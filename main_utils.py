@@ -55,3 +55,26 @@ def extract_attributions(attribution_df):
                         start_index = i
             
     return attributions        
+
+# Get span of attributions
+def extract_attribution_spans(attributions):
+    """
+    Extracts the lowest and highest index from an attribution to find the span of the attribution.
+    Returns a list of tuples.
+
+    :param attributions: list of dictionaries with values being tuples
+    """
+    attribution_spans = []
+    for attribution in attributions:
+        lowest_value = 9999999
+        highest_value = 0
+        for value in attribution.values():
+            if type(value) == tuple and len(value) == 2: # To prevent code breaking
+                start_index, end_index = value
+                if start_index < lowest_value:
+                    lowest_value = start_index
+                if end_index > highest_value:
+                    highest_value = end_index
+        attribution_spans.append((lowest_value, highest_value))
+
+    return attribution_spans
