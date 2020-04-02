@@ -3,18 +3,22 @@ import os
 from main_utils import import_attribution_doc
 from statistics import mean
 
+
 def get_corpus_stats(corpus_directory):
-    '''function to find the general statistics on each file in a corpus and in the corpus overall.
-    
-    takes one agrument: corpus directory- the relative path to the directory caontaining the corpus.
-    
+    """
+    Function to find the general statistics on each file in a corpus and in the corpus overall.
+
+    takes one argument: corpus directory- the relative path to the directory containing the corpus.
+
     returns 2 items: main_list- a list of dictionaries with each dictionary containing stats for each file in the corpus
-                    stats_dict- a dictionary containing the stats for the overall coprus'''
-    
+                    stats_dict- a dictionary containing the stats for the overall corpus
+    :param corpus_directory:
+    """
+
     main_list = list()
     for filename in os.listdir(corpus_directory):
 
-        df = import_attribution_doc(corpus_directory+filename)
+        df = import_attribution_doc(corpus_directory + filename)
 
         doc_dict = dict()
 
@@ -42,8 +46,8 @@ def get_corpus_stats(corpus_directory):
 
         main_list.append(doc_dict)
 
-    #print(main_list)
-    
+    # print(main_list)
+
     stats_dict = dict()
 
     sent_count = list()
@@ -63,6 +67,6 @@ def get_corpus_stats(corpus_directory):
     stats_dict['average number of sentences'] = av_sent_count
     stats_dict['average number of tokens'] = av_token_count
     stats_dict['average sentence length'] = av_sent_len
-    #print(stats_dict)
-    
+    # print(stats_dict)
+
     return main_list, stats_dict
