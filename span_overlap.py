@@ -67,4 +67,4 @@ if __name__ == '__main__':
 
     # Just some signals that the script is done.
     print('DONE!')
-    winsound.Beep(freq, duration)
+    #winsound.Beep(freq, duration)

@@ -77,7 +77,7 @@ def extract_attribution_spans(attributions):
                         lowest_value = start_index
                     if end_index > highest_value:
                         highest_value = end_index
-            attribution_spans.append((lowest_value, highest_value))
+        attribution_spans.append((lowest_value, highest_value))
 
     return attribution_spans
 
