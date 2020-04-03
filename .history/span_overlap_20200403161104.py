@@ -24,7 +24,7 @@ def count_span_sentence_overlaps(df, attribution_spans):
     multiple_sentence_span = 0
     for start_index, end_index in attribution_spans:
         if start_index == 9999999 or end_index == 0:
-            print(df.at[0, 'filename'])  # These prints are for debugging!
+            print(df.at[0, 'filename'])  # These prints are for 
             print(start_index)
             print(end_index)
             continue

@@ -24,9 +24,9 @@ def count_span_sentence_overlaps(df, attribution_spans):
     multiple_sentence_span = 0
     for start_index, end_index in attribution_spans:
         if start_index == 9999999 or end_index == 0:
-            print(df.at[0, 'filename'])  # These prints are for debugging!
-            print(start_index)
-            print(end_index)
+            #print(df.at[0, 'filename'])
+            #print(start_index)
+            #print(end_index)
             continue
         if df.at[start_index, 'sentence_number'] == df.at[end_index, 'sentence_number']:
             one_sentence_span += 1
@@ -60,11 +60,9 @@ def main():
     print()
     print('one sentence:', one_sentence_total)
     print('multiple sentence:', multiple_sentences_total)
-
-
+  
+    
 if __name__ == '__main__':
     main()
-
-    # Just some signals that the script is done.
     print('DONE!')
     winsound.Beep(freq, duration)
