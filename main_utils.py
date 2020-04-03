@@ -30,6 +30,8 @@ def extract_attributions(attribution_df):
         df row of the span, "e" is the line in the df after the span ends (use range(s, e) to traverse the span)
         attributions = [{"SOURCE": (s, e), "CUE": (s, e), "CONTENT": (s, e)}, ...]
     '''
+    filename = attribution_df["filename"][0]
+    
     attribution_info = attribution_df["attribution"]
     num_attributions = len(attribution_info[0].split(" "))
     attributions = [] 
@@ -46,7 +48,7 @@ def extract_attributions(attribution_df):
                     # Not inside a span
                     if start_index != None:
                         # Found the end of a span we were in
-                        assert attributions[att_index][att_part] == None, f"multi-part {att_part}? Line {i}"
+                        assert attributions[att_index][att_part] == None, f"multi-part {att_part}? Line {i}, '{filename}'"
                         attributions[att_index][att_part] = (start_index, i)
                         start_index = None
                 else:
