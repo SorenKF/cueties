@@ -80,3 +80,20 @@ def extract_attribution_spans(attributions):
         attribution_spans.append((lowest_value, highest_value))
 
     return attribution_spans
+
+def import_attribution_tsv(attribution_tsv):
+    '''
+    Imports an attribution tsv file into a pandas dataframe. 
+    Columns: filename, SOURCE, CUE, CONTENT
+    
+    :param attribution_tsv: a .tsv file containing attribution information (in span tuple format) for a corpus of files
+    ex.
+    filename    SOURCE    CUE    CONTENT
+    wsj_0001.txt    1,3    4,7   19,29     
+    ...
+    
+    :returns df: a pandas dataframe with columns: filename, SOURCE, CUE, CONTENT
+        SOURCE, CUE, CONTENT are represented as span (start, end) tuples.
+    '''
+    df = pd.read_csv(attribution_tsv, sep='\t')
+    return df
