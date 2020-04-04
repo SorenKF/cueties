@@ -5,8 +5,7 @@ from main_utils import import_attribution_doc, extract_attributions, extract_att
 
 # here's a sound snippet to play a beep once this MF has run. The call to play the soudn is at one of the last lines.
 import winsound
-duration = 1000  # milliseconds
-freq = 440  # Hz
+
 ####
 
 # Get span of attributions
@@ -58,6 +57,7 @@ def main():
             one_sentence_total += one_sentence
             multiple_sentences_total += multiple_sentences
     print()
+    print('total number of files:', i)
     print('one sentence:', one_sentence_total)
     print('multiple sentence:', multiple_sentences_total)
 
@@ -67,4 +67,6 @@ if __name__ == '__main__':
 
     # Just some signals that the script is done.
     print('DONE!')
-    #winsound.Beep(freq, duration)
+    duration = 1000  # milliseconds
+    freq = 550  # Hz
+    winsound.Beep(freq, duration)
