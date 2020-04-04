@@ -5,7 +5,8 @@ from main_utils import import_attribution_doc, extract_attributions, extract_att
 
 # here's a sound snippet to play a beep once this MF has run. The call to play the soudn is at one of the last lines.
 import winsound
-
+duration = 1000  # milliseconds
+freq = 440  # Hz
 ####
 
 # Get span of attributions
@@ -19,23 +20,18 @@ def count_span_sentence_overlaps(df, attribution_spans):
     Returns: tuple containing count of attributions which span one sentence and those that span
     multiple.
     """
-    # Initiate for counting
     one_sentence_span = 0
     multiple_sentence_span = 0
-    # Extract start and end index for each attribution span
     for start_index, end_index in attribution_spans:
-        # If it didn't find the start or end index then skip it
         if start_index == 9999999 or end_index == 0:
-            print(df.at[0, 'filename'])  # These prints are for debugging!
-            print(start_index)
-            print(end_index)
+            #print(df.at[0, 'filename'])
+            #print(start_index)
+            #print(end_index)
             continue
-        # If the sentence number for start and end of span are the same then add one to single sentence count
         if df.at[start_index, 'sentence_number'] == df.at[end_index, 'sentence_number']:
             one_sentence_span += 1
-        else: # If the sentence numbers differ then add one to the multi sentence count
+        else:
             multiple_sentence_span += 1
-    # Return tuple of counts
     return one_sentence_span, multiple_sentence_span
 
 
@@ -62,16 +58,11 @@ def main():
             one_sentence_total += one_sentence
             multiple_sentences_total += multiple_sentences
     print()
-    print('total number of files:', i)
     print('one sentence:', one_sentence_total)
     print('multiple sentence:', multiple_sentences_total)
 
-
+    
 if __name__ == '__main__':
     main()
-
-    # Just some signals that the script is done.
     print('DONE!')
-    duration = 1000  # milliseconds
-    freq = 550  # Hz
     winsound.Beep(freq, duration)
