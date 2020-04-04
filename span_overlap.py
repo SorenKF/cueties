@@ -32,7 +32,7 @@ def count_span_sentence_overlaps(df, attribution_spans):
 def main():
     # Replace with your path (obvs)
     parc_directory = "./../Data/parc30-conll/train-conll-foreval/"
-    polnear_directory = "./../Data/polnear-conll/polnear-conll/train-conll-foreval/"
+    polnear_directory = "./../Data/polnear-conll/train-conll-foreval/"
 
     one_sentence_total = 0
     multiple_sentences_total = 0
