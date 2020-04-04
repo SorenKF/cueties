@@ -19,18 +19,23 @@ def count_span_sentence_overlaps(df, attribution_spans):
     Returns: tuple containing count of attributions which span one sentence and those that span
     multiple.
     """
+    # Initiate for counting
     one_sentence_span = 0
     multiple_sentence_span = 0
+    # Extract start and end index for each attribution span
     for start_index, end_index in attribution_spans:
+        # If it didn't find the start or end index then skip it
         if start_index == 9999999 or end_index == 0:
             print(df.at[0, 'filename'])  # These prints are for debugging!
             print(start_index)
             print(end_index)
             continue
+        # If the sentence number for start and end of span are the same then add one to single sentence count
         if df.at[start_index, 'sentence_number'] == df.at[end_index, 'sentence_number']:
             one_sentence_span += 1
-        else:
+        else: # If the sentence numbers differ then add one to the multi sentence count
             multiple_sentence_span += 1
+    # Return tuple of counts
     return one_sentence_span, multiple_sentence_span
 
 
