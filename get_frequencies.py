@@ -5,7 +5,9 @@ import json
 
 ######### comment out and replace filpath to directory you want to use
 directory = "C:/Users/Stell/Documents/Attribution System/polnear-conll/polnear-conll/train-conll-foreval/"
-#directory = "C:/Users/Stell/Documents/Attribution System/parc30-conll/train-conll-foreval/"
+
+
+# directory = "C:/Users/Stell/Documents/Attribution System/parc30-conll/train-conll-foreval/"
 
 def get_cue_frequencies():
     """
@@ -13,21 +15,21 @@ def get_cue_frequencies():
     - a dictionary with for every entry a string of lemmas in cue spans as key and frequency as value
     - a dictionary with for every entry a string of POS in cue spans as key and frequency as value
     """
-    
+
     lemma_list_cue = []
     freq_dict_lemma_cue = {}
     pos_list_cue = []
     freq_dict_pos_cue = {}
-   
+
     for filename in os.listdir(directory):
-        df = import_attribution_doc(directory+filename)
+        df = import_attribution_doc(directory + filename)
         if df["attribution"][0] != 0:
-            atts = extract_attributions(df)            
+            atts = extract_attributions(df)
 
             for i in range(len(atts)):
                 attribution = atts[i]
                 cue_span = attribution["CUE"]
-                
+
                 for span in cue_span:
                     if span == None:
                         continue
@@ -44,22 +46,20 @@ def get_cue_frequencies():
                             pos += tag + " "
                         pos_list_cue.append(pos.strip(" "))
 
-
     for item in lemma_list_cue:
         if item in freq_dict_lemma_cue:
             freq_dict_lemma_cue[item] += 1
         else:
-            freq_dict_lemma_cue[item] = 1 
-    
-                                        
-    
+            freq_dict_lemma_cue[item] = 1
+
     for item in pos_list_cue:
         if item in freq_dict_pos_cue:
             freq_dict_pos_cue[item] += 1
         else:
-            freq_dict_pos_cue[item] = 1 
-      
-    return(freq_dict_lemma_cue, freq_dict_pos_cue)
+            freq_dict_pos_cue[item] = 1
+
+    return (freq_dict_lemma_cue, freq_dict_pos_cue)
+
 
 def get_source_frequencies():
     """
@@ -67,21 +67,21 @@ def get_source_frequencies():
     - a dictionary with for every entry a string of lemmas in source spans as key and frequency as value
     - a dictionary with for every entry a string of POS in source spans as key and frequency as value
     """
-    
+
     lemma_list_source = []
     freq_dict_lemma_source = {}
     pos_list_source = []
     freq_dict_pos_source = {}
-   
+
     for filename in os.listdir(directory):
-        df = import_attribution_doc(directory+filename)
+        df = import_attribution_doc(directory + filename)
         if df["attribution"][0] != 0:
             atts = extract_attributions(df)
 
             for i in range(len(atts)):
                 attribution = atts[i]
                 source_span = attribution["SOURCE"]
-                
+
                 for span in source_span:
                     if span == None:
                         continue
@@ -98,23 +98,19 @@ def get_source_frequencies():
                             pos += tag + " "
                         pos_list_source.append(pos.strip(" "))
 
-
     for item in lemma_list_source:
         if item in freq_dict_lemma_source:
             freq_dict_lemma_source[item] += 1
         else:
-            freq_dict_lemma_source[item] = 1 
-    
-                                        
-    
+            freq_dict_lemma_source[item] = 1
+
     for item in pos_list_source:
         if item in freq_dict_pos_source:
             freq_dict_pos_source[item] += 1
         else:
-            freq_dict_pos_source[item] = 1 
-      
-    return(freq_dict_lemma_source, freq_dict_pos_source)
-    
+            freq_dict_pos_source[item] = 1
+
+    return (freq_dict_lemma_source, freq_dict_pos_source)
 
 
 def main():
@@ -122,7 +118,7 @@ def main():
     pos_cue = get_cue_frequencies()[1]
     lemmas_source = get_source_frequencies()[0]
     pos_source = get_source_frequencies()[1]
-    
+
     print(lemmas_cue)
     print()
     print(pos_cue)
@@ -130,8 +126,8 @@ def main():
     print(lemmas_source)
     print()
     print(pos_source)
-    
-    
+
+
 #     for key, value in lemmas_cue.items():
 #         if value > 15:
 #             print(key, value)
@@ -150,4 +146,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

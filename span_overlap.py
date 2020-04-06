@@ -1,7 +1,8 @@
 # Here's code for using main_utils in a notebook:
-#import pandas as pd
+# import pandas as pd
 import os
 from main_utils import import_attribution_doc, extract_attributions, extract_attribution_spans
+
 
 # Get span of attributions
 
@@ -54,6 +55,7 @@ def main():
     print()
     print('one sentence:', one_sentence_total)
     print('multiple sentence:', multiple_sentences_total)
+
 
 if __name__ == '__main__':
     main()
