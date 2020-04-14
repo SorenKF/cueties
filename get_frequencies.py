@@ -1,7 +1,5 @@
-import pandas as pd
 import os
 from main_utils import import_attribution_doc, extract_attributions
-import json
 
 ######### comment out and replace filpath to directory you want to use
 directory = "C:/Users/Stell/Documents/Attribution System/polnear-conll/polnear-conll/train-conll-foreval/"
