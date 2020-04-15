@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 
+
 def import_attribution_doc(filename):
     '''
     Takes the name of a PARC or polnear attribution corpus document and returns a pandas df containing its data
@@ -11,11 +12,12 @@ def import_attribution_doc(filename):
             "filename", "sentence_number", "doc_token_number", "sent_token_number", "offset", "word", "lemma", "POS", "dependency_label",
                 "dependency_head_id", "attribution"
     '''
-    
-    headers = ["filename", "sentence_number", "doc_token_number", "sent_token_number", "offset", 
+
+    headers = ["filename", "sentence_number", "doc_token_number", "sent_token_number", "offset",
                "word", "lemma", "POS", "dependency_label", "dependency_head_id", "attribution"]
-    df = pd.read_csv(filename, sep='\t',names=headers)
+    df = pd.read_csv(filename, sep='\t', names=headers)
     return df
+
 
 def extract_attributions(attribution_df):
     '''
@@ -31,14 +33,14 @@ def extract_attributions(attribution_df):
         attributions = [{"SOURCE": [(s, e)], "CUE": [(s, e)], "CONTENT": [(s1, e1), (s2, e2)]}, ...]
     '''
     filename = attribution_df["filename"][0]
-    
+
     attribution_info = attribution_df["attribution"]
     num_attributions = len(attribution_info[0].split(" "))
-    attributions = [] 
+    attributions = []
     attribution_parts = ["SOURCE", "CUE", "CONTENT"]
     for i in range(num_attributions):
         attributions.append({"SOURCE": [], "CUE": [], "CONTENT": []})
-    
+
     for att_index in range(num_attributions):
         for attribution_part in attribution_parts:
             start_index = None
@@ -54,8 +56,9 @@ def extract_attributions(attribution_df):
                     IOB_label, att_part = attribution_string[0], attribution_string[1]
                     if att_part == attribution_part and IOB_label == "B":
                         start_index = i
-            
-    return attributions        
+
+    return attributions
+
 
 # Get span of attributions
 def extract_attribution_spans(attributions):
@@ -71,7 +74,7 @@ def extract_attribution_spans(attributions):
         highest_value = 0
         for tuple_list in attribution.values():
             for attribution_tuple in tuple_list:
-                if type(attribution_tuple) == tuple and len(attribution_tuple) == 2: # To prevent code breaking
+                if type(attribution_tuple) == tuple and len(attribution_tuple) == 2:  # To prevent code breaking
                     start_index, end_index = attribution_tuple
                     if start_index < lowest_value:
                         lowest_value = start_index
@@ -80,6 +83,7 @@ def extract_attribution_spans(attributions):
         attribution_spans.append((lowest_value, highest_value))
 
     return attribution_spans
+
 
 def import_attribution_tsv(attribution_tsv):
     '''
