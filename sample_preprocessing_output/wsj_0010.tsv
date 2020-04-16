@@ -1,435 +1,435 @@
-	POS	dependency_head	dependency_label	doc_token_number	lemma	ne_info	sentence_number	sentence_token_number	token	cue_label
-0	WRB	4	mark	1	when	O	1	1	When	0
-1	PRP	4	nsubj	2	it	O	1	2	it	0
-2	VBZ	4	cop	3	be	O	1	3	's	0
-3	NN	16	advcl	4	time	O	1	4	time	0
-4	IN	8	case	5	for	O	1	5	for	0
-5	PRP$	8	nmod:poss	6	they	O	1	6	their	0
-6	JJ	8	amod	7	biannual	S-DATE	1	7	biannual	0
-7	NN	4	nmod	8	powwow	O	1	8	powwow	0
-8	,	16	punct	9	,	O	1	9	,	0
-9	DT	11	det	10	the	O	1	10	the	0
-10	NN	14	nmod:poss	11	nation	O	1	11	nation	0
-11	POS	11	case	12	's	O	1	12	's	0
-12	NN	14	compound	13	manufacturing	O	1	13	manufacturing	0
-13	NNS	16	nsubj	14	titan	O	1	14	titans	0
-14	RB	16	advmod	15	typically	O	1	15	typically	0
-15	VBP	0	root	16	jet	O	1	16	jet	0
-16	RP	16	compound:prt	17	off	O	1	17	off	0
-17	IN	21	case	18	to	O	1	18	to	0
-18	DT	21	det	19	the	O	1	19	the	0
-19	JJ	21	amod	20	sunny	O	1	20	sunny	0
-20	NNS	16	obl	21	confines	O	1	21	confines	0
-21	IN	24	case	22	of	O	1	22	of	0
-22	NN	24	compound	23	resort	O	1	23	resort	0
-23	NNS	21	nmod	24	town	O	1	24	towns	0
-24	IN	27	case	25	like	O	1	25	like	0
-25	NNP	27	compound	26	Boca	B-GPE	1	26	Boca	0
-26	NNP	24	nmod	27	Raton	E-GPE	1	27	Raton	0
-27	CC	30	cc	28	and	O	1	28	and	0
-28	NNP	30	compound	29	Hot	B-GPE	1	29	Hot	0
-29	NNPS	27	conj	30	Springs	E-GPE	1	30	Springs	0
-30	.	16	punct	31	.	O	1	31	.	0
-31	RB	3	advmod	32	not	O	2	1	Not	0
-32	DT	3	det	33	this	B-DATE	2	2	this	0
-33	NN	0	root	34	year	E-DATE	2	3	year	0
-34	.	3	punct	35	.	O	2	4	.	0
-35	DT	3	det	36	the	B-ORG	3	1	The	0
-36	NNP	3	compound	37	National	I-ORG	3	2	National	0
-37	NNP	6	nsubj	38	Association	I-ORG	3	3	Association	0
-38	IN	5	case	39	of	I-ORG	3	4	of	0
-39	NNPS	3	nmod	40	Manufacturers	E-ORG	3	5	Manufacturers	0
-40	VBN	0	root	41	settle	O	3	6	settled	0
-41	IN	10	case	42	on	O	3	7	on	0
-42	DT	10	det	43	the	O	3	8	the	0
-43	NNP	10	compound	44	Hoosier	S-NORP	3	9	Hoosier	0
-44	NN	6	obl	45	capital	O	3	10	capital	0
-45	IN	12	case	46	of	O	3	11	of	0
-46	NNP	10	nmod	47	Indianapolis	S-GPE	3	12	Indianapolis	0
-47	IN	17	case	48	for	O	3	13	for	0
-48	PRP$	17	nmod:poss	49	its	O	3	14	its	0
-49	NN	16	compound	50	fall	O	3	15	fall	0
-50	NN	17	compound	51	board	O	3	16	board	0
-51	NN	6	obl	52	meeting	O	3	17	meeting	0
-52	.	6	punct	53	.	O	3	18	.	0
-53	CC	4	cc	54	and	O	4	1	And	0
-54	DT	3	det	55	the	O	4	2	the	0
-55	NN	4	nsubj	56	city	O	4	3	city	0
-56	VBD	0	root	57	decide	O	4	4	decided	1
-57	TO	6	mark	58	to	O	4	5	to	0
-58	VB	4	xcomp	59	treat	O	4	6	treat	0
-59	PRP$	8	nmod:poss	60	its	O	4	7	its	0
-60	NNS	6	obj	61	guest	O	4	8	guests	0
-61	RBR	6	advmod	62	more	O	4	9	more	0
-62	IN	11	case	63	like	O	4	10	like	0
-63	JJ	14	amod	64	royalty	O	4	11	royalty	0
-64	CC	13	cc	65	or	O	4	12	or	0
-65	NN	11	conj	66	rock	O	4	13	rock	0
-66	NNS	6	obl	67	star	O	4	14	stars	0
-67	IN	17	case	68	than	O	4	15	than	0
-68	NN	17	compound	69	factory	O	4	16	factory	0
-69	NNS	6	obl	70	owner	O	4	17	owners	0
-70	.	4	punct	71	.	O	4	18	.	0
-71	DT	2	det	72	the	O	5	1	The	0
-72	NN	0	root	73	idea	O	5	2	idea	1
-73	,	2	punct	74	,	O	5	3	,	0
-74	RB	8	advmod	75	of	O	5	4	of	0
-75	RB	4	fixed	76	course	O	5	5	course	0
-76	:	2	punct	77	:	O	5	6	:	0
-77	TO	8	mark	78	to	O	5	7	to	0
-78	VB	2	parataxis	79	prove	O	5	8	prove	0
-79	IN	13	case	80	to	O	5	9	to	0
-80	CD	13	nummod	81	125	S-CARDINAL	5	10	125	0
-81	JJ	12	amod	82	corporate	O	5	11	corporate	0
-82	NN	13	compound	83	decision	O	5	12	decision	0
-83	NNS	8	obl	84	maker	O	5	13	makers	0
-84	IN	24	mark	85	that	O	5	14	that	0
-85	DT	16	det	86	the	O	5	15	the	0
-86	NN	24	nsubj	87	buckle	O	5	16	buckle	0
-87	IN	20	case	88	on	O	5	17	on	0
-88	DT	20	det	89	the	B-LOC	5	18	the	0
-89	NNP	20	compound	90	Rust	I-LOC	5	19	Rust	0
-90	NNP	16	nmod	91	Belt	E-LOC	5	20	Belt	0
-91	VBZ	24	cop	92	be	O	5	21	is	0
-92	RB	24	advmod	93	not	O	5	22	n't	0
-93	RB	24	advmod	94	so	O	5	23	so	0
-94	JJ	8	ccomp	95	rusty	O	5	24	rusty	0
-95	RB	26	case	96	after	O	5	25	after	0
-96	DT	24	obl	97	all	O	5	26	all	0
-97	,	24	punct	98	,	O	5	27	,	0
-98	IN	33	mark	99	that	O	5	28	that	0
-99	PRP	33	nsubj	100	it	O	5	29	it	0
-100	VBZ	33	cop	101	be	O	5	30	's	0
-101	DT	33	det	102	a	O	5	31	a	0
-102	JJ	33	amod	103	good	O	5	32	good	0
-103	NN	24	conj	104	place	O	5	33	place	0
-104	IN	36	case	105	for	O	5	34	for	0
-105	DT	36	det	106	a	O	5	35	a	0
-106	NN	33	nmod	107	company	O	5	36	company	0
-107	TO	38	mark	108	to	O	5	37	to	0
-108	VB	36	acl	109	expand	O	5	38	expand	0
-109	.	2	punct	110	.	O	5	39	.	0
-110	IN	4	case	111	on	O	6	1	On	0
-111	DT	4	det	112	the	O	6	2	the	0
-112	VBG	4	amod	113	receive	O	6	3	receiving	0
-113	NN	9	obl	114	end	O	6	4	end	0
-114	IN	7	case	115	of	O	6	5	of	0
-115	DT	7	det	116	the	O	6	6	the	0
-116	NN	4	nmod	117	message	O	6	7	message	0
-117	VBD	9	cop	118	be	O	6	8	were	0
-118	NNS	0	root	119	official	O	6	9	officials	0
-119	IN	11	case	120	from	O	6	10	from	0
-120	NNS	9	nmod	121	giant	O	6	11	giants	0
-121	IN	14	case	122	like	O	6	12	like	0
-122	NNP	14	compound	123	Du	B-ORG	6	13	Du	0
-123	NNP	11	nmod	124	Pont	E-ORG	6	14	Pont	0
-124	CC	16	cc	125	and	O	6	15	and	0
-125	NNP	14	conj	126	Maytag	S-ORG	6	16	Maytag	0
-126	,	9	punct	127	,	O	6	17	,	0
-127	IN	21	case	128	along	O	6	18	along	0
-128	IN	21	case	129	with	O	6	19	with	0
-129	JJR	21	amod	130	lesser	O	6	20	lesser	0
-130	NNS	9	nmod	131	known	O	6	21	knowns	0
-131	IN	24	case	132	like	O	6	22	like	0
-132	NNP	24	compound	133	Trojan	B-ORG	6	23	Trojan	0
-133	NNP	21	nmod	134	Steel	E-ORG	6	24	Steel	0
-134	CC	30	cc	135	and	O	6	25	and	0
-135	DT	30	det	136	the	B-ORG	6	26	the	0
-136	NNP	30	compound	137	Valley	I-ORG	6	27	Valley	0
-137	NNP	29	compound	138	Queen	I-ORG	6	28	Queen	0
-138	NNP	30	compound	139	cheese	I-ORG	6	29	Cheese	0
-139	NNP	24	conj	140	Factory	E-ORG	6	30	Factory	0
-140	.	9	punct	141	.	O	6	31	.	0
-141	IN	2	case	142	for	O	7	1	For	0
-142	NNS	6	obl	143	starter	O	7	2	starters	0
-143	,	6	punct	144	,	O	7	3	,	0
-144	DT	5	det	145	the	O	7	4	the	0
-145	NNS	6	nsubj	146	executive	O	7	5	executives	0
-146	VBD	0	root	147	join	O	7	6	joined	0
-147	NNP	6	obj	148	Mayor	O	7	7	Mayor	0
-148	NNP	7	flat	149	William	B-PERSON	7	8	William	0
-149	NNP	7	flat	150	H.	I-PERSON	7	9	H.	0
-150	NNP	7	flat	151	Hudnut	I-PERSON	7	10	Hudnut	0
-151	CD	7	amod	152	iii	E-PERSON	7	11	III	0
-152	IN	14	case	153	for	O	7	12	for	0
-153	DT	14	det	154	a	O	7	13	an	0
-154	NN	6	obl	155	evening	S-TIME	7	14	evening	0
-155	IN	19	case	156	of	O	7	15	of	0
-156	DT	19	det	157	the	B-ORG	7	16	the	0
-157	NNP	18	compound	158	Indianapolis	I-ORG	7	17	Indianapolis	0
-158	NNP	19	compound	159	Symphony	I-ORG	7	18	Symphony	0
-159	NNP	14	nmod	160	Orchestra	E-ORG	7	19	Orchestra	0
-160	CC	24	cc	161	and	O	7	20	and	0
-161	DT	24	det	162	a	O	7	21	a	0
-162	NN	24	compound	163	guest	O	7	22	guest	0
-163	JJ	24	amod	164	pianist-comedian	O	7	23	pianist-comedian	0
-164	NNP	19	conj	165	Victor	B-PERSON	7	24	Victor	0
-165	NNP	24	flat	166	Borge	E-PERSON	7	25	Borge	0
-166	.	6	punct	167	.	O	7	26	.	0
-167	NN	4	nsubj	168	Champagne	O	8	1	Champagne	0
-168	CC	3	cc	169	and	O	8	2	and	0
-169	NN	1	conj	170	dessert	O	8	3	dessert	0
-170	VBD	0	root	171	follow	O	8	4	followed	0
-171	.	4	punct	172	.	O	8	5	.	0
-172	DT	3	det	173	the	B-TIME	9	1	The	0
-173	JJ	3	amod	174	next	I-TIME	9	2	next	0
-174	NN	16	obl:tmod	175	morning	E-TIME	9	3	morning	0
-175	,	16	punct	176	,	O	9	4	,	0
-176	IN	8	case	177	with	O	9	5	with	0
-177	DT	8	det	178	a	O	9	6	a	0
-178	NN	8	compound	179	police	O	9	7	police	0
-179	NN	16	obl	180	escort	O	9	8	escort	0
-180	,	16	punct	181	,	O	9	9	,	0
-181	NNS	16	nsubj	182	busload	O	9	10	busloads	0
-182	IN	12	case	183	of	O	9	11	of	0
-183	NNS	10	nmod	184	executive	O	9	12	executives	0
-184	CC	15	cc	185	and	O	9	13	and	0
-185	PRP$	15	nmod:poss	186	they	O	9	14	their	0
-186	NNS	12	conj	187	wife	O	9	15	wives	0
-187	VBD	0	root	188	race	O	9	16	raced	0
-188	IN	21	case	189	to	O	9	17	to	0
-189	DT	21	det	190	the	B-FAC	9	18	the	0
-190	NNP	21	compound	191	Indianapolis	I-FAC	9	19	Indianapolis	0
-191	NNP	21	compound	192	Motor	I-FAC	9	20	Motor	0
-192	NNP	16	obl	193	Speedway	E-FAC	9	21	Speedway	0
-193	,	21	punct	194	,	O	9	22	,	0
-194	VBN	21	acl	195	unimped	O	9	23	unimpeded	0
-195	IN	25	case	196	by	O	9	24	by	0
-196	NN	23	obl	197	traffic	O	9	25	traffic	0
-197	CC	28	cc	198	or	O	9	26	or	0
-198	JJ	28	amod	199	red	O	9	27	red	0
-199	NNS	25	conj	200	light	O	9	28	lights	0
-200	.	16	punct	201	.	O	9	29	.	0
-201	DT	2	det	202	the	O	10	1	The	0
-202	NNP	5	nsubj	203	governor	O	10	2	governor	0
-203	MD	5	aux	204	could	O	10	3	could	0
-204	RB	5	advmod	205	not	O	10	4	n't	0
-205	VB	0	root	206	make	O	10	5	make	0
-206	PRP	5	obj	207	it	O	10	6	it	0
-207	,	5	punct	208	,	O	10	7	,	0
-208	RB	12	advmod	209	so	O	10	8	so	0
-209	DT	11	det	210	the	O	10	9	the	0
-210	NN	11	compound	211	lieutenant	O	10	10	lieutenant	0
-211	NN	12	nsubj	212	governor	O	10	11	governor	0
-212	VBD	5	parataxis	213	welcome	O	10	12	welcomed	0
-213	DT	15	det	214	the	O	10	13	the	0
-214	JJ	15	amod	215	special	O	10	14	special	0
-215	NNS	12	obj	216	guest	O	10	15	guests	0
-216	.	5	punct	217	.	O	10	16	.	0
-217	DT	3	det	218	a	O	11	1	A	0
-218	NN	3	compound	219	buffet	O	11	2	buffet	0
-219	NN	5	nsubj:pass	220	breakfast	O	11	3	breakfast	0
-220	VBD	5	aux:pass	221	be	O	11	4	was	0
-221	VBN	0	root	222	hold	O	11	5	held	0
-222	IN	8	case	223	in	O	11	6	in	0
-223	DT	8	det	224	the	O	11	7	the	0
-224	NN	5	obl	225	museum	O	11	8	museum	0
-225	,	8	punct	226	,	O	11	9	,	0
-226	WRB	15	advmod	227	where	O	11	10	where	0
-227	NN	15	nsubj:pass	228	food	O	11	11	food	0
-228	CC	13	cc	229	and	O	11	12	and	0
-229	NNS	11	conj	230	drink	O	11	13	drinks	0
-230	VBP	15	aux:pass	231	be	O	11	14	are	0
-231	VBN	8	acl:relcl	232	ban	O	11	15	banned	0
-232	IN	18	case	233	to	O	11	16	to	0
-233	JJ	18	amod	234	everyday	O	11	17	everyday	0
-234	NNS	15	obl	235	visitor	O	11	18	visitors	0
-235	.	5	punct	236	.	O	11	19	.	0
-236	RB	11	advmod	237	then	O	12	1	Then	0
-237	,	11	punct	238	,	O	12	2	,	0
-238	IN	7	case	239	in	O	12	3	in	0
-239	DT	5	det	240	the	O	12	4	the	0
-240	NNS	7	nmod:poss	241	guest	O	12	5	guests	0
-241	POS	5	case	242	's	O	12	6	'	0
-242	NN	11	obl	243	honor	O	12	7	honor	0
-243	,	11	punct	244	,	O	12	8	,	0
-244	DT	10	det	245	the	O	12	9	the	0
-245	NN	11	nsubj	246	speedway	O	12	10	speedway	0
-246	VBD	0	root	247	haul	O	12	11	hauled	0
-247	RP	11	compound:prt	248	out	O	12	12	out	0
-248	CD	14	nummod	249	four	S-CARDINAL	12	13	four	0
-249	NNS	11	obj	250	driver	O	12	14	drivers	0
-250	,	16	punct	251	,	O	12	15	,	0
-251	NNS	14	conj	252	crew	O	12	16	crews	0
-252	CC	23	cc	253	and	O	12	17	and	0
-253	RB	23	advmod	254	even	O	12	18	even	0
-254	DT	23	det	255	the	O	12	19	the	0
-255	JJ	23	amod	256	official	O	12	20	official	0
-256	NNP	23	compound	257	Indianapolis	B-ORG	12	21	Indianapolis	0
-257	CD	23	nummod	258	500	E-ORG	12	22	500	0
-258	NN	14	conj	259	announcer	O	12	23	announcer	0
-259	IN	28	case	260	for	O	12	24	for	0
-260	DT	28	det	261	a	O	12	25	a	0
-261	JJ	28	amod	262	10-lap	O	12	26	10-lap	0
-262	NN	28	compound	263	exhibition	O	12	27	exhibition	0
-263	NN	23	nmod	264	race	O	12	28	race	0
-264	.	11	punct	265	.	O	12	29	.	0
-265	IN	3	case	266	after	O	13	1	After	0
-266	DT	3	det	267	the	O	13	2	the	0
-267	NN	8	obl	268	race	O	13	3	race	0
-268	,	8	punct	269	,	O	13	4	,	0
-269	NNP	7	compound	270	Fortune	B-ORG	13	5	Fortune	0
-270	CD	5	nummod	271	500	E-ORG	13	6	500	0
-271	NNS	8	nsubj	272	executive	O	13	7	executives	0
-272	VBD	0	root	273	drool	O	13	8	drooled	0
-273	IN	10	case	274	like	O	13	9	like	0
-274	NNS	8	obl	275	schoolboy	O	13	10	schoolboys	0
-275	IN	13	case	276	over	O	13	11	over	0
-276	DT	13	det	277	the	O	13	12	the	0
-277	NNS	8	obl	278	car	O	13	13	cars	0
-278	CC	15	cc	279	and	O	13	14	and	0
-279	NNS	13	conj	280	driver	O	13	15	drivers	0
-280	.	8	punct	281	.	O	13	16	.	0
-281	DT	2	det	282	no	O	14	1	No	0
-282	NNS	0	root	283	dummy	O	14	2	dummies	0
-283	,	2	punct	284	,	O	14	3	,	0
-284	DT	5	det	285	the	O	14	4	the	0
-285	NNS	6	nsubj	286	driver	O	14	5	drivers	0
-286	VBD	2	parataxis	287	point	O	14	6	pointed	0
-287	RP	6	compound:prt	288	out	O	14	7	out	1
-288	PRP	10	nsubj	289	they	O	14	8	they	0
-289	RB	10	advmod	290	still	O	14	9	still	0
-290	VBD	6	ccomp	291	have	O	14	10	had	0
-291	NN	10	obj	292	space	O	14	11	space	0
-292	IN	14	case	293	on	O	14	12	on	0
-293	PRP$	14	nmod:poss	294	they	O	14	13	their	0
-294	NNS	11	nmod	295	machine	O	14	14	machines	0
-295	IN	19	case	296	for	O	14	15	for	0
-296	DT	17	det	297	another	O	14	16	another	0
-297	NN	19	nmod:poss	298	sponsor	O	14	17	sponsor	0
-298	POS	17	case	299	's	O	14	18	's	0
-299	NN	10	obl	300	name	O	14	19	name	0
-300	CC	21	cc	301	or	O	14	20	or	0
-301	CD	19	conj	302	two	S-CARDINAL	14	21	two	0
-302	.	2	punct	303	.	O	14	22	.	0
-303	RB	2	advmod	304	back	O	15	1	Back	0
-304	NN	6	obl:tmod	305	downtown	O	15	2	downtown	0
-305	,	6	punct	306	,	O	15	3	,	0
-306	DT	5	det	307	the	O	15	4	the	0
-307	NNS	6	nsubj	308	exec	O	15	5	execs	0
-308	VBD	0	root	309	squeeze	O	15	6	squeezed	0
-309	IN	10	case	310	in	O	15	7	in	0
-310	DT	10	det	311	a	O	15	8	a	0
-311	JJ	10	amod	312	few	O	15	9	few	0
-312	NNS	6	obl	313	meeting	O	15	10	meetings	0
-313	IN	13	case	314	at	O	15	11	at	0
-314	DT	13	det	315	the	O	15	12	the	0
-315	NN	10	nmod	316	hotel	O	15	13	hotel	0
-316	IN	15	mark	317	before	O	15	14	before	0
-317	VBG	6	advcl	318	board	O	15	15	boarding	0
-318	DT	17	det	319	the	O	15	16	the	0
-319	NNS	15	obj	320	bus	O	15	17	buses	0
-320	RB	15	advmod	321	again	O	15	18	again	0
-321	.	6	punct	322	.	O	15	19	.	0
-322	DT	2	det	323	this	O	16	1	This	0
-323	NN	7	obl:tmod	324	time	O	16	2	time	0
-324	,	7	punct	325	,	O	16	3	,	0
-325	PRP	7	nsubj	326	it	O	16	4	it	0
-326	VBD	7	cop	327	be	O	16	5	was	0
-327	IN	7	case	328	for	O	16	6	for	0
-328	NN	0	root	329	dinner	O	16	7	dinner	0
-329	CC	9	cc	330	and	O	16	8	and	0
-330	NN	7	conj	331	dancing	O	16	9	dancing	0
-331	,	7	punct	332	--	O	16	10	--	0
-332	DT	12	det	333	a	O	16	11	a	0
-333	NN	13	obl:npmod	334	block	O	16	12	block	0
-334	RB	7	conj	335	away	O	16	13	away	0
-335	.	7	punct	336	.	O	16	14	.	0
-336	IN	3	case	337	under	O	17	1	Under	0
-337	DT	3	det	338	the	O	17	2	the	0
-338	NNS	20	obl	339	star	O	17	3	stars	0
-339	CC	5	cc	340	and	O	17	4	and	0
-340	NNS	3	conj	341	moon	O	17	5	moons	0
-341	IN	11	case	342	of	O	17	6	of	0
-342	DT	11	det	343	the	O	17	7	the	0
-343	VBN	11	amod	344	renovate	O	17	8	renovated	0
-344	NNP	10	compound	345	Indiana	B-FAC	17	9	Indiana	0
-345	NNP	11	compound	346	Roof	E-FAC	17	10	Roof	0
-346	NNP	3	nmod	347	ballroom	O	17	11	ballroom	0
-347	,	20	punct	348	,	O	17	12	,	0
-348	CD	20	nsubj	349	nine	S-CARDINAL	17	13	nine	0
-349	IN	17	case	350	of	O	17	14	of	0
-350	DT	17	det	351	the	O	17	15	the	0
-351	JJS	17	amod	352	hottest	O	17	16	hottest	0
-352	NNS	13	nmod	353	chef	O	17	17	chefs	0
-353	IN	19	case	354	in	O	17	18	in	0
-354	NN	17	nmod	355	town	O	17	19	town	0
-355	VBD	0	root	356	feed	O	17	20	fed	0
-356	PRP	20	iobj	357	they	O	17	21	them	0
-357	NNP	24	compound	358	Indiana	S-GPE	17	22	Indiana	0
-358	NN	24	compound	359	duckling	O	17	23	duckling	0
-359	NN	20	obj	360	mousseline	O	17	24	mousseline	0
-360	,	27	punct	361	,	O	17	25	,	0
-361	NN	27	compound	362	lobster	O	17	26	lobster	0
-362	NN	24	conj	363	consomme	O	17	27	consomme	0
-363	,	30	punct	364	,	O	17	28	,	0
-364	NN	30	compound	365	veal	O	17	29	veal	0
-365	NN	24	conj	366	mignon	O	17	30	mignon	0
-366	CC	33	cc	367	and	O	17	31	and	0
-367	NN	33	compound	368	chocolate	O	17	32	chocolate	0
-368	NN	24	conj	369	terrine	O	17	33	terrine	0
-369	IN	37	case	370	with	O	17	34	with	0
-370	DT	37	det	371	a	O	17	35	a	0
-371	NN	37	compound	372	raspberry	O	17	36	raspberry	0
-372	NN	20	obl	373	sauce	O	17	37	sauce	0
-373	.	20	punct	374	.	O	17	38	.	0
-374	VBG	16	advcl	375	know	O	18	1	Knowing	0
-375	DT	3	det	376	a	O	18	2	a	0
-376	JJ	1	obj	377	tasty	O	18	3	tasty	0
-377	,	3	punct	378	--	O	18	4	--	0
-378	CC	6	cc	379	and	O	18	5	and	0
-379	JJ	3	conj	380	free	O	18	6	free	0
-380	,	3	punct	381	--	O	18	7	--	0
-381	NN	16	obl:npmod	382	meal	O	18	8	meal	0
-382	WRB	11	mark	383	when	O	18	9	when	0
-383	PRP	11	nsubj	384	they	O	18	10	they	0
-384	VBP	16	advcl	385	eat	O	18	11	eat	0
-385	CD	11	obj	386	one	S-CARDINAL	18	12	one	0
-386	,	16	punct	387	,	O	18	13	,	0
-387	DT	15	det	388	the	O	18	14	the	0
-388	NNS	16	nsubj	389	executive	O	18	15	executives	0
-389	VBD	0	root	390	give	O	18	16	gave	0
-390	DT	18	det	391	the	O	18	17	the	0
-391	NNS	16	iobj	392	chef	O	18	18	chefs	0
-392	DT	21	det	393	a	O	18	19	a	0
-393	NN	21	compound	394	standing	O	18	20	standing	0
-394	NN	16	obj	395	ovation	O	18	21	ovation	0
-395	.	16	punct	396	.	O	18	22	.	0
-396	JJR	6	nsubj	397	more	O	19	1	More	0
-397	IN	5	case	398	than	O	19	2	than	0
-398	DT	5	det	399	a	O	19	3	a	0
-399	JJ	5	amod	400	few	O	19	4	few	0
-400	NNS	1	obl	401	ceo	O	19	5	CEOs	0
-401	VBP	0	root	402	say	O	19	6	say	1
-402	DT	9	det	403	the	O	19	7	the	0
-403	JJ	9	amod	404	red-carpet	O	19	8	red-carpet	0
-404	NN	10	nsubj	405	treatment	O	19	9	treatment	0
-405	VBZ	6	ccomp	406	tempt	O	19	10	tempts	0
-406	PRP	10	obj	407	they	O	19	11	them	0
-407	TO	13	mark	408	to	O	19	12	to	0
-408	VB	10	xcomp	409	return	O	19	13	return	0
-409	IN	17	case	410	to	O	19	14	to	0
-410	DT	17	det	411	a	O	19	15	a	0
-411	NN	17	compound	412	heartland	O	19	16	heartland	0
-412	NN	13	obl	413	city	O	19	17	city	0
-413	IN	20	case	414	for	O	19	18	for	0
-414	JJ	20	amod	415	future	O	19	19	future	0
-415	NNS	13	obl	416	meeting	O	19	20	meetings	0
-416	.	6	punct	417	.	O	19	21	.	0
-417	CC	7	cc	418	but	O	20	1	But	0
-418	IN	3	case	419	for	O	20	2	for	0
-419	RB	7	obl	420	now	O	20	3	now	0
-420	,	7	punct	421	,	O	20	4	,	0
-421	PRP	7	nsubj	422	they	O	20	5	they	0
-422	VBP	7	aux	423	be	O	20	6	're	0
-423	VBG	0	root	424	look	O	20	7	looking	0
-424	RB	7	advmod	425	forward	O	20	8	forward	0
-425	IN	12	case	426	to	O	20	9	to	0
-426	PRP$	12	nmod:poss	427	they	O	20	10	their	0
-427	NN	12	compound	428	winter	S-DATE	20	11	winter	0
-428	NN	7	obl	429	meeting	O	20	12	meeting	0
-429	,	12	punct	430	--	O	20	13	--	0
-430	NNP	12	appos	431	Boca	S-PERSON	20	14	Boca	0
-431	IN	16	case	432	in	O	20	15	in	0
-432	NNP	12	nmod	433	February	S-DATE	20	16	February	0
-433	.	7	punct	434	.	O	20	17	.	0
+	POS	dependency_head	dependency_label	doc_token_number	lemma	ne_info	sentence_number	sentence_token_number	token	cue_label	attribution
+0	WRB	4	mark	1	when	O	1	1	When	0	_ _ _ _
+1	PRP	4	nsubj	2	it	O	1	2	it	0	_ _ _ _
+2	VBZ	4	cop	3	be	O	1	3	's	0	_ _ _ _
+3	NN	16	advcl	4	time	O	1	4	time	0	_ _ _ _
+4	IN	8	case	5	for	O	1	5	for	0	_ _ _ _
+5	PRP$	8	nmod:poss	6	they	O	1	6	their	0	_ _ _ _
+6	JJ	8	amod	7	biannual	S-DATE	1	7	biannual	0	_ _ _ _
+7	NN	4	nmod	8	powwow	O	1	8	powwow	0	_ _ _ _
+8	,	16	punct	9	,	O	1	9	,	0	_ _ _ _
+9	DT	11	det	10	the	O	1	10	the	0	_ _ _ _
+10	NN	14	nmod:poss	11	nation	O	1	11	nation	0	_ _ _ _
+11	POS	11	case	12	's	O	1	12	's	0	_ _ _ _
+12	NN	14	compound	13	manufacturing	O	1	13	manufacturing	0	_ _ _ _
+13	NNS	16	nsubj	14	titan	O	1	14	titans	0	_ _ _ _
+14	RB	16	advmod	15	typically	O	1	15	typically	0	_ _ _ _
+15	VBP	0	root	16	jet	O	1	16	jet	0	_ _ _ _
+16	RP	16	compound:prt	17	off	O	1	17	off	0	_ _ _ _
+17	IN	21	case	18	to	O	1	18	to	0	_ _ _ _
+18	DT	21	det	19	the	O	1	19	the	0	_ _ _ _
+19	JJ	21	amod	20	sunny	O	1	20	sunny	0	_ _ _ _
+20	NNS	16	obl	21	confines	O	1	21	confines	0	_ _ _ _
+21	IN	24	case	22	of	O	1	22	of	0	_ _ _ _
+22	NN	24	compound	23	resort	O	1	23	resort	0	_ _ _ _
+23	NNS	21	nmod	24	town	O	1	24	towns	0	_ _ _ _
+24	IN	27	case	25	like	O	1	25	like	0	_ _ _ _
+25	NNP	27	compound	26	Boca	B-GPE	1	26	Boca	0	_ _ _ _
+26	NNP	24	nmod	27	Raton	E-GPE	1	27	Raton	0	_ _ _ _
+27	CC	30	cc	28	and	O	1	28	and	0	_ _ _ _
+28	NNP	30	compound	29	Hot	B-GPE	1	29	Hot	0	_ _ _ _
+29	NNPS	27	conj	30	Springs	E-GPE	1	30	Springs	0	_ _ _ _
+30	.	16	punct	31	.	O	1	31	.	0	_ _ _ _
+31	RB	3	advmod	32	not	O	2	1	Not	0	_ _ _ _
+32	DT	3	det	33	this	B-DATE	2	2	this	0	_ _ _ _
+33	NN	0	root	34	year	E-DATE	2	3	year	0	_ _ _ _
+34	.	3	punct	35	.	O	2	4	.	0	_ _ _ _
+35	DT	3	det	36	the	B-ORG	3	1	The	0	_ _ _ _
+36	NNP	3	compound	37	National	I-ORG	3	2	National	0	_ _ _ _
+37	NNP	6	nsubj	38	Association	I-ORG	3	3	Association	0	_ _ _ _
+38	IN	5	case	39	of	I-ORG	3	4	of	0	_ _ _ _
+39	NNPS	3	nmod	40	Manufacturers	E-ORG	3	5	Manufacturers	0	_ _ _ _
+40	VBN	0	root	41	settle	O	3	6	settled	0	_ _ _ _
+41	IN	10	case	42	on	O	3	7	on	0	_ _ _ _
+42	DT	10	det	43	the	O	3	8	the	0	_ _ _ _
+43	NNP	10	compound	44	Hoosier	S-NORP	3	9	Hoosier	0	_ _ _ _
+44	NN	6	obl	45	capital	O	3	10	capital	0	_ _ _ _
+45	IN	12	case	46	of	O	3	11	of	0	_ _ _ _
+46	NNP	10	nmod	47	Indianapolis	S-GPE	3	12	Indianapolis	0	_ _ _ _
+47	IN	17	case	48	for	O	3	13	for	0	_ _ _ _
+48	PRP$	17	nmod:poss	49	its	O	3	14	its	0	_ _ _ _
+49	NN	16	compound	50	fall	O	3	15	fall	0	_ _ _ _
+50	NN	17	compound	51	board	O	3	16	board	0	_ _ _ _
+51	NN	6	obl	52	meeting	O	3	17	meeting	0	_ _ _ _
+52	.	6	punct	53	.	O	3	18	.	0	_ _ _ _
+53	CC	4	cc	54	and	O	4	1	And	0	_ _ _ _
+54	DT	3	det	55	the	O	4	2	the	0	B-SOURCE-AT-2 _ _ _
+55	NN	4	nsubj	56	city	O	4	3	city	0	I-SOURCE-AT-2 _ _ _
+56	VBD	0	root	57	decide	O	4	4	decided	1	B-CUE-AT-2 _ _ _
+57	TO	6	mark	58	to	O	4	5	to	0	B-CONTENT-AT-2 _ _ _
+58	VB	4	xcomp	59	treat	O	4	6	treat	0	I-CONTENT-AT-2 _ _ _
+59	PRP$	8	nmod:poss	60	its	O	4	7	its	0	I-CONTENT-AT-2 _ _ _
+60	NNS	6	obj	61	guest	O	4	8	guests	0	I-CONTENT-AT-2 _ _ _
+61	RBR	6	advmod	62	more	O	4	9	more	0	I-CONTENT-AT-2 _ _ _
+62	IN	11	case	63	like	O	4	10	like	0	I-CONTENT-AT-2 _ _ _
+63	JJ	14	amod	64	royalty	O	4	11	royalty	0	I-CONTENT-AT-2 _ _ _
+64	CC	13	cc	65	or	O	4	12	or	0	I-CONTENT-AT-2 _ _ _
+65	NN	11	conj	66	rock	O	4	13	rock	0	I-CONTENT-AT-2 _ _ _
+66	NNS	6	obl	67	star	O	4	14	stars	0	I-CONTENT-AT-2 _ _ _
+67	IN	17	case	68	than	O	4	15	than	0	I-CONTENT-AT-2 _ _ _
+68	NN	17	compound	69	factory	O	4	16	factory	0	I-CONTENT-AT-2 _ _ _
+69	NNS	6	obl	70	owner	O	4	17	owners	0	I-CONTENT-AT-2 _ _ _
+70	.	4	punct	71	.	O	4	18	.	0	_ _ _ _
+71	DT	2	det	72	the	O	5	1	The	0	_ _ _ _
+72	NN	0	root	73	idea	O	5	2	idea	1	_ _ _ B-CUE-AT-1
+73	,	2	punct	74	,	O	5	3	,	0	_ _ _ _
+74	RB	8	advmod	75	of	O	5	4	of	0	_ _ _ _
+75	RB	4	fixed	76	course	O	5	5	course	0	_ _ _ _
+76	:	2	punct	77	:	O	5	6	:	0	_ _ _ _
+77	TO	8	mark	78	to	O	5	7	to	0	_ _ _ B-CONTENT-AT-1
+78	VB	2	parataxis	79	prove	O	5	8	prove	0	_ _ _ I-CONTENT-AT-1
+79	IN	13	case	80	to	O	5	9	to	0	_ _ _ I-CONTENT-AT-1
+80	CD	13	nummod	81	125	S-CARDINAL	5	10	125	0	_ _ _ I-CONTENT-AT-1
+81	JJ	12	amod	82	corporate	O	5	11	corporate	0	_ _ _ I-CONTENT-AT-1
+82	NN	13	compound	83	decision	O	5	12	decision	0	_ _ _ I-CONTENT-AT-1
+83	NNS	8	obl	84	maker	O	5	13	makers	0	_ _ _ I-CONTENT-AT-1
+84	IN	24	mark	85	that	O	5	14	that	0	_ _ _ I-CONTENT-AT-1
+85	DT	16	det	86	the	O	5	15	the	0	_ _ _ I-CONTENT-AT-1
+86	NN	24	nsubj	87	buckle	O	5	16	buckle	0	_ _ _ I-CONTENT-AT-1
+87	IN	20	case	88	on	O	5	17	on	0	_ _ _ I-CONTENT-AT-1
+88	DT	20	det	89	the	B-LOC	5	18	the	0	_ _ _ I-CONTENT-AT-1
+89	NNP	20	compound	90	Rust	I-LOC	5	19	Rust	0	_ _ _ I-CONTENT-AT-1
+90	NNP	16	nmod	91	Belt	E-LOC	5	20	Belt	0	_ _ _ I-CONTENT-AT-1
+91	VBZ	24	cop	92	be	O	5	21	is	0	_ _ _ I-CONTENT-AT-1
+92	RB	24	advmod	93	not	O	5	22	n't	0	_ _ _ I-CONTENT-AT-1
+93	RB	24	advmod	94	so	O	5	23	so	0	_ _ _ I-CONTENT-AT-1
+94	JJ	8	ccomp	95	rusty	O	5	24	rusty	0	_ _ _ I-CONTENT-AT-1
+95	RB	26	case	96	after	O	5	25	after	0	_ _ _ I-CONTENT-AT-1
+96	DT	24	obl	97	all	O	5	26	all	0	_ _ _ I-CONTENT-AT-1
+97	,	24	punct	98	,	O	5	27	,	0	_ _ _ I-CONTENT-AT-1
+98	IN	33	mark	99	that	O	5	28	that	0	_ _ _ I-CONTENT-AT-1
+99	PRP	33	nsubj	100	it	O	5	29	it	0	_ _ _ I-CONTENT-AT-1
+100	VBZ	33	cop	101	be	O	5	30	's	0	_ _ _ I-CONTENT-AT-1
+101	DT	33	det	102	a	O	5	31	a	0	_ _ _ I-CONTENT-AT-1
+102	JJ	33	amod	103	good	O	5	32	good	0	_ _ _ I-CONTENT-AT-1
+103	NN	24	conj	104	place	O	5	33	place	0	_ _ _ I-CONTENT-AT-1
+104	IN	36	case	105	for	O	5	34	for	0	_ _ _ I-CONTENT-AT-1
+105	DT	36	det	106	a	O	5	35	a	0	_ _ _ I-CONTENT-AT-1
+106	NN	33	nmod	107	company	O	5	36	company	0	_ _ _ I-CONTENT-AT-1
+107	TO	38	mark	108	to	O	5	37	to	0	_ _ _ I-CONTENT-AT-1
+108	VB	36	acl	109	expand	O	5	38	expand	0	_ _ _ I-CONTENT-AT-1
+109	.	2	punct	110	.	O	5	39	.	0	_ _ _ _
+110	IN	4	case	111	on	O	6	1	On	0	_ _ _ _
+111	DT	4	det	112	the	O	6	2	the	0	_ _ _ _
+112	VBG	4	amod	113	receive	O	6	3	receiving	0	_ _ _ _
+113	NN	9	obl	114	end	O	6	4	end	0	_ _ _ _
+114	IN	7	case	115	of	O	6	5	of	0	_ _ _ _
+115	DT	7	det	116	the	O	6	6	the	0	_ _ _ _
+116	NN	4	nmod	117	message	O	6	7	message	0	_ _ _ _
+117	VBD	9	cop	118	be	O	6	8	were	0	_ _ _ _
+118	NNS	0	root	119	official	O	6	9	officials	0	_ _ _ _
+119	IN	11	case	120	from	O	6	10	from	0	_ _ _ _
+120	NNS	9	nmod	121	giant	O	6	11	giants	0	_ _ _ _
+121	IN	14	case	122	like	O	6	12	like	0	_ _ _ _
+122	NNP	14	compound	123	Du	B-ORG	6	13	Du	0	_ _ _ _
+123	NNP	11	nmod	124	Pont	E-ORG	6	14	Pont	0	_ _ _ _
+124	CC	16	cc	125	and	O	6	15	and	0	_ _ _ _
+125	NNP	14	conj	126	Maytag	S-ORG	6	16	Maytag	0	_ _ _ _
+126	,	9	punct	127	,	O	6	17	,	0	_ _ _ _
+127	IN	21	case	128	along	O	6	18	along	0	_ _ _ _
+128	IN	21	case	129	with	O	6	19	with	0	_ _ _ _
+129	JJR	21	amod	130	lesser	O	6	20	lesser	0	_ _ _ _
+130	NNS	9	nmod	131	known	O	6	21	knowns	0	_ _ _ _
+131	IN	24	case	132	like	O	6	22	like	0	_ _ _ _
+132	NNP	24	compound	133	Trojan	B-ORG	6	23	Trojan	0	_ _ _ _
+133	NNP	21	nmod	134	Steel	E-ORG	6	24	Steel	0	_ _ _ _
+134	CC	30	cc	135	and	O	6	25	and	0	_ _ _ _
+135	DT	30	det	136	the	B-ORG	6	26	the	0	_ _ _ _
+136	NNP	30	compound	137	Valley	I-ORG	6	27	Valley	0	_ _ _ _
+137	NNP	29	compound	138	Queen	I-ORG	6	28	Queen	0	_ _ _ _
+138	NNP	30	compound	139	cheese	I-ORG	6	29	Cheese	0	_ _ _ _
+139	NNP	24	conj	140	Factory	E-ORG	6	30	Factory	0	_ _ _ _
+140	.	9	punct	141	.	O	6	31	.	0	_ _ _ _
+141	IN	2	case	142	for	O	7	1	For	0	_ _ _ _
+142	NNS	6	obl	143	starter	O	7	2	starters	0	_ _ _ _
+143	,	6	punct	144	,	O	7	3	,	0	_ _ _ _
+144	DT	5	det	145	the	O	7	4	the	0	_ _ _ _
+145	NNS	6	nsubj	146	executive	O	7	5	executives	0	_ _ _ _
+146	VBD	0	root	147	join	O	7	6	joined	0	_ _ _ _
+147	NNP	6	obj	148	Mayor	O	7	7	Mayor	0	_ _ _ _
+148	NNP	7	flat	149	William	B-PERSON	7	8	William	0	_ _ _ _
+149	NNP	7	flat	150	H.	I-PERSON	7	9	H.	0	_ _ _ _
+150	NNP	7	flat	151	Hudnut	I-PERSON	7	10	Hudnut	0	_ _ _ _
+151	CD	7	amod	152	iii	E-PERSON	7	11	III	0	_ _ _ _
+152	IN	14	case	153	for	O	7	12	for	0	_ _ _ _
+153	DT	14	det	154	a	O	7	13	an	0	_ _ _ _
+154	NN	6	obl	155	evening	S-TIME	7	14	evening	0	_ _ _ _
+155	IN	19	case	156	of	O	7	15	of	0	_ _ _ _
+156	DT	19	det	157	the	B-ORG	7	16	the	0	_ _ _ _
+157	NNP	18	compound	158	Indianapolis	I-ORG	7	17	Indianapolis	0	_ _ _ _
+158	NNP	19	compound	159	Symphony	I-ORG	7	18	Symphony	0	_ _ _ _
+159	NNP	14	nmod	160	Orchestra	E-ORG	7	19	Orchestra	0	_ _ _ _
+160	CC	24	cc	161	and	O	7	20	and	0	_ _ _ _
+161	DT	24	det	162	a	O	7	21	a	0	_ _ _ _
+162	NN	24	compound	163	guest	O	7	22	guest	0	_ _ _ _
+163	JJ	24	amod	164	pianist-comedian	O	7	23	pianist-comedian	0	_ _ _ _
+164	NNP	19	conj	165	Victor	B-PERSON	7	24	Victor	0	_ _ _ _
+165	NNP	24	flat	166	Borge	E-PERSON	7	25	Borge	0	_ _ _ _
+166	.	6	punct	167	.	O	7	26	.	0	_ _ _ _
+167	NN	4	nsubj	168	Champagne	O	8	1	Champagne	0	_ _ _ _
+168	CC	3	cc	169	and	O	8	2	and	0	_ _ _ _
+169	NN	1	conj	170	dessert	O	8	3	dessert	0	_ _ _ _
+170	VBD	0	root	171	follow	O	8	4	followed	0	_ _ _ _
+171	.	4	punct	172	.	O	8	5	.	0	_ _ _ _
+172	DT	3	det	173	the	B-TIME	9	1	The	0	_ _ _ _
+173	JJ	3	amod	174	next	I-TIME	9	2	next	0	_ _ _ _
+174	NN	16	obl:tmod	175	morning	E-TIME	9	3	morning	0	_ _ _ _
+175	,	16	punct	176	,	O	9	4	,	0	_ _ _ _
+176	IN	8	case	177	with	O	9	5	with	0	_ _ _ _
+177	DT	8	det	178	a	O	9	6	a	0	_ _ _ _
+178	NN	8	compound	179	police	O	9	7	police	0	_ _ _ _
+179	NN	16	obl	180	escort	O	9	8	escort	0	_ _ _ _
+180	,	16	punct	181	,	O	9	9	,	0	_ _ _ _
+181	NNS	16	nsubj	182	busload	O	9	10	busloads	0	_ _ _ _
+182	IN	12	case	183	of	O	9	11	of	0	_ _ _ _
+183	NNS	10	nmod	184	executive	O	9	12	executives	0	_ _ _ _
+184	CC	15	cc	185	and	O	9	13	and	0	_ _ _ _
+185	PRP$	15	nmod:poss	186	they	O	9	14	their	0	_ _ _ _
+186	NNS	12	conj	187	wife	O	9	15	wives	0	_ _ _ _
+187	VBD	0	root	188	race	O	9	16	raced	0	_ _ _ _
+188	IN	21	case	189	to	O	9	17	to	0	_ _ _ _
+189	DT	21	det	190	the	B-FAC	9	18	the	0	_ _ _ _
+190	NNP	21	compound	191	Indianapolis	I-FAC	9	19	Indianapolis	0	_ _ _ _
+191	NNP	21	compound	192	Motor	I-FAC	9	20	Motor	0	_ _ _ _
+192	NNP	16	obl	193	Speedway	E-FAC	9	21	Speedway	0	_ _ _ _
+193	,	21	punct	194	,	O	9	22	,	0	_ _ _ _
+194	VBN	21	acl	195	unimped	O	9	23	unimpeded	0	_ _ _ _
+195	IN	25	case	196	by	O	9	24	by	0	_ _ _ _
+196	NN	23	obl	197	traffic	O	9	25	traffic	0	_ _ _ _
+197	CC	28	cc	198	or	O	9	26	or	0	_ _ _ _
+198	JJ	28	amod	199	red	O	9	27	red	0	_ _ _ _
+199	NNS	25	conj	200	light	O	9	28	lights	0	_ _ _ _
+200	.	16	punct	201	.	O	9	29	.	0	_ _ _ _
+201	DT	2	det	202	the	O	10	1	The	0	_ _ _ _
+202	NNP	5	nsubj	203	governor	O	10	2	governor	0	_ _ _ _
+203	MD	5	aux	204	could	O	10	3	could	0	_ _ _ _
+204	RB	5	advmod	205	not	O	10	4	n't	0	_ _ _ _
+205	VB	0	root	206	make	O	10	5	make	0	_ _ _ _
+206	PRP	5	obj	207	it	O	10	6	it	0	_ _ _ _
+207	,	5	punct	208	,	O	10	7	,	0	_ _ _ _
+208	RB	12	advmod	209	so	O	10	8	so	0	_ _ _ _
+209	DT	11	det	210	the	O	10	9	the	0	_ _ _ _
+210	NN	11	compound	211	lieutenant	O	10	10	lieutenant	0	_ _ _ _
+211	NN	12	nsubj	212	governor	O	10	11	governor	0	_ _ _ _
+212	VBD	5	parataxis	213	welcome	O	10	12	welcomed	0	_ _ _ _
+213	DT	15	det	214	the	O	10	13	the	0	_ _ _ _
+214	JJ	15	amod	215	special	O	10	14	special	0	_ _ _ _
+215	NNS	12	obj	216	guest	O	10	15	guests	0	_ _ _ _
+216	.	5	punct	217	.	O	10	16	.	0	_ _ _ _
+217	DT	3	det	218	a	O	11	1	A	0	_ _ _ _
+218	NN	3	compound	219	buffet	O	11	2	buffet	0	_ _ _ _
+219	NN	5	nsubj:pass	220	breakfast	O	11	3	breakfast	0	_ _ _ _
+220	VBD	5	aux:pass	221	be	O	11	4	was	0	_ _ _ _
+221	VBN	0	root	222	hold	O	11	5	held	0	_ _ _ _
+222	IN	8	case	223	in	O	11	6	in	0	_ _ _ _
+223	DT	8	det	224	the	O	11	7	the	0	_ _ _ _
+224	NN	5	obl	225	museum	O	11	8	museum	0	_ _ _ _
+225	,	8	punct	226	,	O	11	9	,	0	_ _ _ _
+226	WRB	15	advmod	227	where	O	11	10	where	0	_ _ _ _
+227	NN	15	nsubj:pass	228	food	O	11	11	food	0	_ _ _ _
+228	CC	13	cc	229	and	O	11	12	and	0	_ _ _ _
+229	NNS	11	conj	230	drink	O	11	13	drinks	0	_ _ _ _
+230	VBP	15	aux:pass	231	be	O	11	14	are	0	_ _ _ _
+231	VBN	8	acl:relcl	232	ban	O	11	15	banned	0	_ _ _ _
+232	IN	18	case	233	to	O	11	16	to	0	_ _ _ _
+233	JJ	18	amod	234	everyday	O	11	17	everyday	0	_ _ _ _
+234	NNS	15	obl	235	visitor	O	11	18	visitors	0	_ _ _ _
+235	.	5	punct	236	.	O	11	19	.	0	_ _ _ _
+236	RB	11	advmod	237	then	O	12	1	Then	0	_ _ _ _
+237	,	11	punct	238	,	O	12	2	,	0	_ _ _ _
+238	IN	7	case	239	in	O	12	3	in	0	_ _ _ _
+239	DT	5	det	240	the	O	12	4	the	0	_ _ _ _
+240	NNS	7	nmod:poss	241	guest	O	12	5	guests	0	_ _ _ _
+241	POS	5	case	242	's	O	12	6	'	0	_ _ _ _
+242	NN	11	obl	243	honor	O	12	7	honor	0	_ _ _ _
+243	,	11	punct	244	,	O	12	8	,	0	_ _ _ _
+244	DT	10	det	245	the	O	12	9	the	0	_ _ _ _
+245	NN	11	nsubj	246	speedway	O	12	10	speedway	0	_ _ _ _
+246	VBD	0	root	247	haul	O	12	11	hauled	0	_ _ _ _
+247	RP	11	compound:prt	248	out	O	12	12	out	0	_ _ _ _
+248	CD	14	nummod	249	four	S-CARDINAL	12	13	four	0	_ _ _ _
+249	NNS	11	obj	250	driver	O	12	14	drivers	0	_ _ _ _
+250	,	16	punct	251	,	O	12	15	,	0	_ _ _ _
+251	NNS	14	conj	252	crew	O	12	16	crews	0	_ _ _ _
+252	CC	23	cc	253	and	O	12	17	and	0	_ _ _ _
+253	RB	23	advmod	254	even	O	12	18	even	0	_ _ _ _
+254	DT	23	det	255	the	O	12	19	the	0	_ _ _ _
+255	JJ	23	amod	256	official	O	12	20	official	0	_ _ _ _
+256	NNP	23	compound	257	Indianapolis	B-ORG	12	21	Indianapolis	0	_ _ _ _
+257	CD	23	nummod	258	500	E-ORG	12	22	500	0	_ _ _ _
+258	NN	14	conj	259	announcer	O	12	23	announcer	0	_ _ _ _
+259	IN	28	case	260	for	O	12	24	for	0	_ _ _ _
+260	DT	28	det	261	a	O	12	25	a	0	_ _ _ _
+261	JJ	28	amod	262	10-lap	O	12	26	10-lap	0	_ _ _ _
+262	NN	28	compound	263	exhibition	O	12	27	exhibition	0	_ _ _ _
+263	NN	23	nmod	264	race	O	12	28	race	0	_ _ _ _
+264	.	11	punct	265	.	O	12	29	.	0	_ _ _ _
+265	IN	3	case	266	after	O	13	1	After	0	_ _ _ _
+266	DT	3	det	267	the	O	13	2	the	0	_ _ _ _
+267	NN	8	obl	268	race	O	13	3	race	0	_ _ _ _
+268	,	8	punct	269	,	O	13	4	,	0	_ _ _ _
+269	NNP	7	compound	270	Fortune	B-ORG	13	5	Fortune	0	_ _ _ _
+270	CD	5	nummod	271	500	E-ORG	13	6	500	0	_ _ _ _
+271	NNS	8	nsubj	272	executive	O	13	7	executives	0	_ _ _ _
+272	VBD	0	root	273	drool	O	13	8	drooled	0	_ _ _ _
+273	IN	10	case	274	like	O	13	9	like	0	_ _ _ _
+274	NNS	8	obl	275	schoolboy	O	13	10	schoolboys	0	_ _ _ _
+275	IN	13	case	276	over	O	13	11	over	0	_ _ _ _
+276	DT	13	det	277	the	O	13	12	the	0	_ _ _ _
+277	NNS	8	obl	278	car	O	13	13	cars	0	_ _ _ _
+278	CC	15	cc	279	and	O	13	14	and	0	_ _ _ _
+279	NNS	13	conj	280	driver	O	13	15	drivers	0	_ _ _ _
+280	.	8	punct	281	.	O	13	16	.	0	_ _ _ _
+281	DT	2	det	282	no	O	14	1	No	0	_ _ _ _
+282	NNS	0	root	283	dummy	O	14	2	dummies	0	_ _ _ _
+283	,	2	punct	284	,	O	14	3	,	0	_ _ _ _
+284	DT	5	det	285	the	O	14	4	the	0	_ _ B-SOURCE-AT-4 _
+285	NNS	6	nsubj	286	driver	O	14	5	drivers	0	_ _ I-SOURCE-AT-4 _
+286	VBD	2	parataxis	287	point	O	14	6	pointed	0	_ _ B-CUE-AT-4 _
+287	RP	6	compound:prt	288	out	O	14	7	out	1	_ _ I-CUE-AT-4 _
+288	PRP	10	nsubj	289	they	O	14	8	they	0	_ _ B-CONTENT-AT-4 _
+289	RB	10	advmod	290	still	O	14	9	still	0	_ _ I-CONTENT-AT-4 _
+290	VBD	6	ccomp	291	have	O	14	10	had	0	_ _ I-CONTENT-AT-4 _
+291	NN	10	obj	292	space	O	14	11	space	0	_ _ I-CONTENT-AT-4 _
+292	IN	14	case	293	on	O	14	12	on	0	_ _ I-CONTENT-AT-4 _
+293	PRP$	14	nmod:poss	294	they	O	14	13	their	0	_ _ I-CONTENT-AT-4 _
+294	NNS	11	nmod	295	machine	O	14	14	machines	0	_ _ I-CONTENT-AT-4 _
+295	IN	19	case	296	for	O	14	15	for	0	_ _ I-CONTENT-AT-4 _
+296	DT	17	det	297	another	O	14	16	another	0	_ _ I-CONTENT-AT-4 _
+297	NN	19	nmod:poss	298	sponsor	O	14	17	sponsor	0	_ _ I-CONTENT-AT-4 _
+298	POS	17	case	299	's	O	14	18	's	0	_ _ I-CONTENT-AT-4 _
+299	NN	10	obl	300	name	O	14	19	name	0	_ _ I-CONTENT-AT-4 _
+300	CC	21	cc	301	or	O	14	20	or	0	_ _ I-CONTENT-AT-4 _
+301	CD	19	conj	302	two	S-CARDINAL	14	21	two	0	_ _ I-CONTENT-AT-4 _
+302	.	2	punct	303	.	O	14	22	.	0	_ _ _ _
+303	RB	2	advmod	304	back	O	15	1	Back	0	_ _ _ _
+304	NN	6	obl:tmod	305	downtown	O	15	2	downtown	0	_ _ _ _
+305	,	6	punct	306	,	O	15	3	,	0	_ _ _ _
+306	DT	5	det	307	the	O	15	4	the	0	_ _ _ _
+307	NNS	6	nsubj	308	exec	O	15	5	execs	0	_ _ _ _
+308	VBD	0	root	309	squeeze	O	15	6	squeezed	0	_ _ _ _
+309	IN	10	case	310	in	O	15	7	in	0	_ _ _ _
+310	DT	10	det	311	a	O	15	8	a	0	_ _ _ _
+311	JJ	10	amod	312	few	O	15	9	few	0	_ _ _ _
+312	NNS	6	obl	313	meeting	O	15	10	meetings	0	_ _ _ _
+313	IN	13	case	314	at	O	15	11	at	0	_ _ _ _
+314	DT	13	det	315	the	O	15	12	the	0	_ _ _ _
+315	NN	10	nmod	316	hotel	O	15	13	hotel	0	_ _ _ _
+316	IN	15	mark	317	before	O	15	14	before	0	_ _ _ _
+317	VBG	6	advcl	318	board	O	15	15	boarding	0	_ _ _ _
+318	DT	17	det	319	the	O	15	16	the	0	_ _ _ _
+319	NNS	15	obj	320	bus	O	15	17	buses	0	_ _ _ _
+320	RB	15	advmod	321	again	O	15	18	again	0	_ _ _ _
+321	.	6	punct	322	.	O	15	19	.	0	_ _ _ _
+322	DT	2	det	323	this	O	16	1	This	0	_ _ _ _
+323	NN	7	obl:tmod	324	time	O	16	2	time	0	_ _ _ _
+324	,	7	punct	325	,	O	16	3	,	0	_ _ _ _
+325	PRP	7	nsubj	326	it	O	16	4	it	0	_ _ _ _
+326	VBD	7	cop	327	be	O	16	5	was	0	_ _ _ _
+327	IN	7	case	328	for	O	16	6	for	0	_ _ _ _
+328	NN	0	root	329	dinner	O	16	7	dinner	0	_ _ _ _
+329	CC	9	cc	330	and	O	16	8	and	0	_ _ _ _
+330	NN	7	conj	331	dancing	O	16	9	dancing	0	_ _ _ _
+331	,	7	punct	332	--	O	16	10	--	0	_ _ _ _
+332	DT	12	det	333	a	O	16	11	a	0	_ _ _ _
+333	NN	13	obl:npmod	334	block	O	16	12	block	0	_ _ _ _
+334	RB	7	conj	335	away	O	16	13	away	0	_ _ _ _
+335	.	7	punct	336	.	O	16	14	.	0	_ _ _ _
+336	IN	3	case	337	under	O	17	1	Under	0	_ _ _ _
+337	DT	3	det	338	the	O	17	2	the	0	_ _ _ _
+338	NNS	20	obl	339	star	O	17	3	stars	0	_ _ _ _
+339	CC	5	cc	340	and	O	17	4	and	0	_ _ _ _
+340	NNS	3	conj	341	moon	O	17	5	moons	0	_ _ _ _
+341	IN	11	case	342	of	O	17	6	of	0	_ _ _ _
+342	DT	11	det	343	the	O	17	7	the	0	_ _ _ _
+343	VBN	11	amod	344	renovate	O	17	8	renovated	0	_ _ _ _
+344	NNP	10	compound	345	Indiana	B-FAC	17	9	Indiana	0	_ _ _ _
+345	NNP	11	compound	346	Roof	E-FAC	17	10	Roof	0	_ _ _ _
+346	NNP	3	nmod	347	ballroom	O	17	11	ballroom	0	_ _ _ _
+347	,	20	punct	348	,	O	17	12	,	0	_ _ _ _
+348	CD	20	nsubj	349	nine	S-CARDINAL	17	13	nine	0	_ _ _ _
+349	IN	17	case	350	of	O	17	14	of	0	_ _ _ _
+350	DT	17	det	351	the	O	17	15	the	0	_ _ _ _
+351	JJS	17	amod	352	hottest	O	17	16	hottest	0	_ _ _ _
+352	NNS	13	nmod	353	chef	O	17	17	chefs	0	_ _ _ _
+353	IN	19	case	354	in	O	17	18	in	0	_ _ _ _
+354	NN	17	nmod	355	town	O	17	19	town	0	_ _ _ _
+355	VBD	0	root	356	feed	O	17	20	fed	0	_ _ _ _
+356	PRP	20	iobj	357	they	O	17	21	them	0	_ _ _ _
+357	NNP	24	compound	358	Indiana	S-GPE	17	22	Indiana	0	_ _ _ _
+358	NN	24	compound	359	duckling	O	17	23	duckling	0	_ _ _ _
+359	NN	20	obj	360	mousseline	O	17	24	mousseline	0	_ _ _ _
+360	,	27	punct	361	,	O	17	25	,	0	_ _ _ _
+361	NN	27	compound	362	lobster	O	17	26	lobster	0	_ _ _ _
+362	NN	24	conj	363	consomme	O	17	27	consomme	0	_ _ _ _
+363	,	30	punct	364	,	O	17	28	,	0	_ _ _ _
+364	NN	30	compound	365	veal	O	17	29	veal	0	_ _ _ _
+365	NN	24	conj	366	mignon	O	17	30	mignon	0	_ _ _ _
+366	CC	33	cc	367	and	O	17	31	and	0	_ _ _ _
+367	NN	33	compound	368	chocolate	O	17	32	chocolate	0	_ _ _ _
+368	NN	24	conj	369	terrine	O	17	33	terrine	0	_ _ _ _
+369	IN	37	case	370	with	O	17	34	with	0	_ _ _ _
+370	DT	37	det	371	a	O	17	35	a	0	_ _ _ _
+371	NN	37	compound	372	raspberry	O	17	36	raspberry	0	_ _ _ _
+372	NN	20	obl	373	sauce	O	17	37	sauce	0	_ _ _ _
+373	.	20	punct	374	.	O	17	38	.	0	_ _ _ _
+374	VBG	16	advcl	375	know	O	18	1	Knowing	0	_ _ _ _
+375	DT	3	det	376	a	O	18	2	a	0	_ _ _ _
+376	JJ	1	obj	377	tasty	O	18	3	tasty	0	_ _ _ _
+377	,	3	punct	378	--	O	18	4	--	0	_ _ _ _
+378	CC	6	cc	379	and	O	18	5	and	0	_ _ _ _
+379	JJ	3	conj	380	free	O	18	6	free	0	_ _ _ _
+380	,	3	punct	381	--	O	18	7	--	0	_ _ _ _
+381	NN	16	obl:npmod	382	meal	O	18	8	meal	0	_ _ _ _
+382	WRB	11	mark	383	when	O	18	9	when	0	_ _ _ _
+383	PRP	11	nsubj	384	they	O	18	10	they	0	_ _ _ _
+384	VBP	16	advcl	385	eat	O	18	11	eat	0	_ _ _ _
+385	CD	11	obj	386	one	S-CARDINAL	18	12	one	0	_ _ _ _
+386	,	16	punct	387	,	O	18	13	,	0	_ _ _ _
+387	DT	15	det	388	the	O	18	14	the	0	_ _ _ _
+388	NNS	16	nsubj	389	executive	O	18	15	executives	0	_ _ _ _
+389	VBD	0	root	390	give	O	18	16	gave	0	_ _ _ _
+390	DT	18	det	391	the	O	18	17	the	0	_ _ _ _
+391	NNS	16	iobj	392	chef	O	18	18	chefs	0	_ _ _ _
+392	DT	21	det	393	a	O	18	19	a	0	_ _ _ _
+393	NN	21	compound	394	standing	O	18	20	standing	0	_ _ _ _
+394	NN	16	obj	395	ovation	O	18	21	ovation	0	_ _ _ _
+395	.	16	punct	396	.	O	18	22	.	0	_ _ _ _
+396	JJR	6	nsubj	397	more	O	19	1	More	0	_ B-SOURCE-AT-3 _ _
+397	IN	5	case	398	than	O	19	2	than	0	_ I-SOURCE-AT-3 _ _
+398	DT	5	det	399	a	O	19	3	a	0	_ I-SOURCE-AT-3 _ _
+399	JJ	5	amod	400	few	O	19	4	few	0	_ I-SOURCE-AT-3 _ _
+400	NNS	1	obl	401	ceo	O	19	5	CEOs	0	_ I-SOURCE-AT-3 _ _
+401	VBP	0	root	402	say	O	19	6	say	1	_ B-CUE-AT-3 _ _
+402	DT	9	det	403	the	O	19	7	the	0	_ B-CONTENT-AT-3 _ _
+403	JJ	9	amod	404	red-carpet	O	19	8	red-carpet	0	_ I-CONTENT-AT-3 _ _
+404	NN	10	nsubj	405	treatment	O	19	9	treatment	0	_ I-CONTENT-AT-3 _ _
+405	VBZ	6	ccomp	406	tempt	O	19	10	tempts	0	_ I-CONTENT-AT-3 _ _
+406	PRP	10	obj	407	they	O	19	11	them	0	_ I-CONTENT-AT-3 _ _
+407	TO	13	mark	408	to	O	19	12	to	0	_ I-CONTENT-AT-3 _ _
+408	VB	10	xcomp	409	return	O	19	13	return	0	_ I-CONTENT-AT-3 _ _
+409	IN	17	case	410	to	O	19	14	to	0	_ I-CONTENT-AT-3 _ _
+410	DT	17	det	411	a	O	19	15	a	0	_ I-CONTENT-AT-3 _ _
+411	NN	17	compound	412	heartland	O	19	16	heartland	0	_ I-CONTENT-AT-3 _ _
+412	NN	13	obl	413	city	O	19	17	city	0	_ I-CONTENT-AT-3 _ _
+413	IN	20	case	414	for	O	19	18	for	0	_ I-CONTENT-AT-3 _ _
+414	JJ	20	amod	415	future	O	19	19	future	0	_ I-CONTENT-AT-3 _ _
+415	NNS	13	obl	416	meeting	O	19	20	meetings	0	_ I-CONTENT-AT-3 _ _
+416	.	6	punct	417	.	O	19	21	.	0	_ _ _ _
+417	CC	7	cc	418	but	O	20	1	But	0	_ _ _ _
+418	IN	3	case	419	for	O	20	2	for	0	_ _ _ _
+419	RB	7	obl	420	now	O	20	3	now	0	_ _ _ _
+420	,	7	punct	421	,	O	20	4	,	0	_ _ _ _
+421	PRP	7	nsubj	422	they	O	20	5	they	0	_ _ _ _
+422	VBP	7	aux	423	be	O	20	6	're	0	_ _ _ _
+423	VBG	0	root	424	look	O	20	7	looking	0	_ _ _ _
+424	RB	7	advmod	425	forward	O	20	8	forward	0	_ _ _ _
+425	IN	12	case	426	to	O	20	9	to	0	_ _ _ _
+426	PRP$	12	nmod:poss	427	they	O	20	10	their	0	_ _ _ _
+427	NN	12	compound	428	winter	S-DATE	20	11	winter	0	_ _ _ _
+428	NN	7	obl	429	meeting	O	20	12	meeting	0	_ _ _ _
+429	,	12	punct	430	--	O	20	13	--	0	_ _ _ _
+430	NNP	12	appos	431	Boca	S-PERSON	20	14	Boca	0	_ _ _ _
+431	IN	16	case	432	in	O	20	15	in	0	_ _ _ _
+432	NNP	12	nmod	433	February	S-DATE	20	16	February	0	_ _ _ _
+433	.	7	punct	434	.	O	20	17	.	0	_ _ _ _

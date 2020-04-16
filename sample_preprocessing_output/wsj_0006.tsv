@@ -1,45 +1,45 @@
-	POS	dependency_head	dependency_label	doc_token_number	lemma	ne_info	sentence_number	sentence_token_number	token	cue_label
-0	NNP	4	compound	1	Pacific	B-ORG	1	1	Pacific	0
-1	NNP	4	compound	2	First	I-ORG	1	2	First	0
-2	NNP	4	compound	3	Financial	I-ORG	1	3	Financial	0
-3	NNP	5	nsubj	4	Corp.	E-ORG	1	4	Corp.	0
-4	VBD	0	root	5	say	O	1	5	said	0
-5	NNS	7	nsubj	6	shareholder	O	1	6	shareholders	0
-6	VBD	5	ccomp	7	approve	O	1	7	approved	0
-7	PRP$	9	nmod:poss	8	its	O	1	8	its	0
-8	NN	7	obj	9	acquisition	O	1	9	acquisition	0
-9	IN	13	case	10	by	O	1	10	by	0
-10	NNP	13	compound	11	Royal	B-ORG	1	11	Royal	0
-11	NNP	13	compound	12	Trustco	I-ORG	1	12	Trustco	0
-12	NNP	9	nmod	13	Ltd.	E-ORG	1	13	Ltd.	0
-13	IN	15	case	14	of	O	1	14	of	0
-14	NNP	13	nmod	15	Toronto	S-GPE	1	15	Toronto	0
-15	IN	17	case	16	for	O	1	16	for	0
-16	$	7	obl	17	$	O	1	17	$	0
-17	CD	17	nummod	18	27	S-MONEY	1	18	27	0
-18	DT	20	det	19	a	O	1	19	a	0
-19	NN	17	appos	20	share	O	1	20	share	0
-20	,	23	punct	21	,	O	1	21	,	0
-21	CC	23	cc	22	or	O	1	22	or	0
-22	$	17	conj	23	$	B-MONEY	1	23	$	0
-23	CD	25	compound	24	212	I-MONEY	1	24	212	0
-24	CD	23	nummod	25	million	E-MONEY	1	25	million	0
-25	.	5	punct	26	.	O	1	26	.	0
-26	DT	4	det	27	the	O	2	1	The	0
-27	NN	3	compound	28	thrift	O	2	2	thrift	0
-28	NN	4	compound	29	holding	O	2	3	holding	0
-29	NN	5	nsubj	30	company	O	2	4	company	0
-30	VBD	0	root	31	say	O	2	5	said	0
-31	PRP	7	nsubj	32	it	O	2	6	it	0
-32	VBZ	5	ccomp	33	expect	O	2	7	expects	0
-33	TO	9	mark	34	to	O	2	8	to	0
-34	VB	7	xcomp	35	obtain	O	2	9	obtain	0
-35	JJ	11	amod	36	regulatory	O	2	10	regulatory	0
-36	NN	9	obj	37	approval	O	2	11	approval	0
-37	CC	13	cc	38	and	O	2	12	and	0
-38	VB	9	conj	39	complete	O	2	13	complete	0
-39	DT	15	det	40	the	O	2	14	the	0
-40	NN	13	obj	41	transaction	O	2	15	transaction	0
-41	IN	17	case	42	by	O	2	16	by	0
-42	NN	13	obl	43	year-end	S-DATE	2	17	year-end	0
-43	.	5	punct	44	.	O	2	18	.	0
+	POS	dependency_head	dependency_label	doc_token_number	lemma	ne_info	sentence_number	sentence_token_number	token	cue_label	attribution
+0	NNP	4	compound	1	Pacific	B-ORG	1	1	Pacific	0	0
+1	NNP	4	compound	2	First	I-ORG	1	2	First	0	0
+2	NNP	4	compound	3	Financial	I-ORG	1	3	Financial	0	0
+3	NNP	5	nsubj	4	Corp.	E-ORG	1	4	Corp.	0	0
+4	VBD	0	root	5	say	O	1	5	said	0	0
+5	NNS	7	nsubj	6	shareholder	O	1	6	shareholders	0	0
+6	VBD	5	ccomp	7	approve	O	1	7	approved	0	0
+7	PRP$	9	nmod:poss	8	its	O	1	8	its	0	0
+8	NN	7	obj	9	acquisition	O	1	9	acquisition	0	0
+9	IN	13	case	10	by	O	1	10	by	0	0
+10	NNP	13	compound	11	Royal	B-ORG	1	11	Royal	0	0
+11	NNP	13	compound	12	Trustco	I-ORG	1	12	Trustco	0	0
+12	NNP	9	nmod	13	Ltd.	E-ORG	1	13	Ltd.	0	0
+13	IN	15	case	14	of	O	1	14	of	0	0
+14	NNP	13	nmod	15	Toronto	S-GPE	1	15	Toronto	0	0
+15	IN	17	case	16	for	O	1	16	for	0	0
+16	$	7	obl	17	$	O	1	17	$	0	0
+17	CD	17	nummod	18	27	S-MONEY	1	18	27	0	0
+18	DT	20	det	19	a	O	1	19	a	0	0
+19	NN	17	appos	20	share	O	1	20	share	0	0
+20	,	23	punct	21	,	O	1	21	,	0	0
+21	CC	23	cc	22	or	O	1	22	or	0	0
+22	$	17	conj	23	$	B-MONEY	1	23	$	0	0
+23	CD	25	compound	24	212	I-MONEY	1	24	212	0	0
+24	CD	23	nummod	25	million	E-MONEY	1	25	million	0	0
+25	.	5	punct	26	.	O	1	26	.	0	0
+26	DT	4	det	27	the	O	2	1	The	0	0
+27	NN	3	compound	28	thrift	O	2	2	thrift	0	0
+28	NN	4	compound	29	holding	O	2	3	holding	0	0
+29	NN	5	nsubj	30	company	O	2	4	company	0	0
+30	VBD	0	root	31	say	O	2	5	said	0	0
+31	PRP	7	nsubj	32	it	O	2	6	it	0	0
+32	VBZ	5	ccomp	33	expect	O	2	7	expects	0	0
+33	TO	9	mark	34	to	O	2	8	to	0	0
+34	VB	7	xcomp	35	obtain	O	2	9	obtain	0	0
+35	JJ	11	amod	36	regulatory	O	2	10	regulatory	0	0
+36	NN	9	obj	37	approval	O	2	11	approval	0	0
+37	CC	13	cc	38	and	O	2	12	and	0	0
+38	VB	9	conj	39	complete	O	2	13	complete	0	0
+39	DT	15	det	40	the	O	2	14	the	0	0
+40	NN	13	obj	41	transaction	O	2	15	transaction	0	0
+41	IN	17	case	42	by	O	2	16	by	0	0
+42	NN	13	obl	43	year-end	S-DATE	2	17	year-end	0	0
+43	.	5	punct	44	.	O	2	18	.	0	0

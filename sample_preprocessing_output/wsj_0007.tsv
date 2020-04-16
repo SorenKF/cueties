@@ -1,72 +1,72 @@
-	POS	dependency_head	dependency_label	doc_token_number	lemma	ne_info	sentence_number	sentence_token_number	token	cue_label
-0	NNP	3	compound	1	McDermott	B-ORG	1	1	McDermott	0
-1	NNP	3	compound	2	International	I-ORG	1	2	International	0
-2	NNP	4	nsubj	3	Inc.	E-ORG	1	3	Inc.	0
-3	VBD	0	root	4	say	O	1	4	said	1
-4	PRP$	9	nmod:poss	5	its	O	1	5	its	0
-5	NNP	9	compound	6	Babcock	B-ORG	1	6	Babcock	0
-6	NNP	9	compound	7	&amp;	I-ORG	1	7	&amp;	0
-7	NNP	9	compound	8	Wilcox	E-ORG	1	8	Wilcox	0
-8	NN	10	nsubj	9	unit	O	1	9	unit	0
-9	VBD	4	ccomp	10	complete	O	1	10	completed	0
-10	DT	12	det	11	the	O	1	11	the	0
-11	NN	10	obj	12	sale	O	1	12	sale	0
-12	IN	17	case	13	of	O	1	13	of	0
-13	PRP$	17	nmod:poss	14	its	O	1	14	its	0
-14	NNP	17	compound	15	Bailey	B-ORG	1	15	Bailey	0
-15	NNP	17	compound	16	Controls	I-ORG	1	16	Controls	0
-16	NNPS	12	nmod	17	Operations	I-ORG	1	17	Operations	0
-17	IN	20	case	18	to	I-ORG	1	18	to	0
-18	NNP	20	compound	19	Finmeccanica	I-ORG	1	19	Finmeccanica	0
-19	NNP	17	nmod	20	S.p	I-ORG	1	20	S.p	0
-20	.	10	punct	21	.	I-ORG	1	21	.	0
-21	NNP	20	flat	22	A.	E-ORG	1	22	A.	0
-22	IN	24	case	23	for	O	1	23	for	0
-23	$	10	obl	24	$	B-MONEY	1	24	$	0
-24	CD	26	compound	25	295	I-MONEY	1	25	295	0
-25	CD	24	nummod	26	million	E-MONEY	1	26	million	0
-26	.	4	punct	27	.	O	1	27	.	0
-27	NNP	7	nsubj	28	Finmeccanica	S-ORG	2	1	Finmeccanica	0
-28	VBZ	7	cop	29	be	O	2	2	is	0
-29	DT	7	det	30	a	O	2	3	an	0
-30	JJ	7	amod	31	italian	S-NORP	2	4	Italian	0
-31	JJ	7	amod	32	state-owned	O	2	5	state-owned	0
-32	NN	7	compound	33	holding	O	2	6	holding	0
-33	NN	0	root	34	company	O	2	7	company	0
-34	IN	9	case	35	with	O	2	8	with	0
-35	NNS	7	nmod	36	interest	O	2	9	interests	0
-36	IN	14	case	37	in	O	2	10	in	0
-37	DT	14	det	38	the	O	2	11	the	0
-38	JJ	13	amod	39	mechanical	O	2	12	mechanical	0
-39	NN	14	compound	40	engineering	O	2	13	engineering	0
-40	NN	9	nmod	41	industry	O	2	14	industry	0
-41	.	7	punct	42	.	O	2	15	.	0
-42	NNP	10	nsubj	43	Bailey	B-ORG	3	1	Bailey	0
-43	NNP	1	flat	44	Controls	E-ORG	3	2	Controls	0
-44	,	1	punct	45	,	O	3	3	,	0
-45	VBN	1	acl	46	base	O	3	4	based	0
-46	IN	6	case	47	in	O	3	5	in	0
-47	NNP	4	obl	48	Wickliffe	S-GPE	3	6	Wickliffe	0
-48	,	6	punct	49	,	O	3	7	,	0
-49	NNP	6	appos	50	Ohio	S-GPE	3	8	Ohio	0
-50	,	10	punct	51	,	O	3	9	,	0
-51	VBZ	0	root	52	make	O	3	10	makes	0
-52	VBN	14	amod	53	computerize	O	3	11	computerized	0
-53	JJ	13	amod	54	industrial	O	3	12	industrial	0
-54	NN	14	compound	55	controls	O	3	13	controls	0
-55	NNS	10	obj	56	system	O	3	14	systems	0
-56	.	10	punct	57	.	O	3	15	.	0
-57	PRP	2	nsubj	58	it	O	4	1	It	0
-58	VBZ	0	root	59	employ	O	4	2	employs	0
-59	CD	4	nummod	60	2,700	S-CARDINAL	4	3	2,700	0
-60	NNS	2	obj	61	people	O	4	4	people	0
-61	CC	6	cc	62	and	O	4	5	and	0
-62	VBZ	2	conj	63	have	O	4	6	has	0
-63	JJ	8	amod	64	annual	S-DATE	4	7	annual	0
-64	NN	6	obj	65	revenue	O	4	8	revenue	0
-65	IN	11	case	66	of	O	4	9	of	0
-66	RB	11	advmod	67	about	B-MONEY	4	10	about	0
-67	$	8	nmod	68	$	I-MONEY	4	11	$	0
-68	CD	13	compound	69	370	I-MONEY	4	12	370	0
-69	CD	11	compound	70	million	E-MONEY	4	13	million	0
-70	.	2	punct	71	.	O	4	14	.	0
+	POS	dependency_head	dependency_label	doc_token_number	lemma	ne_info	sentence_number	sentence_token_number	token	cue_label	attribution
+0	NNP	3	compound	1	McDermott	B-ORG	1	1	McDermott	0	B-SOURCE-AT-1
+1	NNP	3	compound	2	International	I-ORG	1	2	International	0	I-SOURCE-AT-1
+2	NNP	4	nsubj	3	Inc.	E-ORG	1	3	Inc.	0	I-SOURCE-AT-1
+3	VBD	0	root	4	say	O	1	4	said	1	B-CUE-AT-1
+4	PRP$	9	nmod:poss	5	its	O	1	5	its	0	B-CONTENT-AT-1
+5	NNP	9	compound	6	Babcock	B-ORG	1	6	Babcock	0	I-CONTENT-AT-1
+6	NNP	9	compound	7	&amp;	I-ORG	1	7	&amp;	0	I-CONTENT-AT-1
+7	NNP	9	compound	8	Wilcox	E-ORG	1	8	Wilcox	0	I-CONTENT-AT-1
+8	NN	10	nsubj	9	unit	O	1	9	unit	0	I-CONTENT-AT-1
+9	VBD	4	ccomp	10	complete	O	1	10	completed	0	I-CONTENT-AT-1
+10	DT	12	det	11	the	O	1	11	the	0	I-CONTENT-AT-1
+11	NN	10	obj	12	sale	O	1	12	sale	0	I-CONTENT-AT-1
+12	IN	17	case	13	of	O	1	13	of	0	I-CONTENT-AT-1
+13	PRP$	17	nmod:poss	14	its	O	1	14	its	0	I-CONTENT-AT-1
+14	NNP	17	compound	15	Bailey	B-ORG	1	15	Bailey	0	I-CONTENT-AT-1
+15	NNP	17	compound	16	Controls	I-ORG	1	16	Controls	0	I-CONTENT-AT-1
+16	NNPS	12	nmod	17	Operations	I-ORG	1	17	Operations	0	I-CONTENT-AT-1
+17	IN	20	case	18	to	I-ORG	1	18	to	0	I-CONTENT-AT-1
+18	NNP	20	compound	19	Finmeccanica	I-ORG	1	19	Finmeccanica	0	I-CONTENT-AT-1
+19	NNP	17	nmod	20	S.p	I-ORG	1	20	S.p	0	I-CONTENT-AT-1
+20	.	10	punct	21	.	I-ORG	1	21	.	0	I-CONTENT-AT-1
+21	NNP	20	flat	22	A.	E-ORG	1	22	A.	0	I-CONTENT-AT-1
+22	IN	24	case	23	for	O	1	23	for	0	I-CONTENT-AT-1
+23	$	10	obl	24	$	B-MONEY	1	24	$	0	I-CONTENT-AT-1
+24	CD	26	compound	25	295	I-MONEY	1	25	295	0	I-CONTENT-AT-1
+25	CD	24	nummod	26	million	E-MONEY	1	26	million	0	I-CONTENT-AT-1
+26	.	4	punct	27	.	O	1	27	.	0	_
+27	NNP	7	nsubj	28	Finmeccanica	S-ORG	2	1	Finmeccanica	0	_
+28	VBZ	7	cop	29	be	O	2	2	is	0	_
+29	DT	7	det	30	a	O	2	3	an	0	_
+30	JJ	7	amod	31	italian	S-NORP	2	4	Italian	0	_
+31	JJ	7	amod	32	state-owned	O	2	5	state-owned	0	_
+32	NN	7	compound	33	holding	O	2	6	holding	0	_
+33	NN	0	root	34	company	O	2	7	company	0	_
+34	IN	9	case	35	with	O	2	8	with	0	_
+35	NNS	7	nmod	36	interest	O	2	9	interests	0	_
+36	IN	14	case	37	in	O	2	10	in	0	_
+37	DT	14	det	38	the	O	2	11	the	0	_
+38	JJ	13	amod	39	mechanical	O	2	12	mechanical	0	_
+39	NN	14	compound	40	engineering	O	2	13	engineering	0	_
+40	NN	9	nmod	41	industry	O	2	14	industry	0	_
+41	.	7	punct	42	.	O	2	15	.	0	_
+42	NNP	10	nsubj	43	Bailey	B-ORG	3	1	Bailey	0	_
+43	NNP	1	flat	44	Controls	E-ORG	3	2	Controls	0	_
+44	,	1	punct	45	,	O	3	3	,	0	_
+45	VBN	1	acl	46	base	O	3	4	based	0	_
+46	IN	6	case	47	in	O	3	5	in	0	_
+47	NNP	4	obl	48	Wickliffe	S-GPE	3	6	Wickliffe	0	_
+48	,	6	punct	49	,	O	3	7	,	0	_
+49	NNP	6	appos	50	Ohio	S-GPE	3	8	Ohio	0	_
+50	,	10	punct	51	,	O	3	9	,	0	_
+51	VBZ	0	root	52	make	O	3	10	makes	0	_
+52	VBN	14	amod	53	computerize	O	3	11	computerized	0	_
+53	JJ	13	amod	54	industrial	O	3	12	industrial	0	_
+54	NN	14	compound	55	controls	O	3	13	controls	0	_
+55	NNS	10	obj	56	system	O	3	14	systems	0	_
+56	.	10	punct	57	.	O	3	15	.	0	_
+57	PRP	2	nsubj	58	it	O	4	1	It	0	_
+58	VBZ	0	root	59	employ	O	4	2	employs	0	_
+59	CD	4	nummod	60	2,700	S-CARDINAL	4	3	2,700	0	_
+60	NNS	2	obj	61	people	O	4	4	people	0	_
+61	CC	6	cc	62	and	O	4	5	and	0	_
+62	VBZ	2	conj	63	have	O	4	6	has	0	_
+63	JJ	8	amod	64	annual	S-DATE	4	7	annual	0	_
+64	NN	6	obj	65	revenue	O	4	8	revenue	0	_
+65	IN	11	case	66	of	O	4	9	of	0	_
+66	RB	11	advmod	67	about	B-MONEY	4	10	about	0	_
+67	$	8	nmod	68	$	I-MONEY	4	11	$	0	_
+68	CD	13	compound	69	370	I-MONEY	4	12	370	0	_
+69	CD	11	compound	70	million	E-MONEY	4	13	million	0	_
+70	.	2	punct	71	.	O	4	14	.	0	_

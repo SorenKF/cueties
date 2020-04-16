@@ -1,398 +1,398 @@
-	POS	dependency_head	dependency_label	doc_token_number	lemma	ne_info	sentence_number	sentence_token_number	token	cue_label
-0	VBZ	0	root	1	yield	O	1	1	Yields	0
-1	IN	5	case	2	on	O	1	2	on	0
-2	JJ	5	amod	3	money-market	O	1	3	money-market	0
-3	JJ	5	amod	4	mutual	O	1	4	mutual	0
-4	NNS	1	obl	5	fund	O	1	5	funds	0
-5	VBN	5	acl	6	continue	O	1	6	continued	0
-6	TO	8	mark	7	to	O	1	7	to	0
-7	VB	6	xcomp	8	slide	O	1	8	slide	0
-8	,	1	punct	9	,	O	1	9	,	0
-9	IN	11	case	10	amid	O	1	10	amid	0
-10	NNS	1	obl	11	sign	O	1	11	signs	0
-11	IN	15	mark	12	that	O	1	12	that	0
-12	NN	14	compound	13	portfolio	O	1	13	portfolio	0
-13	NNS	15	nsubj	14	manager	O	1	14	managers	0
-14	VBP	11	acl	15	expect	O	1	15	expect	1
-15	JJ	17	amod	16	further	O	1	16	further	0
-16	NNS	15	obj	17	decline	O	1	17	declines	0
-17	IN	20	case	18	in	O	1	18	in	0
-18	NN	20	compound	19	interest	O	1	19	interest	0
-19	NNS	17	nmod	20	rate	O	1	20	rates	0
-20	.	1	punct	21	.	O	1	21	.	0
-21	DT	5	det	22	the	O	2	1	The	0
-22	JJ	5	amod	23	average	O	2	2	average	0
-23	JJ	5	amod	24	seven-day	S-DATE	2	3	seven-day	0
-24	NN	5	compound	25	compound	O	2	4	compound	0
-25	NN	18	nsubj	26	yield	O	2	5	yield	0
-26	IN	10	case	27	of	O	2	6	of	0
-27	DT	10	det	28	the	O	2	7	the	0
-28	CD	10	nummod	29	400	S-CARDINAL	2	8	400	0
-29	NN	10	compound	30	taxable	O	2	9	taxable	0
-30	NNS	5	nmod	31	fund	O	2	10	funds	0
-31	VBN	10	acl	32	track	O	2	11	tracked	0
-32	IN	17	case	33	by	O	2	12	by	0
-33	NNP	17	nmod:poss	34	IBC/Donoghue	S-ORG	2	13	IBC/Donoghue	0
-34	POS	13	case	35	's	O	2	14	's	0
-35	NNP	17	compound	36	money	O	2	15	Money	0
-36	NNP	17	compound	37	Fund	O	2	16	Fund	0
-37	NNP	11	obl	38	report	O	2	17	Report	0
-38	VBD	0	root	39	ease	O	2	18	eased	0
-39	DT	20	det	40	a	O	2	19	a	0
-40	NN	18	obj	41	fraction	O	2	20	fraction	0
-41	IN	24	case	42	of	O	2	21	of	0
-42	DT	24	det	43	a	O	2	22	a	0
-43	NN	24	compound	44	percentage	O	2	23	percentage	0
-44	NN	20	nmod	45	point	O	2	24	point	0
-45	IN	27	case	46	to	O	2	25	to	0
-46	CD	27	nummod	47	8.45	B-PERCENT	2	26	8.45	0
-47	NN	30	compound	48	%	E-PERCENT	2	27	%	0
-48	IN	30	case	49	from	O	2	28	from	0
-49	CD	30	nummod	50	8.47	B-PERCENT	2	29	8.47	0
-50	NN	24	nmod	51	%	E-PERCENT	2	30	%	0
-51	IN	33	case	52	for	O	2	31	for	0
-52	DT	33	det	53	the	B-DATE	2	32	the	0
-53	NN	30	nmod	54	week	I-DATE	2	33	week	0
-54	VBD	18	advcl	55	end	I-DATE	2	34	ended	0
-55	NNP	34	obl:tmod	56	Tuesday	E-DATE	2	35	Tuesday	0
-56	.	18	punct	57	.	O	2	36	.	0
-57	NN	2	compound	58	compound	O	3	1	Compound	0
-58	NNS	3	nsubj	59	yield	O	3	2	yields	0
-59	VBP	0	root	60	assume	O	3	3	assume	0
-60	NN	3	obj	61	reinvestment	O	3	4	reinvestment	0
-61	IN	6	case	62	of	O	3	5	of	0
-62	NNS	4	nmod	63	dividend	O	3	6	dividends	0
-63	CC	12	cc	64	and	O	3	7	and	0
-64	IN	12	mark	65	that	O	3	8	that	0
-65	DT	11	det	66	the	O	3	9	the	0
-66	JJ	11	amod	67	current	O	3	10	current	0
-67	NN	12	nsubj	68	yield	O	3	11	yield	0
-68	VBZ	3	conj	69	continue	O	3	12	continues	0
-69	IN	15	case	70	for	O	3	13	for	0
-70	DT	15	det	71	a	B-DATE	3	14	a	0
-71	NN	12	obl	72	year	E-DATE	3	15	year	0
-72	.	3	punct	73	.	O	3	16	.	0
-73	JJ	2	amod	74	average	O	4	1	Average	0
-74	NN	0	root	75	maturity	O	4	2	maturity	0
-75	IN	7	case	76	of	O	4	3	of	0
-76	DT	5	det	77	the	O	4	4	the	0
-77	NNS	7	nmod:poss	78	fund	O	4	5	funds	0
-78	POS	5	case	79	's	O	4	6	'	0
-79	NNS	2	nmod	80	investment	O	4	7	investments	0
-80	VBN	7	acl	81	lengthen	O	4	8	lengthened	0
-81	IN	14	case	82	by	O	4	9	by	0
-82	DT	14	det	83	a	B-DATE	4	10	a	0
-83	NN	14	compound	84	day	I-DATE	4	11	day	0
-84	IN	13	case	85	to	I-DATE	4	12	to	0
-85	CD	11	nmod	86	41	I-DATE	4	13	41	0
-86	NNS	8	obl	87	day	E-DATE	4	14	days	0
-87	,	2	punct	88	,	O	4	15	,	0
-88	DT	17	det	89	the	O	4	16	the	0
-89	JJS	2	appos	90	longest	O	4	17	longest	0
-90	IN	20	case	91	since	O	4	18	since	0
-91	JJ	20	amod	92	early	B-DATE	4	19	early	0
-92	NNP	17	obl	93	August	E-DATE	4	20	August	0
-93	,	17	punct	94	,	O	4	21	,	0
-94	VBG	24	case	95	accord	O	4	22	according	0
-95	IN	22	fixed	96	to	O	4	23	to	1
-96	NNP	17	obl	97	Donoghue	S-ORG	4	24	Donoghue	0
-97	POS	24	case	98	's	O	4	25	's	0
-98	.	2	punct	99	.	O	4	26	.	0
-99	JJR	2	amod	100	longer	O	5	1	Longer	0
-100	NNS	4	nsubj:pass	101	maturity	O	5	2	maturities	0
-101	VBP	4	aux:pass	102	be	O	5	3	are	0
-102	VBN	0	root	103	think	O	5	4	thought	1
-103	TO	6	mark	104	to	O	5	5	to	0
-104	VB	4	xcomp	105	indicate	O	5	6	indicate	0
-105	VBG	6	xcomp	106	decline	O	5	7	declining	0
-106	NN	9	compound	107	interest	O	5	8	interest	0
-107	NNS	7	obj	108	rate	O	5	9	rates	0
-108	IN	12	mark	109	because	O	5	10	because	0
-109	PRP	12	nsubj	110	they	O	5	11	they	0
-110	VBP	6	advcl	111	permit	O	5	12	permit	0
-111	NN	14	compound	112	portfolio	O	5	13	portfolio	0
-112	NNS	12	obj	113	manager	O	5	14	managers	0
-113	TO	16	mark	114	to	O	5	15	to	0
-114	VB	12	xcomp	115	retain	O	5	16	retain	0
-115	RB	18	advmod	116	relatively	O	5	17	relatively	0
-116	JJR	19	amod	117	higher	O	5	18	higher	0
-117	NNS	16	obj	118	rate	O	5	19	rates	0
-118	IN	23	case	119	for	O	5	20	for	0
-119	DT	23	det	120	a	O	5	21	a	0
-120	JJR	23	amod	121	longer	O	5	22	longer	0
-121	NN	16	obl	122	period	O	5	23	period	0
-122	.	4	punct	123	.	O	5	24	.	0
-123	JJR	2	amod	124	shorter	O	6	1	Shorter	0
-124	NNS	4	nsubj:pass	125	maturity	O	6	2	maturities	0
-125	VBP	4	aux:pass	126	be	O	6	3	are	0
-126	VBN	0	root	127	consider	O	6	4	considered	1
-127	DT	6	det	128	a	O	6	5	a	0
-128	NN	4	xcomp	129	sign	O	6	6	sign	0
-129	IN	9	case	130	of	O	6	7	of	0
-130	NN	9	compound	131	rise	O	6	8	rising	0
-131	NNS	6	nmod	132	rate	O	6	9	rates	0
-132	IN	14	mark	133	because	O	6	10	because	0
-133	NN	12	compound	134	portfolio	O	6	11	portfolio	0
-134	NNS	14	nsubj	135	manager	O	6	12	managers	0
-135	MD	14	aux	136	can	O	6	13	can	0
-136	VB	4	advcl	137	capture	O	6	14	capture	0
-137	JJR	16	amod	138	higher	O	6	15	higher	0
-138	NNS	14	obj	139	rate	O	6	16	rates	0
-139	RBR	14	advmod	140	sooner	O	6	17	sooner	0
-140	.	4	punct	141	.	O	6	18	.	0
-141	DT	3	det	142	the	O	7	1	The	0
-142	JJ	3	amod	143	average	O	7	2	average	0
-143	NN	27	nsubj	144	maturity	O	7	3	maturity	0
-144	IN	5	case	145	for	O	7	4	for	0
-145	NNS	3	nmod	146	fund	O	7	5	funds	0
-146	JJ	5	amod	147	open	O	7	6	open	0
-147	RB	9	advmod	148	only	O	7	7	only	0
-148	IN	9	case	149	to	O	7	8	to	0
-149	NNS	6	obl	150	institution	O	7	9	institutions	0
-150	,	3	punct	151	,	O	7	10	,	0
-151	VBN	9	acl	152	consider	O	7	11	considered	0
-152	IN	13	case	153	by	O	7	12	by	1
-153	DT	11	obl	154	some	O	7	13	some	0
-154	TO	18	mark	155	to	O	7	14	to	0
-155	VB	18	cop	156	be	O	7	15	be	0
-156	DT	18	det	157	a	O	7	16	a	0
-157	JJR	18	amod	158	stronger	O	7	17	stronger	0
-158	NN	11	xcomp	159	indicator	O	7	18	indicator	0
-159	IN	22	mark	160	because	O	7	19	because	0
-160	DT	21	det	161	those	O	7	20	those	0
-161	NNS	22	nsubj	162	manager	O	7	21	managers	0
-162	VBP	27	advcl	163	watch	O	7	22	watch	0
-163	DT	24	det	164	the	O	7	23	the	0
-164	NN	22	obj	165	market	O	7	24	market	0
-165	RB	22	advmod	166	closely	O	7	25	closely	0
-166	,	27	punct	167	,	O	7	26	,	0
-167	VBN	0	root	168	reach	O	7	27	reached	0
-168	DT	30	det	169	a	O	7	28	a	0
-169	JJ	30	amod	170	high	O	7	29	high	0
-170	NN	27	obj	171	point	O	7	30	point	0
-171	IN	33	case	172	for	O	7	31	for	0
-172	DT	33	det	173	the	B-DATE	7	32	the	0
-173	NN	27	obl	174	year	E-DATE	7	33	year	0
-174	,	27	punct	175	--	O	7	34	--	0
-175	CD	36	nummod	176	33	B-DATE	7	35	33	0
-176	NNS	27	obl:tmod	177	day	E-DATE	7	36	days	0
-177	.	27	punct	178	.	O	7	37	.	0
-178	RB	3	advmod	179	nevertheless	O	8	1	Nevertheless	0
-179	,	3	punct	180	,	O	8	2	,	0
-180	VBD	0	root	181	say	O	8	3	said	1
-181	NNP	14	nsubj	182	Brenda	B-PERSON	8	4	Brenda	0
-182	NNP	4	flat	183	Malizia	I-PERSON	8	5	Malizia	0
-183	NNP	4	flat	184	Negus	E-PERSON	8	6	Negus	0
-184	,	4	punct	185	,	O	8	7	,	0
-185	NN	4	appos	186	editor	O	8	8	editor	0
-186	IN	12	case	187	of	O	8	9	of	0
-187	NNP	12	compound	188	money	B-ORG	8	10	Money	0
-188	NNP	12	compound	189	Fund	I-ORG	8	11	Fund	0
-189	NNP	8	nmod	190	report	E-ORG	8	12	Report	0
-190	,	14	punct	191	,	O	8	13	,	0
-191	VBZ	3	ccomp	192	yield	O	8	14	yields	0
-192	,	17	punct	193	``	O	8	15	``	0
-193	MD	17	aux	194	may	O	8	16	may	0
-194	VB	14	ccomp	195	blip	O	8	17	blip	0
-195	RP	17	compound:prt	196	up	O	8	18	up	0
-196	RB	17	advmod	197	again	O	8	19	again	0
-197	IN	22	mark	198	before	O	8	20	before	0
-198	PRP	22	nsubj	199	they	O	8	21	they	0
-199	VBP	17	advcl	200	blip	O	8	22	blip	0
-200	RP	22	compound:prt	201	down	O	8	23	down	0
-201	''	17	punct	202	''	O	8	24	''	0
-202	IN	28	case	203	because	O	8	25	because	0
-203	IN	25	fixed	204	of	O	8	26	of	0
-204	JJ	28	amod	205	recent	O	8	27	recent	0
-205	NNS	17	obl	206	rise	O	8	28	rises	0
-206	IN	32	case	207	in	O	8	29	in	0
-207	JJ	32	amod	208	short-term	O	8	30	short-term	0
-208	NN	32	compound	209	interest	O	8	31	interest	0
-209	NNS	28	nmod	210	rate	O	8	32	rates	0
-210	.	3	punct	211	.	O	8	33	.	0
-211	DT	2	det	212	the	O	9	1	The	0
-212	NN	16	nsubj	213	yield	O	9	2	yield	0
-213	IN	6	case	214	on	O	9	3	on	0
-214	NN	6	compound	215	six-month	S-DATE	9	4	six-month	0
-215	NN	6	compound	216	treasury	S-ORG	9	5	Treasury	0
-216	NNS	2	nmod	217	bill	O	9	6	bills	0
-217	VBN	6	acl	218	sell	O	9	7	sold	0
-218	IN	11	case	219	at	O	9	8	at	0
-219	NNP	11	nmod:poss	220	Monday	S-DATE	9	9	Monday	0
-220	POS	9	case	221	's	O	9	10	's	0
-221	NN	7	obl	222	auction	O	9	11	auction	0
-222	,	16	punct	223	,	O	9	12	,	0
-223	IN	14	case	224	for	O	9	13	for	0
-224	NN	16	obl	225	example	O	9	14	example	0
-225	,	16	punct	226	,	O	9	15	,	0
-226	VBD	0	root	227	rise	O	9	16	rose	0
-227	IN	19	case	228	to	O	9	17	to	0
-228	CD	19	nummod	229	8.04	B-PERCENT	9	18	8.04	0
-229	NN	16	obl	230	%	E-PERCENT	9	19	%	0
-230	IN	22	case	231	from	O	9	20	from	0
-231	CD	22	nummod	232	7.90	B-PERCENT	9	21	7.90	0
-232	NN	16	obl	233	%	E-PERCENT	9	22	%	0
-233	.	16	punct	234	.	O	9	23	.	0
-234	IN	3	case	235	despite	O	10	1	Despite	0
-235	JJ	3	amod	236	recent	O	10	2	recent	0
-236	NNS	8	obl	237	decline	O	10	3	declines	0
-237	IN	5	case	238	in	O	10	4	in	0
-238	NNS	3	nmod	239	yield	O	10	5	yields	0
-239	,	8	punct	240	,	O	10	6	,	0
-240	NNS	8	nsubj	241	investor	O	10	7	investors	0
-241	VBP	0	root	242	continue	O	10	8	continue	0
-242	TO	10	mark	243	to	O	10	9	to	0
-243	VB	8	xcomp	244	pour	O	10	10	pour	0
-244	NN	10	obj	245	cash	O	10	11	cash	0
-245	IN	14	case	246	into	O	10	12	into	0
-246	NN	14	compound	247	money	O	10	13	money	0
-247	NNS	10	obl	248	fund	O	10	14	funds	0
-248	.	8	punct	249	.	O	10	15	.	0
-249	NNS	7	nsubj	250	asset	O	11	1	Assets	0
-250	IN	6	case	251	of	O	11	2	of	0
-251	DT	6	det	252	the	O	11	3	the	0
-252	CD	6	nummod	253	400	S-CARDINAL	11	4	400	0
-253	NN	6	compound	254	taxable	O	11	5	taxable	0
-254	NNS	1	nmod	255	fund	O	11	6	funds	0
-255	VBD	0	root	256	grow	O	11	7	grew	0
-256	IN	9	case	257	by	O	11	8	by	0
-257	$	7	obl	258	$	B-MONEY	11	9	$	0
-258	CD	11	compound	259	1.5	I-MONEY	11	10	1.5	0
-259	CD	9	nummod	260	billion	E-MONEY	11	11	billion	0
-260	IN	15	case	261	during	O	11	12	during	0
-261	DT	15	det	262	the	B-DATE	11	13	the	0
-262	JJS	15	amod	263	latest	I-DATE	11	14	latest	0
-263	NN	7	obl	264	week	E-DATE	11	15	week	0
-264	,	7	punct	265	,	O	11	16	,	0
-265	IN	18	case	266	to	O	11	17	to	0
-266	$	7	obl	267	$	B-MONEY	11	18	$	0
-267	CD	20	compound	268	352.7	I-MONEY	11	19	352.7	0
-268	CD	18	nummod	269	billion	E-MONEY	11	20	billion	0
-269	.	7	punct	270	.	O	11	21	.	0
-270	RB	5	advmod	271	typically	O	12	1	Typically	0
-271	,	5	punct	272	,	O	12	2	,	0
-272	JJ	4	amod	273	money-fund	O	12	3	money-fund	0
-273	NNS	5	nsubj	274	yield	O	12	4	yields	0
-274	VBP	0	root	275	beat	O	12	5	beat	0
-275	JJ	8	amod	276	comparable	O	12	6	comparable	0
-276	JJ	8	amod	277	short-term	O	12	7	short-term	0
-277	NNS	5	obj	278	investment	O	12	8	investments	0
-278	IN	13	mark	279	because	O	12	9	because	0
-279	NN	11	compound	280	portfolio	O	12	10	portfolio	0
-280	NNS	13	nsubj	281	manager	O	12	11	managers	0
-281	MD	13	aux	282	can	O	12	12	can	0
-282	VB	5	advcl	283	vary	O	12	13	vary	0
-283	NNS	13	obj	284	maturity	O	12	14	maturities	0
-284	CC	16	cc	285	and	O	12	15	and	0
-285	VB	13	conj	286	go	O	12	16	go	0
-286	IN	20	case	287	after	O	12	17	after	0
-287	DT	20	det	288	the	O	12	18	the	0
-288	JJS	20	amod	289	highest	O	12	19	highest	0
-289	NNS	16	obl	290	rate	O	12	20	rates	0
-290	.	5	punct	291	.	O	12	21	.	0
-291	DT	4	det	292	the	O	13	1	The	0
-292	JJ	4	amod	293	top	O	13	2	top	0
-293	NN	4	compound	294	money	O	13	3	money	0
-294	NNS	7	nsubj	295	fund	O	13	4	funds	0
-295	VBP	7	aux	296	be	O	13	5	are	0
-296	RB	7	advmod	297	currently	O	13	6	currently	0
-297	VBG	0	root	298	yield	O	13	7	yielding	0
-298	RB	10	advmod	299	well	B-PERCENT	13	8	well	0
-299	RB	10	advmod	300	over	I-PERCENT	13	9	over	0
-300	CD	11	nummod	301	9	I-PERCENT	13	10	9	0
-301	NN	7	obj	302	%	E-PERCENT	13	11	%	0
-302	.	7	punct	303	.	O	13	12	.	0
-303	NNP	9	nsubj	304	Dreyfus	B-ORG	14	1	Dreyfus	0
-304	NNP	1	flat	305	World-Wide	I-ORG	14	2	World-Wide	0
-305	NNP	1	flat	306	dollar	E-ORG	14	3	Dollar	0
-306	,	1	punct	307	,	O	14	4	,	0
-307	DT	7	det	308	the	O	14	5	the	0
-308	NN	7	compound	309	top-yielding	O	14	6	top-yielding	0
-309	NN	1	appos	310	fund	O	14	7	fund	0
-310	,	9	punct	311	,	O	14	8	,	0
-311	VBD	0	root	312	have	O	14	9	had	0
-312	DT	13	det	313	a	O	14	10	a	0
-313	JJ	13	amod	314	seven-day	O	14	11	seven-day	0
-314	NN	13	compound	315	compound	O	14	12	compound	0
-315	NN	9	obj	316	yield	O	14	13	yield	0
-316	IN	16	case	317	of	O	14	14	of	0
-317	CD	16	nummod	318	9.37	B-PERCENT	14	15	9.37	0
-318	NN	13	nmod	319	%	E-PERCENT	14	16	%	0
-319	IN	20	case	320	during	O	14	17	during	0
-320	DT	20	det	321	the	B-DATE	14	18	the	0
-321	JJS	20	amod	322	latest	I-DATE	14	19	latest	0
-322	NN	9	obl	323	week	E-DATE	14	20	week	0
-323	,	9	punct	324	,	O	14	21	,	0
-324	RB	9	advmod	325	down	O	14	22	down	0
-325	IN	25	case	326	from	O	14	23	from	0
-326	CD	25	nummod	327	9.45	B-PERCENT	14	24	9.45	0
-327	NN	22	obl	328	%	E-PERCENT	14	25	%	0
-328	DT	27	det	329	a	B-DATE	14	26	a	0
-329	NN	28	obl:npmod	330	week	I-DATE	14	27	week	0
-330	RBR	22	advmod	331	earlier	E-DATE	14	28	earlier	0
-331	.	9	punct	332	.	O	14	29	.	0
-332	PRP	2	nsubj	333	it	O	15	1	It	0
-333	VBZ	0	root	334	invest	O	15	2	invests	0
-334	RB	2	advmod	335	heavily	O	15	3	heavily	0
-335	IN	6	case	336	in	O	15	4	in	0
-336	JJ	6	amod	337	dollar-denominated	O	15	5	dollar-denominated	0
-337	NNS	2	obl	338	security	O	15	6	securities	0
-338	RB	2	advmod	339	overseas	O	15	7	overseas	0
-339	CC	11	cc	340	and	O	15	8	and	0
-340	VBZ	11	aux	341	be	O	15	9	is	0
-341	RB	11	advmod	342	currently	O	15	10	currently	0
-342	VBG	2	conj	343	waiv	O	15	11	waiving	0
-343	NN	13	compound	344	management	O	15	12	management	0
-344	NNS	11	obj	345	fee	O	15	13	fees	0
-345	,	13	punct	346	,	O	15	14	,	0
-346	WDT	16	nsubj	347	which	O	15	15	which	0
-347	VBZ	13	acl:relcl	348	boost	O	15	16	boosts	0
-348	PRP$	18	nmod:poss	349	its	O	15	17	its	0
-349	NN	16	obj	350	yield	O	15	18	yield	0
-350	.	2	punct	351	.	O	15	19	.	0
-351	DT	5	det	352	the	O	16	1	The	0
-352	JJ	5	amod	353	average	O	16	2	average	0
-353	JJ	5	amod	354	seven-day	S-DATE	16	3	seven-day	0
-354	JJ	5	amod	355	simple	O	16	4	simple	0
-355	NN	12	nsubj	356	yield	O	16	5	yield	0
-356	IN	9	case	357	of	O	16	6	of	0
-357	DT	9	det	358	the	O	16	7	the	0
-358	CD	9	nummod	359	400	S-CARDINAL	16	8	400	0
-359	NNS	5	nmod	360	fund	O	16	9	funds	0
-360	VBD	12	cop	361	be	O	16	10	was	0
-361	CD	12	nummod	362	8.12	B-PERCENT	16	11	8.12	0
-362	NN	0	root	363	%	E-PERCENT	16	12	%	0
-363	,	12	punct	364	,	O	16	13	,	0
-364	RB	12	advmod	365	down	O	16	14	down	0
-365	IN	17	case	366	from	O	16	15	from	0
-366	CD	17	nummod	367	8.14	B-PERCENT	16	16	8.14	0
-367	NN	14	obl	368	%	E-PERCENT	16	17	%	0
-368	.	12	punct	369	.	O	16	18	.	0
-369	DT	4	det	370	the	O	17	1	The	0
-370	JJ	4	amod	371	30-day	S-DATE	17	2	30-day	0
-371	JJ	4	amod	372	simple	O	17	3	simple	0
-372	NN	5	nsubj	373	yield	O	17	4	yield	0
-373	VBD	0	root	374	fall	O	17	5	fell	0
-374	IN	10	case	375	to	O	17	6	to	0
-375	DT	10	det	376	a	O	17	7	an	0
-376	JJ	10	amod	377	average	O	17	8	average	0
-377	CD	10	nummod	378	8.19	B-PERCENT	17	9	8.19	0
-378	NN	5	obl	379	%	E-PERCENT	17	10	%	0
-379	IN	13	case	380	from	O	17	11	from	0
-380	CD	13	nummod	381	8.22	B-PERCENT	17	12	8.22	0
-381	NN	5	obl	382	%	E-PERCENT	17	13	%	0
-382	,	5	punct	383	;	O	17	14	;	0
-383	DT	18	det	384	the	O	17	15	the	0
-384	NNP	18	compound	385	30-day	S-DATE	17	16	30-day	0
-385	NN	18	compound	386	compound	O	17	17	compound	0
-386	NN	19	nsubj	387	yield	O	17	18	yield	0
-387	VBD	5	parataxis	388	slid	O	17	19	slid	0
-388	IN	24	case	389	to	O	17	20	to	0
-389	DT	24	det	390	a	O	17	21	an	0
-390	JJ	24	amod	391	average	O	17	22	average	0
-391	CD	24	nummod	392	8.53	B-PERCENT	17	23	8.53	0
-392	NN	19	obl	393	%	E-PERCENT	17	24	%	0
-393	IN	27	case	394	from	O	17	25	from	0
-394	CD	27	nummod	395	8.56	B-PERCENT	17	26	8.56	0
-395	NN	19	obl	396	%	E-PERCENT	17	27	%	0
-396	.	5	punct	397	.	O	17	28	.	0
+	POS	dependency_head	dependency_label	doc_token_number	lemma	ne_info	sentence_number	sentence_token_number	token	cue_label	attribution
+0	VBZ	0	root	1	yield	O	1	1	Yields	0	_ _ _ _ _ _
+1	IN	5	case	2	on	O	1	2	on	0	_ _ _ _ _ _
+2	JJ	5	amod	3	money-market	O	1	3	money-market	0	_ _ _ _ _ _
+3	JJ	5	amod	4	mutual	O	1	4	mutual	0	_ _ _ _ _ _
+4	NNS	1	obl	5	fund	O	1	5	funds	0	_ _ _ _ _ _
+5	VBN	5	acl	6	continue	O	1	6	continued	0	_ _ _ _ _ _
+6	TO	8	mark	7	to	O	1	7	to	0	_ _ _ _ _ _
+7	VB	6	xcomp	8	slide	O	1	8	slide	0	_ _ _ _ _ _
+8	,	1	punct	9	,	O	1	9	,	0	_ _ _ _ _ _
+9	IN	11	case	10	amid	O	1	10	amid	0	_ _ _ _ _ _
+10	NNS	1	obl	11	sign	O	1	11	signs	0	_ _ _ _ _ _
+11	IN	15	mark	12	that	O	1	12	that	0	_ _ _ _ _ _
+12	NN	14	compound	13	portfolio	O	1	13	portfolio	0	_ _ _ _ _ B-SOURCE-AT-2
+13	NNS	15	nsubj	14	manager	O	1	14	managers	0	_ _ _ _ _ I-SOURCE-AT-2
+14	VBP	11	acl	15	expect	O	1	15	expect	1	_ _ _ _ _ B-CUE-AT-2
+15	JJ	17	amod	16	further	O	1	16	further	0	_ _ _ _ _ B-CONTENT-AT-2
+16	NNS	15	obj	17	decline	O	1	17	declines	0	_ _ _ _ _ I-CONTENT-AT-2
+17	IN	20	case	18	in	O	1	18	in	0	_ _ _ _ _ I-CONTENT-AT-2
+18	NN	20	compound	19	interest	O	1	19	interest	0	_ _ _ _ _ I-CONTENT-AT-2
+19	NNS	17	nmod	20	rate	O	1	20	rates	0	_ _ _ _ _ I-CONTENT-AT-2
+20	.	1	punct	21	.	O	1	21	.	0	_ _ _ _ _ _
+21	DT	5	det	22	the	O	2	1	The	0	_ _ _ _ _ _
+22	JJ	5	amod	23	average	O	2	2	average	0	_ _ _ _ _ _
+23	JJ	5	amod	24	seven-day	S-DATE	2	3	seven-day	0	_ _ _ _ _ _
+24	NN	5	compound	25	compound	O	2	4	compound	0	_ _ _ _ _ _
+25	NN	18	nsubj	26	yield	O	2	5	yield	0	_ _ _ _ _ _
+26	IN	10	case	27	of	O	2	6	of	0	_ _ _ _ _ _
+27	DT	10	det	28	the	O	2	7	the	0	_ _ _ _ _ _
+28	CD	10	nummod	29	400	S-CARDINAL	2	8	400	0	_ _ _ _ _ _
+29	NN	10	compound	30	taxable	O	2	9	taxable	0	_ _ _ _ _ _
+30	NNS	5	nmod	31	fund	O	2	10	funds	0	_ _ _ _ _ _
+31	VBN	10	acl	32	track	O	2	11	tracked	0	_ _ _ _ _ _
+32	IN	17	case	33	by	O	2	12	by	0	_ _ _ _ _ _
+33	NNP	17	nmod:poss	34	IBC/Donoghue	S-ORG	2	13	IBC/Donoghue	0	_ _ _ _ _ _
+34	POS	13	case	35	's	O	2	14	's	0	_ _ _ _ _ _
+35	NNP	17	compound	36	money	O	2	15	Money	0	_ _ _ _ _ _
+36	NNP	17	compound	37	Fund	O	2	16	Fund	0	_ _ _ _ _ _
+37	NNP	11	obl	38	report	O	2	17	Report	0	_ _ _ _ _ _
+38	VBD	0	root	39	ease	O	2	18	eased	0	_ _ _ _ _ _
+39	DT	20	det	40	a	O	2	19	a	0	_ _ _ _ _ _
+40	NN	18	obj	41	fraction	O	2	20	fraction	0	_ _ _ _ _ _
+41	IN	24	case	42	of	O	2	21	of	0	_ _ _ _ _ _
+42	DT	24	det	43	a	O	2	22	a	0	_ _ _ _ _ _
+43	NN	24	compound	44	percentage	O	2	23	percentage	0	_ _ _ _ _ _
+44	NN	20	nmod	45	point	O	2	24	point	0	_ _ _ _ _ _
+45	IN	27	case	46	to	O	2	25	to	0	_ _ _ _ _ _
+46	CD	27	nummod	47	8.45	B-PERCENT	2	26	8.45	0	_ _ _ _ _ _
+47	NN	30	compound	48	%	E-PERCENT	2	27	%	0	_ _ _ _ _ _
+48	IN	30	case	49	from	O	2	28	from	0	_ _ _ _ _ _
+49	CD	30	nummod	50	8.47	B-PERCENT	2	29	8.47	0	_ _ _ _ _ _
+50	NN	24	nmod	51	%	E-PERCENT	2	30	%	0	_ _ _ _ _ _
+51	IN	33	case	52	for	O	2	31	for	0	_ _ _ _ _ _
+52	DT	33	det	53	the	B-DATE	2	32	the	0	_ _ _ _ _ _
+53	NN	30	nmod	54	week	I-DATE	2	33	week	0	_ _ _ _ _ _
+54	VBD	18	advcl	55	end	I-DATE	2	34	ended	0	_ _ _ _ _ _
+55	NNP	34	obl:tmod	56	Tuesday	E-DATE	2	35	Tuesday	0	_ _ _ _ _ _
+56	.	18	punct	57	.	O	2	36	.	0	_ _ _ _ _ _
+57	NN	2	compound	58	compound	O	3	1	Compound	0	_ _ _ _ _ _
+58	NNS	3	nsubj	59	yield	O	3	2	yields	0	_ _ _ _ _ _
+59	VBP	0	root	60	assume	O	3	3	assume	0	_ _ _ _ _ _
+60	NN	3	obj	61	reinvestment	O	3	4	reinvestment	0	_ _ _ _ _ _
+61	IN	6	case	62	of	O	3	5	of	0	_ _ _ _ _ _
+62	NNS	4	nmod	63	dividend	O	3	6	dividends	0	_ _ _ _ _ _
+63	CC	12	cc	64	and	O	3	7	and	0	_ _ _ _ _ _
+64	IN	12	mark	65	that	O	3	8	that	0	_ _ _ _ _ _
+65	DT	11	det	66	the	O	3	9	the	0	_ _ _ _ _ _
+66	JJ	11	amod	67	current	O	3	10	current	0	_ _ _ _ _ _
+67	NN	12	nsubj	68	yield	O	3	11	yield	0	_ _ _ _ _ _
+68	VBZ	3	conj	69	continue	O	3	12	continues	0	_ _ _ _ _ _
+69	IN	15	case	70	for	O	3	13	for	0	_ _ _ _ _ _
+70	DT	15	det	71	a	B-DATE	3	14	a	0	_ _ _ _ _ _
+71	NN	12	obl	72	year	E-DATE	3	15	year	0	_ _ _ _ _ _
+72	.	3	punct	73	.	O	3	16	.	0	_ _ _ _ _ _
+73	JJ	2	amod	74	average	O	4	1	Average	0	B-CONTENT-AT-1 _ _ _ _ _
+74	NN	0	root	75	maturity	O	4	2	maturity	0	I-CONTENT-AT-1 _ _ _ _ _
+75	IN	7	case	76	of	O	4	3	of	0	I-CONTENT-AT-1 _ _ _ _ _
+76	DT	5	det	77	the	O	4	4	the	0	I-CONTENT-AT-1 _ _ _ _ _
+77	NNS	7	nmod:poss	78	fund	O	4	5	funds	0	I-CONTENT-AT-1 _ _ _ _ _
+78	POS	5	case	79	's	O	4	6	'	0	I-CONTENT-AT-1 _ _ _ _ _
+79	NNS	2	nmod	80	investment	O	4	7	investments	0	I-CONTENT-AT-1 _ _ _ _ _
+80	VBN	7	acl	81	lengthen	O	4	8	lengthened	0	I-CONTENT-AT-1 _ _ _ _ _
+81	IN	14	case	82	by	O	4	9	by	0	I-CONTENT-AT-1 _ _ _ _ _
+82	DT	14	det	83	a	B-DATE	4	10	a	0	I-CONTENT-AT-1 _ _ _ _ _
+83	NN	14	compound	84	day	I-DATE	4	11	day	0	I-CONTENT-AT-1 _ _ _ _ _
+84	IN	13	case	85	to	I-DATE	4	12	to	0	I-CONTENT-AT-1 _ _ _ _ _
+85	CD	11	nmod	86	41	I-DATE	4	13	41	0	I-CONTENT-AT-1 _ _ _ _ _
+86	NNS	8	obl	87	day	E-DATE	4	14	days	0	I-CONTENT-AT-1 _ _ _ _ _
+87	,	2	punct	88	,	O	4	15	,	0	I-CONTENT-AT-1 _ _ _ _ _
+88	DT	17	det	89	the	O	4	16	the	0	I-CONTENT-AT-1 _ _ _ _ _
+89	JJS	2	appos	90	longest	O	4	17	longest	0	I-CONTENT-AT-1 _ _ _ _ _
+90	IN	20	case	91	since	O	4	18	since	0	I-CONTENT-AT-1 _ _ _ _ _
+91	JJ	20	amod	92	early	B-DATE	4	19	early	0	I-CONTENT-AT-1 _ _ _ _ _
+92	NNP	17	obl	93	August	E-DATE	4	20	August	0	I-CONTENT-AT-1 _ _ _ _ _
+93	,	17	punct	94	,	O	4	21	,	0	_ _ _ _ _ _
+94	VBG	24	case	95	accord	O	4	22	according	0	B-CUE-AT-1 _ _ _ _ _
+95	IN	22	fixed	96	to	O	4	23	to	1	I-CUE-AT-1 _ _ _ _ _
+96	NNP	17	obl	97	Donoghue	S-ORG	4	24	Donoghue	0	B-SOURCE-AT-1 _ _ _ _ _
+97	POS	24	case	98	's	O	4	25	's	0	I-SOURCE-AT-1 _ _ _ _ _
+98	.	2	punct	99	.	O	4	26	.	0	_ _ _ _ _ _
+99	JJR	2	amod	100	longer	O	5	1	Longer	0	_ _ _ _ _ _
+100	NNS	4	nsubj:pass	101	maturity	O	5	2	maturities	0	_ _ _ _ _ _
+101	VBP	4	aux:pass	102	be	O	5	3	are	0	_ _ _ B-CUE-PD-0 _ _
+102	VBN	0	root	103	think	O	5	4	thought	1	_ _ _ I-CUE-PD-0 _ _
+103	TO	6	mark	104	to	O	5	5	to	0	_ _ _ B-CONTENT-PD-0 _ _
+104	VB	4	xcomp	105	indicate	O	5	6	indicate	0	_ _ _ I-CONTENT-PD-0 _ _
+105	VBG	6	xcomp	106	decline	O	5	7	declining	0	_ _ _ I-CONTENT-PD-0 _ _
+106	NN	9	compound	107	interest	O	5	8	interest	0	_ _ _ I-CONTENT-PD-0 _ _
+107	NNS	7	obj	108	rate	O	5	9	rates	0	_ _ _ I-CONTENT-PD-0 _ _
+108	IN	12	mark	109	because	O	5	10	because	0	_ _ _ I-CONTENT-PD-0 _ _
+109	PRP	12	nsubj	110	they	O	5	11	they	0	_ _ _ I-CONTENT-PD-0 _ _
+110	VBP	6	advcl	111	permit	O	5	12	permit	0	_ _ _ I-CONTENT-PD-0 _ _
+111	NN	14	compound	112	portfolio	O	5	13	portfolio	0	_ _ _ I-CONTENT-PD-0 _ _
+112	NNS	12	obj	113	manager	O	5	14	managers	0	_ _ _ I-CONTENT-PD-0 _ _
+113	TO	16	mark	114	to	O	5	15	to	0	_ _ _ I-CONTENT-PD-0 _ _
+114	VB	12	xcomp	115	retain	O	5	16	retain	0	_ _ _ I-CONTENT-PD-0 _ _
+115	RB	18	advmod	116	relatively	O	5	17	relatively	0	_ _ _ I-CONTENT-PD-0 _ _
+116	JJR	19	amod	117	higher	O	5	18	higher	0	_ _ _ I-CONTENT-PD-0 _ _
+117	NNS	16	obj	118	rate	O	5	19	rates	0	_ _ _ I-CONTENT-PD-0 _ _
+118	IN	23	case	119	for	O	5	20	for	0	_ _ _ I-CONTENT-PD-0 _ _
+119	DT	23	det	120	a	O	5	21	a	0	_ _ _ I-CONTENT-PD-0 _ _
+120	JJR	23	amod	121	longer	O	5	22	longer	0	_ _ _ I-CONTENT-PD-0 _ _
+121	NN	16	obl	122	period	O	5	23	period	0	_ _ _ I-CONTENT-PD-0 _ _
+122	.	4	punct	123	.	O	5	24	.	0	_ _ _ _ _ _
+123	JJR	2	amod	124	shorter	O	6	1	Shorter	0	_ _ _ _ _ _
+124	NNS	4	nsubj:pass	125	maturity	O	6	2	maturities	0	_ _ _ _ _ _
+125	VBP	4	aux:pass	126	be	O	6	3	are	0	_ B-CUE-PD-1 _ _ _ _
+126	VBN	0	root	127	consider	O	6	4	considered	1	_ I-CUE-PD-1 _ _ _ _
+127	DT	6	det	128	a	O	6	5	a	0	_ B-CONTENT-PD-1 _ _ _ _
+128	NN	4	xcomp	129	sign	O	6	6	sign	0	_ I-CONTENT-PD-1 _ _ _ _
+129	IN	9	case	130	of	O	6	7	of	0	_ I-CONTENT-PD-1 _ _ _ _
+130	NN	9	compound	131	rise	O	6	8	rising	0	_ I-CONTENT-PD-1 _ _ _ _
+131	NNS	6	nmod	132	rate	O	6	9	rates	0	_ I-CONTENT-PD-1 _ _ _ _
+132	IN	14	mark	133	because	O	6	10	because	0	_ I-CONTENT-PD-1 _ _ _ _
+133	NN	12	compound	134	portfolio	O	6	11	portfolio	0	_ I-CONTENT-PD-1 _ _ _ _
+134	NNS	14	nsubj	135	manager	O	6	12	managers	0	_ I-CONTENT-PD-1 _ _ _ _
+135	MD	14	aux	136	can	O	6	13	can	0	_ I-CONTENT-PD-1 _ _ _ _
+136	VB	4	advcl	137	capture	O	6	14	capture	0	_ I-CONTENT-PD-1 _ _ _ _
+137	JJR	16	amod	138	higher	O	6	15	higher	0	_ I-CONTENT-PD-1 _ _ _ _
+138	NNS	14	obj	139	rate	O	6	16	rates	0	_ I-CONTENT-PD-1 _ _ _ _
+139	RBR	14	advmod	140	sooner	O	6	17	sooner	0	_ I-CONTENT-PD-1 _ _ _ _
+140	.	4	punct	141	.	O	6	18	.	0	_ _ _ _ _ _
+141	DT	3	det	142	the	O	7	1	The	0	_ _ _ _ _ _
+142	JJ	3	amod	143	average	O	7	2	average	0	_ _ _ _ _ _
+143	NN	27	nsubj	144	maturity	O	7	3	maturity	0	_ _ _ _ _ _
+144	IN	5	case	145	for	O	7	4	for	0	_ _ _ _ _ _
+145	NNS	3	nmod	146	fund	O	7	5	funds	0	_ _ _ _ _ _
+146	JJ	5	amod	147	open	O	7	6	open	0	_ _ _ _ _ _
+147	RB	9	advmod	148	only	O	7	7	only	0	_ _ _ _ _ _
+148	IN	9	case	149	to	O	7	8	to	0	_ _ _ _ _ _
+149	NNS	6	obl	150	institution	O	7	9	institutions	0	_ _ _ _ _ _
+150	,	3	punct	151	,	O	7	10	,	0	_ _ _ _ _ _
+151	VBN	9	acl	152	consider	O	7	11	considered	0	_ _ B-CUE-PD-2 _ _ _
+152	IN	13	case	153	by	O	7	12	by	1	_ _ I-CUE-PD-2 _ _ _
+153	DT	11	obl	154	some	O	7	13	some	0	_ _ B-SOURCE-PD-2 _ _ _
+154	TO	18	mark	155	to	O	7	14	to	0	_ _ B-CONTENT-PD-2 _ _ _
+155	VB	18	cop	156	be	O	7	15	be	0	_ _ I-CONTENT-PD-2 _ _ _
+156	DT	18	det	157	a	O	7	16	a	0	_ _ I-CONTENT-PD-2 _ _ _
+157	JJR	18	amod	158	stronger	O	7	17	stronger	0	_ _ I-CONTENT-PD-2 _ _ _
+158	NN	11	xcomp	159	indicator	O	7	18	indicator	0	_ _ I-CONTENT-PD-2 _ _ _
+159	IN	22	mark	160	because	O	7	19	because	0	_ _ I-CONTENT-PD-2 _ _ _
+160	DT	21	det	161	those	O	7	20	those	0	_ _ I-CONTENT-PD-2 _ _ _
+161	NNS	22	nsubj	162	manager	O	7	21	managers	0	_ _ I-CONTENT-PD-2 _ _ _
+162	VBP	27	advcl	163	watch	O	7	22	watch	0	_ _ I-CONTENT-PD-2 _ _ _
+163	DT	24	det	164	the	O	7	23	the	0	_ _ I-CONTENT-PD-2 _ _ _
+164	NN	22	obj	165	market	O	7	24	market	0	_ _ I-CONTENT-PD-2 _ _ _
+165	RB	22	advmod	166	closely	O	7	25	closely	0	_ _ I-CONTENT-PD-2 _ _ _
+166	,	27	punct	167	,	O	7	26	,	0	_ _ _ _ _ _
+167	VBN	0	root	168	reach	O	7	27	reached	0	_ _ _ _ _ _
+168	DT	30	det	169	a	O	7	28	a	0	_ _ _ _ _ _
+169	JJ	30	amod	170	high	O	7	29	high	0	_ _ _ _ _ _
+170	NN	27	obj	171	point	O	7	30	point	0	_ _ _ _ _ _
+171	IN	33	case	172	for	O	7	31	for	0	_ _ _ _ _ _
+172	DT	33	det	173	the	B-DATE	7	32	the	0	_ _ _ _ _ _
+173	NN	27	obl	174	year	E-DATE	7	33	year	0	_ _ _ _ _ _
+174	,	27	punct	175	--	O	7	34	--	0	_ _ _ _ _ _
+175	CD	36	nummod	176	33	B-DATE	7	35	33	0	_ _ _ _ _ _
+176	NNS	27	obl:tmod	177	day	E-DATE	7	36	days	0	_ _ _ _ _ _
+177	.	27	punct	178	.	O	7	37	.	0	_ _ _ _ _ _
+178	RB	3	advmod	179	nevertheless	O	8	1	Nevertheless	0	_ _ _ _ B-CONTENT-PD-3 _
+179	,	3	punct	180	,	O	8	2	,	0	_ _ _ _ _ _
+180	VBD	0	root	181	say	O	8	3	said	1	_ _ _ _ B-CUE-PD-3 _
+181	NNP	14	nsubj	182	Brenda	B-PERSON	8	4	Brenda	0	_ _ _ _ B-SOURCE-PD-3 _
+182	NNP	4	flat	183	Malizia	I-PERSON	8	5	Malizia	0	_ _ _ _ I-SOURCE-PD-3 _
+183	NNP	4	flat	184	Negus	E-PERSON	8	6	Negus	0	_ _ _ _ I-SOURCE-PD-3 _
+184	,	4	punct	185	,	O	8	7	,	0	_ _ _ _ I-SOURCE-PD-3 _
+185	NN	4	appos	186	editor	O	8	8	editor	0	_ _ _ _ I-SOURCE-PD-3 _
+186	IN	12	case	187	of	O	8	9	of	0	_ _ _ _ I-SOURCE-PD-3 _
+187	NNP	12	compound	188	money	B-ORG	8	10	Money	0	_ _ _ _ I-SOURCE-PD-3 _
+188	NNP	12	compound	189	Fund	I-ORG	8	11	Fund	0	_ _ _ _ I-SOURCE-PD-3 _
+189	NNP	8	nmod	190	report	E-ORG	8	12	Report	0	_ _ _ _ I-SOURCE-PD-3 _
+190	,	14	punct	191	,	O	8	13	,	0	_ _ _ _ _ _
+191	VBZ	3	ccomp	192	yield	O	8	14	yields	0	_ _ _ _ I-CONTENT-PD-3 _
+192	,	17	punct	193	``	O	8	15	``	0	_ _ _ _ I-CONTENT-PD-3 _
+193	MD	17	aux	194	may	O	8	16	may	0	_ _ _ _ I-CONTENT-PD-3 _
+194	VB	14	ccomp	195	blip	O	8	17	blip	0	_ _ _ _ I-CONTENT-PD-3 _
+195	RP	17	compound:prt	196	up	O	8	18	up	0	_ _ _ _ I-CONTENT-PD-3 _
+196	RB	17	advmod	197	again	O	8	19	again	0	_ _ _ _ I-CONTENT-PD-3 _
+197	IN	22	mark	198	before	O	8	20	before	0	_ _ _ _ I-CONTENT-PD-3 _
+198	PRP	22	nsubj	199	they	O	8	21	they	0	_ _ _ _ I-CONTENT-PD-3 _
+199	VBP	17	advcl	200	blip	O	8	22	blip	0	_ _ _ _ I-CONTENT-PD-3 _
+200	RP	22	compound:prt	201	down	O	8	23	down	0	_ _ _ _ I-CONTENT-PD-3 _
+201	''	17	punct	202	''	O	8	24	''	0	_ _ _ _ I-CONTENT-PD-3 _
+202	IN	28	case	203	because	O	8	25	because	0	_ _ _ _ I-CONTENT-PD-3 _
+203	IN	25	fixed	204	of	O	8	26	of	0	_ _ _ _ I-CONTENT-PD-3 _
+204	JJ	28	amod	205	recent	O	8	27	recent	0	_ _ _ _ I-CONTENT-PD-3 _
+205	NNS	17	obl	206	rise	O	8	28	rises	0	_ _ _ _ I-CONTENT-PD-3 _
+206	IN	32	case	207	in	O	8	29	in	0	_ _ _ _ I-CONTENT-PD-3 _
+207	JJ	32	amod	208	short-term	O	8	30	short-term	0	_ _ _ _ I-CONTENT-PD-3 _
+208	NN	32	compound	209	interest	O	8	31	interest	0	_ _ _ _ I-CONTENT-PD-3 _
+209	NNS	28	nmod	210	rate	O	8	32	rates	0	_ _ _ _ I-CONTENT-PD-3 _
+210	.	3	punct	211	.	O	8	33	.	0	_ _ _ _ _ _
+211	DT	2	det	212	the	O	9	1	The	0	_ _ _ _ _ _
+212	NN	16	nsubj	213	yield	O	9	2	yield	0	_ _ _ _ _ _
+213	IN	6	case	214	on	O	9	3	on	0	_ _ _ _ _ _
+214	NN	6	compound	215	six-month	S-DATE	9	4	six-month	0	_ _ _ _ _ _
+215	NN	6	compound	216	treasury	S-ORG	9	5	Treasury	0	_ _ _ _ _ _
+216	NNS	2	nmod	217	bill	O	9	6	bills	0	_ _ _ _ _ _
+217	VBN	6	acl	218	sell	O	9	7	sold	0	_ _ _ _ _ _
+218	IN	11	case	219	at	O	9	8	at	0	_ _ _ _ _ _
+219	NNP	11	nmod:poss	220	Monday	S-DATE	9	9	Monday	0	_ _ _ _ _ _
+220	POS	9	case	221	's	O	9	10	's	0	_ _ _ _ _ _
+221	NN	7	obl	222	auction	O	9	11	auction	0	_ _ _ _ _ _
+222	,	16	punct	223	,	O	9	12	,	0	_ _ _ _ _ _
+223	IN	14	case	224	for	O	9	13	for	0	_ _ _ _ _ _
+224	NN	16	obl	225	example	O	9	14	example	0	_ _ _ _ _ _
+225	,	16	punct	226	,	O	9	15	,	0	_ _ _ _ _ _
+226	VBD	0	root	227	rise	O	9	16	rose	0	_ _ _ _ _ _
+227	IN	19	case	228	to	O	9	17	to	0	_ _ _ _ _ _
+228	CD	19	nummod	229	8.04	B-PERCENT	9	18	8.04	0	_ _ _ _ _ _
+229	NN	16	obl	230	%	E-PERCENT	9	19	%	0	_ _ _ _ _ _
+230	IN	22	case	231	from	O	9	20	from	0	_ _ _ _ _ _
+231	CD	22	nummod	232	7.90	B-PERCENT	9	21	7.90	0	_ _ _ _ _ _
+232	NN	16	obl	233	%	E-PERCENT	9	22	%	0	_ _ _ _ _ _
+233	.	16	punct	234	.	O	9	23	.	0	_ _ _ _ _ _
+234	IN	3	case	235	despite	O	10	1	Despite	0	_ _ _ _ _ _
+235	JJ	3	amod	236	recent	O	10	2	recent	0	_ _ _ _ _ _
+236	NNS	8	obl	237	decline	O	10	3	declines	0	_ _ _ _ _ _
+237	IN	5	case	238	in	O	10	4	in	0	_ _ _ _ _ _
+238	NNS	3	nmod	239	yield	O	10	5	yields	0	_ _ _ _ _ _
+239	,	8	punct	240	,	O	10	6	,	0	_ _ _ _ _ _
+240	NNS	8	nsubj	241	investor	O	10	7	investors	0	_ _ _ _ _ _
+241	VBP	0	root	242	continue	O	10	8	continue	0	_ _ _ _ _ _
+242	TO	10	mark	243	to	O	10	9	to	0	_ _ _ _ _ _
+243	VB	8	xcomp	244	pour	O	10	10	pour	0	_ _ _ _ _ _
+244	NN	10	obj	245	cash	O	10	11	cash	0	_ _ _ _ _ _
+245	IN	14	case	246	into	O	10	12	into	0	_ _ _ _ _ _
+246	NN	14	compound	247	money	O	10	13	money	0	_ _ _ _ _ _
+247	NNS	10	obl	248	fund	O	10	14	funds	0	_ _ _ _ _ _
+248	.	8	punct	249	.	O	10	15	.	0	_ _ _ _ _ _
+249	NNS	7	nsubj	250	asset	O	11	1	Assets	0	_ _ _ _ _ _
+250	IN	6	case	251	of	O	11	2	of	0	_ _ _ _ _ _
+251	DT	6	det	252	the	O	11	3	the	0	_ _ _ _ _ _
+252	CD	6	nummod	253	400	S-CARDINAL	11	4	400	0	_ _ _ _ _ _
+253	NN	6	compound	254	taxable	O	11	5	taxable	0	_ _ _ _ _ _
+254	NNS	1	nmod	255	fund	O	11	6	funds	0	_ _ _ _ _ _
+255	VBD	0	root	256	grow	O	11	7	grew	0	_ _ _ _ _ _
+256	IN	9	case	257	by	O	11	8	by	0	_ _ _ _ _ _
+257	$	7	obl	258	$	B-MONEY	11	9	$	0	_ _ _ _ _ _
+258	CD	11	compound	259	1.5	I-MONEY	11	10	1.5	0	_ _ _ _ _ _
+259	CD	9	nummod	260	billion	E-MONEY	11	11	billion	0	_ _ _ _ _ _
+260	IN	15	case	261	during	O	11	12	during	0	_ _ _ _ _ _
+261	DT	15	det	262	the	B-DATE	11	13	the	0	_ _ _ _ _ _
+262	JJS	15	amod	263	latest	I-DATE	11	14	latest	0	_ _ _ _ _ _
+263	NN	7	obl	264	week	E-DATE	11	15	week	0	_ _ _ _ _ _
+264	,	7	punct	265	,	O	11	16	,	0	_ _ _ _ _ _
+265	IN	18	case	266	to	O	11	17	to	0	_ _ _ _ _ _
+266	$	7	obl	267	$	B-MONEY	11	18	$	0	_ _ _ _ _ _
+267	CD	20	compound	268	352.7	I-MONEY	11	19	352.7	0	_ _ _ _ _ _
+268	CD	18	nummod	269	billion	E-MONEY	11	20	billion	0	_ _ _ _ _ _
+269	.	7	punct	270	.	O	11	21	.	0	_ _ _ _ _ _
+270	RB	5	advmod	271	typically	O	12	1	Typically	0	_ _ _ _ _ _
+271	,	5	punct	272	,	O	12	2	,	0	_ _ _ _ _ _
+272	JJ	4	amod	273	money-fund	O	12	3	money-fund	0	_ _ _ _ _ _
+273	NNS	5	nsubj	274	yield	O	12	4	yields	0	_ _ _ _ _ _
+274	VBP	0	root	275	beat	O	12	5	beat	0	_ _ _ _ _ _
+275	JJ	8	amod	276	comparable	O	12	6	comparable	0	_ _ _ _ _ _
+276	JJ	8	amod	277	short-term	O	12	7	short-term	0	_ _ _ _ _ _
+277	NNS	5	obj	278	investment	O	12	8	investments	0	_ _ _ _ _ _
+278	IN	13	mark	279	because	O	12	9	because	0	_ _ _ _ _ _
+279	NN	11	compound	280	portfolio	O	12	10	portfolio	0	_ _ _ _ _ _
+280	NNS	13	nsubj	281	manager	O	12	11	managers	0	_ _ _ _ _ _
+281	MD	13	aux	282	can	O	12	12	can	0	_ _ _ _ _ _
+282	VB	5	advcl	283	vary	O	12	13	vary	0	_ _ _ _ _ _
+283	NNS	13	obj	284	maturity	O	12	14	maturities	0	_ _ _ _ _ _
+284	CC	16	cc	285	and	O	12	15	and	0	_ _ _ _ _ _
+285	VB	13	conj	286	go	O	12	16	go	0	_ _ _ _ _ _
+286	IN	20	case	287	after	O	12	17	after	0	_ _ _ _ _ _
+287	DT	20	det	288	the	O	12	18	the	0	_ _ _ _ _ _
+288	JJS	20	amod	289	highest	O	12	19	highest	0	_ _ _ _ _ _
+289	NNS	16	obl	290	rate	O	12	20	rates	0	_ _ _ _ _ _
+290	.	5	punct	291	.	O	12	21	.	0	_ _ _ _ _ _
+291	DT	4	det	292	the	O	13	1	The	0	_ _ _ _ _ _
+292	JJ	4	amod	293	top	O	13	2	top	0	_ _ _ _ _ _
+293	NN	4	compound	294	money	O	13	3	money	0	_ _ _ _ _ _
+294	NNS	7	nsubj	295	fund	O	13	4	funds	0	_ _ _ _ _ _
+295	VBP	7	aux	296	be	O	13	5	are	0	_ _ _ _ _ _
+296	RB	7	advmod	297	currently	O	13	6	currently	0	_ _ _ _ _ _
+297	VBG	0	root	298	yield	O	13	7	yielding	0	_ _ _ _ _ _
+298	RB	10	advmod	299	well	B-PERCENT	13	8	well	0	_ _ _ _ _ _
+299	RB	10	advmod	300	over	I-PERCENT	13	9	over	0	_ _ _ _ _ _
+300	CD	11	nummod	301	9	I-PERCENT	13	10	9	0	_ _ _ _ _ _
+301	NN	7	obj	302	%	E-PERCENT	13	11	%	0	_ _ _ _ _ _
+302	.	7	punct	303	.	O	13	12	.	0	_ _ _ _ _ _
+303	NNP	9	nsubj	304	Dreyfus	B-ORG	14	1	Dreyfus	0	_ _ _ _ _ _
+304	NNP	1	flat	305	World-Wide	I-ORG	14	2	World-Wide	0	_ _ _ _ _ _
+305	NNP	1	flat	306	dollar	E-ORG	14	3	Dollar	0	_ _ _ _ _ _
+306	,	1	punct	307	,	O	14	4	,	0	_ _ _ _ _ _
+307	DT	7	det	308	the	O	14	5	the	0	_ _ _ _ _ _
+308	NN	7	compound	309	top-yielding	O	14	6	top-yielding	0	_ _ _ _ _ _
+309	NN	1	appos	310	fund	O	14	7	fund	0	_ _ _ _ _ _
+310	,	9	punct	311	,	O	14	8	,	0	_ _ _ _ _ _
+311	VBD	0	root	312	have	O	14	9	had	0	_ _ _ _ _ _
+312	DT	13	det	313	a	O	14	10	a	0	_ _ _ _ _ _
+313	JJ	13	amod	314	seven-day	O	14	11	seven-day	0	_ _ _ _ _ _
+314	NN	13	compound	315	compound	O	14	12	compound	0	_ _ _ _ _ _
+315	NN	9	obj	316	yield	O	14	13	yield	0	_ _ _ _ _ _
+316	IN	16	case	317	of	O	14	14	of	0	_ _ _ _ _ _
+317	CD	16	nummod	318	9.37	B-PERCENT	14	15	9.37	0	_ _ _ _ _ _
+318	NN	13	nmod	319	%	E-PERCENT	14	16	%	0	_ _ _ _ _ _
+319	IN	20	case	320	during	O	14	17	during	0	_ _ _ _ _ _
+320	DT	20	det	321	the	B-DATE	14	18	the	0	_ _ _ _ _ _
+321	JJS	20	amod	322	latest	I-DATE	14	19	latest	0	_ _ _ _ _ _
+322	NN	9	obl	323	week	E-DATE	14	20	week	0	_ _ _ _ _ _
+323	,	9	punct	324	,	O	14	21	,	0	_ _ _ _ _ _
+324	RB	9	advmod	325	down	O	14	22	down	0	_ _ _ _ _ _
+325	IN	25	case	326	from	O	14	23	from	0	_ _ _ _ _ _
+326	CD	25	nummod	327	9.45	B-PERCENT	14	24	9.45	0	_ _ _ _ _ _
+327	NN	22	obl	328	%	E-PERCENT	14	25	%	0	_ _ _ _ _ _
+328	DT	27	det	329	a	B-DATE	14	26	a	0	_ _ _ _ _ _
+329	NN	28	obl:npmod	330	week	I-DATE	14	27	week	0	_ _ _ _ _ _
+330	RBR	22	advmod	331	earlier	E-DATE	14	28	earlier	0	_ _ _ _ _ _
+331	.	9	punct	332	.	O	14	29	.	0	_ _ _ _ _ _
+332	PRP	2	nsubj	333	it	O	15	1	It	0	_ _ _ _ _ _
+333	VBZ	0	root	334	invest	O	15	2	invests	0	_ _ _ _ _ _
+334	RB	2	advmod	335	heavily	O	15	3	heavily	0	_ _ _ _ _ _
+335	IN	6	case	336	in	O	15	4	in	0	_ _ _ _ _ _
+336	JJ	6	amod	337	dollar-denominated	O	15	5	dollar-denominated	0	_ _ _ _ _ _
+337	NNS	2	obl	338	security	O	15	6	securities	0	_ _ _ _ _ _
+338	RB	2	advmod	339	overseas	O	15	7	overseas	0	_ _ _ _ _ _
+339	CC	11	cc	340	and	O	15	8	and	0	_ _ _ _ _ _
+340	VBZ	11	aux	341	be	O	15	9	is	0	_ _ _ _ _ _
+341	RB	11	advmod	342	currently	O	15	10	currently	0	_ _ _ _ _ _
+342	VBG	2	conj	343	waiv	O	15	11	waiving	0	_ _ _ _ _ _
+343	NN	13	compound	344	management	O	15	12	management	0	_ _ _ _ _ _
+344	NNS	11	obj	345	fee	O	15	13	fees	0	_ _ _ _ _ _
+345	,	13	punct	346	,	O	15	14	,	0	_ _ _ _ _ _
+346	WDT	16	nsubj	347	which	O	15	15	which	0	_ _ _ _ _ _
+347	VBZ	13	acl:relcl	348	boost	O	15	16	boosts	0	_ _ _ _ _ _
+348	PRP$	18	nmod:poss	349	its	O	15	17	its	0	_ _ _ _ _ _
+349	NN	16	obj	350	yield	O	15	18	yield	0	_ _ _ _ _ _
+350	.	2	punct	351	.	O	15	19	.	0	_ _ _ _ _ _
+351	DT	5	det	352	the	O	16	1	The	0	_ _ _ _ _ _
+352	JJ	5	amod	353	average	O	16	2	average	0	_ _ _ _ _ _
+353	JJ	5	amod	354	seven-day	S-DATE	16	3	seven-day	0	_ _ _ _ _ _
+354	JJ	5	amod	355	simple	O	16	4	simple	0	_ _ _ _ _ _
+355	NN	12	nsubj	356	yield	O	16	5	yield	0	_ _ _ _ _ _
+356	IN	9	case	357	of	O	16	6	of	0	_ _ _ _ _ _
+357	DT	9	det	358	the	O	16	7	the	0	_ _ _ _ _ _
+358	CD	9	nummod	359	400	S-CARDINAL	16	8	400	0	_ _ _ _ _ _
+359	NNS	5	nmod	360	fund	O	16	9	funds	0	_ _ _ _ _ _
+360	VBD	12	cop	361	be	O	16	10	was	0	_ _ _ _ _ _
+361	CD	12	nummod	362	8.12	B-PERCENT	16	11	8.12	0	_ _ _ _ _ _
+362	NN	0	root	363	%	E-PERCENT	16	12	%	0	_ _ _ _ _ _
+363	,	12	punct	364	,	O	16	13	,	0	_ _ _ _ _ _
+364	RB	12	advmod	365	down	O	16	14	down	0	_ _ _ _ _ _
+365	IN	17	case	366	from	O	16	15	from	0	_ _ _ _ _ _
+366	CD	17	nummod	367	8.14	B-PERCENT	16	16	8.14	0	_ _ _ _ _ _
+367	NN	14	obl	368	%	E-PERCENT	16	17	%	0	_ _ _ _ _ _
+368	.	12	punct	369	.	O	16	18	.	0	_ _ _ _ _ _
+369	DT	4	det	370	the	O	17	1	The	0	_ _ _ _ _ _
+370	JJ	4	amod	371	30-day	S-DATE	17	2	30-day	0	_ _ _ _ _ _
+371	JJ	4	amod	372	simple	O	17	3	simple	0	_ _ _ _ _ _
+372	NN	5	nsubj	373	yield	O	17	4	yield	0	_ _ _ _ _ _
+373	VBD	0	root	374	fall	O	17	5	fell	0	_ _ _ _ _ _
+374	IN	10	case	375	to	O	17	6	to	0	_ _ _ _ _ _
+375	DT	10	det	376	a	O	17	7	an	0	_ _ _ _ _ _
+376	JJ	10	amod	377	average	O	17	8	average	0	_ _ _ _ _ _
+377	CD	10	nummod	378	8.19	B-PERCENT	17	9	8.19	0	_ _ _ _ _ _
+378	NN	5	obl	379	%	E-PERCENT	17	10	%	0	_ _ _ _ _ _
+379	IN	13	case	380	from	O	17	11	from	0	_ _ _ _ _ _
+380	CD	13	nummod	381	8.22	B-PERCENT	17	12	8.22	0	_ _ _ _ _ _
+381	NN	5	obl	382	%	E-PERCENT	17	13	%	0	_ _ _ _ _ _
+382	,	5	punct	383	;	O	17	14	;	0	_ _ _ _ _ _
+383	DT	18	det	384	the	O	17	15	the	0	_ _ _ _ _ _
+384	NNP	18	compound	385	30-day	S-DATE	17	16	30-day	0	_ _ _ _ _ _
+385	NN	18	compound	386	compound	O	17	17	compound	0	_ _ _ _ _ _
+386	NN	19	nsubj	387	yield	O	17	18	yield	0	_ _ _ _ _ _
+387	VBD	5	parataxis	388	slid	O	17	19	slid	0	_ _ _ _ _ _
+388	IN	24	case	389	to	O	17	20	to	0	_ _ _ _ _ _
+389	DT	24	det	390	a	O	17	21	an	0	_ _ _ _ _ _
+390	JJ	24	amod	391	average	O	17	22	average	0	_ _ _ _ _ _
+391	CD	24	nummod	392	8.53	B-PERCENT	17	23	8.53	0	_ _ _ _ _ _
+392	NN	19	obl	393	%	E-PERCENT	17	24	%	0	_ _ _ _ _ _
+393	IN	27	case	394	from	O	17	25	from	0	_ _ _ _ _ _
+394	CD	27	nummod	395	8.56	B-PERCENT	17	26	8.56	0	_ _ _ _ _ _
+395	NN	19	obl	396	%	E-PERCENT	17	27	%	0	_ _ _ _ _ _
+396	.	5	punct	397	.	O	17	28	.	0	_ _ _ _ _ _

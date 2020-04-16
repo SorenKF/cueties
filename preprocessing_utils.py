@@ -62,12 +62,11 @@ def extract_cue_labels(attribution_df):
 def file_to_sents(attribution_df):
     '''
     Takes a conll format attribution pandas df and returns the text in the form of a list of
-    sentences (which are lists of tokens), as well as a list of lists of cue labels
+    sentences (which are lists of tokens)
     
     :param attribution_df: a pandas dataframe with conll attribution column format
     
     :returns sentences: a list of lists of tokens
-    #:returns cue_labels: a list of lists of binary "is-a-cue" labels
     '''
     #cue_labels = extract_cue_labels(attribution_df)
     
@@ -157,6 +156,8 @@ def preprocessing_main(corpus_directory, new_directory):
         stanza_df = stanza_to_df(doc)
         assert len(stanza_df)==len(cue_label_df["cue_label"]), f"Fatal error; file {file}"
         stanza_df["cue_label"] = cue_label_df["cue_label"]
+        assert len(stanza_df) == len(cue_label_df["attribution"]), f"Fatal error; file {file}"
+        stanza_df["attribution"] = cue_label_df["attribution"]
         
         stanza_df.to_csv(new_directory+outfile, sep="\t")
         
