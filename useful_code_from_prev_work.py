@@ -64,3 +64,30 @@ def shape(token):
 
     shape = ''.join(shape_list)
     return shape
+
+def get_previous_or_following(df, column_name, step=-1):
+    """
+    Gets previous or following label, for instance pos tag or token.
+
+    :param df: Dataframe to apply to
+    :param column_name str: column to apply to
+    :param step integer: -1 for previous, 1 for next, -2 for one before previous...
+
+    :returns df:
+    """
+    for i in range(df.shape[0]):
+        if step == 0:
+            break
+        # If the previous or following row is not in the range of the df
+        # then take '.' as value
+        if (i + step < 0) or (i + step >= df.shape[0]):
+            value = '.'
+        # Otherwise take the item at i+step
+        else:
+            value = df.at[i + step, column_name]
+        if step > 0:
+            step_str = f'+{step}'
+        else:
+            step_str = str(step)
+        # Fill in df
+        df.at[i, f'{column_name}_{step_str}'] = value
