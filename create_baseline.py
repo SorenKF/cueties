@@ -39,8 +39,17 @@ def get_common_cues(folder, k):
     return common_cue_list
 
 
-def add_baseline_info(folder, baseline_path):
-    cues = get_common_cues(folder, 10)
+def add_baseline_info(folder, baseline_path, k):
+    """
+    Function that adds the baseline information to the pre-processed data and
+    writes it to a new file with only the lemma, the original gold cue label and the baseline label
+    (either 0 or 1 for False and True, respectively).
+
+    :parameter: folder (path to the folder which contains the pre-processed data)
+    :parameter: baseline_path (path to the new file to which the baseline will be written)
+    :parameter: k (specifies the number of cues in the common cue list)
+    """
+    cues = get_common_cues(folder, k)
 
     complete_df = pd.DataFrame()
 
@@ -57,6 +66,12 @@ def add_baseline_info(folder, baseline_path):
 
 
 def evaluate_baseline(baseline_data_path):
+    """
+    Evaluation metrics for the baseline (accuracy, precision and recall).
+    Check whether the lemma in question matches with any of the previously extracted cues in the most common cue list
+
+    :parameter: baseline_data_path (path to the csv-file that contains the baseline information).
+    """
     data = pd.read_csv(baseline_data_path)
 
     y_true = data["cue_label"].to_numpy()
@@ -71,8 +86,12 @@ def evaluate_baseline(baseline_data_path):
         f"\nBaseline recall score: {round(recall, 3)}")
 
 
-folder = "../parc30-conll/parc_train_updated/"
-baseline_data_path = "../baseline-information/baseline.csv"
-add_baseline_info(folder, baseline_data_path)
+def run():
+    folder = "../parc30-conll/parc_train_updated/"
+    baseline_data_path = "../baseline-information/baseline.csv"
+    add_baseline_info(folder, baseline_data_path, 10)
+    evaluate_baseline(baseline_data_path)
 
-evaluate_baseline(baseline_data_path)
+
+if __name__ == "__main__":
+    run()
