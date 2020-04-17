@@ -6,6 +6,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score
 logging.basicConfig(level=logging.INFO)
 
 
+# TODO: Get common cues for both PolNeAR and PARC (now only PARC).
 def get_common_cues(folder, k):
     """
     Create a list of the k most common cues found in the pre-processed data.
