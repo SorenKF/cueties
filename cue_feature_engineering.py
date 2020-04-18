@@ -8,6 +8,8 @@ def prep_df(df):
     'dependency_head', 'dependency_label', 'ne_info',   
        'cue_label']]
     
+    return df
+
 def get_previous_or_following(df, column_name, step=-1):
     """
     Gets previous or following label, for instance pos tag or token.
@@ -241,4 +243,162 @@ def add_lexicon_check(df, lexicon):
     return df
 
 
+def add_quotation(df):
     
+    df['quotation'] = 'O'
+    
+    qmark_b_indices = list()
+    qmark_e_indices = list()
+    
+  
+    qmark_b_indices += list(df.loc[df['lemma']== '``' ].index)
+    qmark_e_indices += list(df.loc[df['lemma']== '‘‘'].index)
+        
+    zipped_indices = zip(qmark_b_indices, qmark_e_indices)
+    b_e_indices = list(zipped_indices)
+    
+    for b,e in b_e_indices:
+        #for b, e in pair:
+        span = range(b, e)
+        df.loc[span,'quotation'] = 'I'
+        df.loc[b, 'quotation'] = 'B'
+        df.loc[e, 'quotation'] = 'E'
+            
+    return df
+
+
+def get_boundary_indices(df, boundary_type='sent'):
+    """
+    Gets indices of sentence or doc boundaries. For sentence boundary fill in 'sent' (is default). For doc fill in anything else.
+    returns list of indices.
+    """
+    indices = set()
+    # Boundary at start of doc for sent and doc
+    indices.add(0)
+    # If set to sentence boundaries then find all starts of sentences
+    if boundary_type == 'sent':
+        for index in df[df['sentence_token_number'] == 1].index:
+            if index >= 2:   # Only if index is not 0 then add index to list
+                indices.add(index-2)
+                indices.add(index-1)
+                indices.add(index)
+            elif index == 1:
+                indices.add(index)
+    
+    # Also sentence boundary at end of doc
+    indices.add(df.shape[0]-2)
+    indices.add(df.shape[0]-1)
+    return indices
+
+def add_boundary_column(df, boundary_type):
+    """
+    Boundary type is 'sent' or 'doc'
+    """
+    df[f'near_{boundary_type}_boundary'] = 0
+    indices = get_boundary_indices(df, boundary_type=boundary_type)
+    df.loc[indices, f'near_{boundary_type}_boundary'] = 1
+    
+    return df
+    
+def get_sent_start_indices(df):
+    indices = set()
+    for index in df[df['sentence_token_number'] == 1].index:
+        indices.add(index)
+    return indices
+
+def get_sent_bound_indices(df):
+    sent_start_indices = get_sent_start_indices(df)
+    sent_end_indices = set()
+    
+    for index in sent_start_indices:
+        if index>0:
+            sent_end_indices.add(index-1)
+    sent_end_indices.add(df.shape[0]-1)
+    sent_bound_indices = zip(sent_start_indices, sent_end_indices)
+    
+    return list(sent_bound_indices)
+
+def add_sent_distance_metrics_to_df(df):
+    df['dist_beg_sent'] = df['sentence_token_number'] -1
+    sent_bound_indices = get_sent_bound_indices(df)
+    for start_i, end_i in sent_bound_indices:
+        range_indices = list(range(start_i, end_i+1))
+        df.loc[range_indices, 'dist_end_sent'] = df.loc[end_i, 'sentence_token_number'] - df['dist_beg_sent'] -1
+        df.loc[range_indices, 'sent_len'] = df.loc[end_i, 'sentence_token_number']
+    df['dist_end_sent'] = df['dist_end_sent'].astype('int64')
+    df['sent_len'] = df['sent_len'].astype('int64')
+    
+    return df
+
+def add_in_sentence_bools_to_df(df):
+    '''edited by Ellie'''
+    sent_bound_indices = get_sent_bound_indices(df)
+    df['pn_in_sent'] = 0
+    df['ne_in_sent'] = 0
+    df['qm_in_sent'] = 0
+    for start_i, end_i in sent_bound_indices:
+        range_indices = list(range(start_i, end_i+1))
+        if df.loc[range_indices].loc[df['POS'] == 'PNP'].shape[0] != 0:
+            df.loc[range_indices, 'pn_in_sent'] = 1
+        if df.loc[range_indices].loc[df['relevant_ne'] == 1].shape[0] != 0:
+            df.loc[range_indices, 'ne_in_sent'] = 1
+        if df.loc[range_indices].loc[df['quotation'] != 'O'].shape[0] != 0:
+            df.loc[range_indices, 'qm_in_sent'] = 1
+    return df 
+
+def add_any_in_sent(df):
+
+    df['any_in_sent'] = 0
+    item_indices = list()
+    
+    item_indices += list(df.loc[df['pn_in_sent']== 1].index)
+    item_indices += list(df.loc[df['ne_in_sent']== 1].index)
+    item_indices += list(df.loc[df['qm_in_sent']== 1].index)
+    
+    df.loc[item_indices,'any_in_sent'] = 1
+            
+    return df
+
+def add_quotation_extra(df):
+    
+    df['pn_in_sent'] = df['pn_in_sent'].astype(str)
+    df['ne_in_sent'] = df['ne_in_sent'].astype(str)
+    df['qm_in_sent'] = df['qm_in_sent'].astype(str)
+    
+    
+    
+    df['quotation_pn'] = '_'
+    df['quotation_pn'] = df['quotation'] + df['pn_in_sent']
+    
+    df['quotation_ne'] = '_'
+    df['quotation_ne'] = df['quotation'] + df['ne_in_sent']
+    
+    df['quotation_qm'] = '_'
+    df['quotation_qm'] = df['quotation'] + df['qm_in_sent']
+            
+    return df
+
+def create_feature_df_cue(filepath):
+    '''final main function combining all feature engineering steps'''
+    
+    clean = prep_df(df)
+    a = add_tokens_window5(clean)
+    b = add_lemmas_window5(a)
+    c = add_pos_window5(b)
+    d = add_bigrams_prev(c)
+    e = add_bigrams_following(d)
+    f = add_shape(e)
+    g = add_relevant_ne(f)
+    h = add_ne_info_window5(g)
+    i = add_lexicon_check(h, lexicon)
+    j = add_quotation(i)
+    k = add_boundary_column(j, boundary_type='sent')
+    l = add_boundary_column(k, boundary_type='doc')
+    m = add_sent_distance_metrics_to_df(l)
+    n = add_in_sentence_bools_to_df(m)
+    o = add_any_in_sent(n)
+    p = add_quotation_extra(o)
+    
+    final_df = p
+    
+    return final_df
