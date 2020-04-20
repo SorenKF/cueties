@@ -4,28 +4,28 @@ import os
 
 def collect_candidate_cues(training_corpus):
     '''
-    Takes the path to a training corpus and returns a dictionary of the cue tokens together
+    Takes the path to a training corpus and returns a dictionary of the cue lemmas together
     with a list [occurrences_as_cue, total_occurrences]
     
     :param training_corpus: the path to a directory containing the training files
-        training files should be .tsv files of pandas dfs with at least columns "token" and "cue_label"
+        training files should be .tsv files of pandas dfs with at least columns "lemma" and "cue_label"
     
-    :returns cue_dict: a dictionary of cue_token:[occurrences_as_cue, total_occurrences]
+    :returns cue_dict: a dictionary of cue_lemma:[occurrences_as_cue, total_occurrences]
     '''
-    token_dict = defaultdict(lambda: [0,0]) # Collect counts for all tokens in corpus
+    lemma_dict = defaultdict(lambda: [0,0]) # Collect counts for all tokens in corpus
     
     for file in os.listdir(training_corpus):
-        df = df = pd.read_csv(training_corpus+file, sep='\t', header=0)
-        tokens = df["token"]
+        df = pd.read_csv(training_corpus+file, sep='\t', header=0)
+        lemmas = df["lemma"]
         cue_labels = df["cue_label"]
-        for token, cue_label in zip(tokens, cue_labels):
-            token_dict[token][0] += cue_label
-            token_dict[token][1] += 1
+        for lemma, cue_label in zip(lemmas, cue_labels):
+            lemma_dict[lemma][0] += cue_label
+            lemma_dict[lemma][1] += 1
     
     cue_dict = dict() # Collect only cues from token_dict
-    for token, counts in token_dict.items():
+    for lemma, counts in lemma_dict.items():
         if counts[0] > 0:
-            cue_dict[token] = counts
+            cue_dict[lemma] = counts
     return cue_dict
     
 def add_lexicon_check(df, lexicon):
@@ -43,5 +43,6 @@ def add_lexicon_check(df, lexicon):
         else:
             in_lexicon.append(0)
     df["lexicon_check"] = in_lexicon
+    
     
     
