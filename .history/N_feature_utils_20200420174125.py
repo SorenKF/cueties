@@ -14,7 +14,7 @@ def collect_candidate_cues(training_corpus):
     '''
     lemma_dict = defaultdict(lambda: [0,0]) # Collect counts for all tokens in corpus
     
-    for file in os.listdir(training_corpus)[:100]:   
+    for file in os.listdir(training_corpus)[50]:   
         df = pd.read_csv(training_corpus+file, sep='\t', header=0, encoding='utf-8')
         lemmas = df["lemma"]
         cue_labels = df["cue_label"]
