@@ -36,14 +36,10 @@ def get_common_cues(parc_train_folder, polnear_train_folder, k):
     parc_cue_list = get_cue_list(parc_train_folder)
     polnear_cue_list = get_cue_list(polnear_train_folder)
 
-    # Create a frequency dictionary to count the number of occurrences for each cue.
-    for cue in parc_cue_list:
-        if cue in cue_freq_dict.keys():
-            cue_freq_dict[cue] += 1
-        elif cue not in cue_freq_dict.keys():
-            cue_freq_dict[cue] = 1
+    combined_cue_list = parc_cue_list + polnear_cue_list
 
-    for cue in polnear_cue_list:
+    # Create a frequency dictionary to count the number of occurrences for each cue.
+    for cue in combined_cue_list:
         if cue in cue_freq_dict.keys():
             cue_freq_dict[cue] += 1
         elif cue not in cue_freq_dict.keys():
@@ -90,23 +86,26 @@ def add_baseline_column(test_folder, cues):
     return test_data
 
 
-def add_baseline_info(parc_test_folder, polnear_test_folder, cues, baseline_path):
+def add_baseline_info(parc_test_folder, polnear_test_folder, cues):
     """
     Combines the information gathered in add_baseline_column for both parc and polnear to a single dataframe,
         to prepare it for evaluation, and writes it to a csv file.
+        Also writes the separate baseline dataframes for PARC and PolNeAR to a file.
 
     :parameter: parc_test_folder (path to the parc test folder)
     :parameter: polnear_test_folder (path to the polnear test folder)
-    :parameter: baseline_path (path to the new file to which the baseline will be written)
     :parameter: k (specifies the number of cues in the common cue list)
     """
     # Add baseline column
     parc_test_data = add_baseline_column(parc_test_folder, cues)
+    parc_test_data.to_csv('./baseline/parc_baseline.csv', index=False, index_label=False)
+
     polnear_test_data = add_baseline_column(polnear_test_folder, cues)
+    polnear_test_data.to_csv('./baseline/polnear_baseline.csv', index=False, index_label=False)
 
     # Add individual dataframes together and write to file.
     complete_df = parc_test_data.append(polnear_test_data, ignore_index=True)
-    complete_df.to_csv(baseline_path, index=False, index_label=False)
+    complete_df.to_csv("./baseline/entire_baseline.csv", index=False, index_label=False)
 
 
 def evaluate_baseline(baseline_data_path):
@@ -128,10 +127,11 @@ def evaluate_baseline(baseline_data_path):
     precision = precision_score(y_true, y_pred)
     recall = recall_score(y_true, y_pred)
 
-    logging.info(
-        f"Baseline accuracy score: {round(accuracy, 3)} "
-        f"\nBaseline precision score: {round(precision, 3)} "
-        f"\nBaseline recall score: {round(recall, 3)}")
+    baseline_name = baseline_data_path.replace('./baseline/', '')
+    logging.info(f"{baseline_name} "
+                 f"\nBaseline accuracy score: {round(accuracy, 3)} "
+                 f"\nBaseline precision score: {round(precision, 3)} "
+                 f"\nBaseline recall score: {round(recall, 3)}")
 
 
 def run():
@@ -140,11 +140,13 @@ def run():
 
     parc_test_folder = "../parc_updated/parc_test_updated/"
     polnear_test_folder = "../polnear_updated/polnear_test_updated/"
-    baseline_data_path = "./baseline/baseline.csv"
 
     cues = get_common_cues(parc_train_folder, polnear_train_folder, 10)
-    add_baseline_info(parc_test_folder, polnear_test_folder, cues, baseline_data_path)
-    evaluate_baseline(baseline_data_path)
+    add_baseline_info(parc_test_folder, polnear_test_folder, cues)
+
+    evaluate_baseline('./baseline/entire_baseline.csv')
+    evaluate_baseline('./baseline/parc_baseline.csv')
+    evaluate_baseline('./baseline/polnear_baseline.csv')
 
 
 if __name__ == "__main__":
