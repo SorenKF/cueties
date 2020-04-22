@@ -16,11 +16,13 @@ def collect_candidate_cues(training_corpus):
     
     for file in os.listdir(training_corpus):   
         df = pd.read_csv(training_corpus+file, sep='\t', header=0, encoding='utf-8')
+        print(df)
         lemmas = df["lemma"]
         cue_labels = df["cue_label"]
         for lemma, cue_label in zip(lemmas, cue_labels):
             lemma_dict[lemma][0] += cue_label
             lemma_dict[lemma][1] += 1
+    
     cue_dict = dict() # Collect only cues from token_dict
     for lemma, counts in lemma_dict.items():
         if counts[0] > 0:
