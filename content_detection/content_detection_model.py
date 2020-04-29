@@ -2,7 +2,7 @@
 # To run script type in terminal:
 # python train_file test_file out_file
 # For example:
-# python content_detection_model.py ./../../Data/parc_features/parc_train_features_small.tsv ./../../Data/parc_features/parc_test_features_small.tsv ./../../Data/parc_features/parc_test_predicted_features_small.tsv
+# python content_detection_model.py ./../../Data/parc_features/parc_train_features.tsv ./../../Data/parc_features/parc_test_features.tsv ./../../Data/parc_features/parc_test_predicted_features.tsv
 import sklearn_crfsuite
 from csv import DictReader, DictWriter
 import sys
@@ -54,7 +54,7 @@ def read_data(filepath):
     :param filepath: str, filepath to read
     :return: list of dicts
     """
-    with open(filepath, 'r') as infile:
+    with open(filepath, 'r', encoding='utf-8') as infile:
         dict_reader = DictReader(infile, delimiter='\t')
         data = list(dict_reader)
     return data
@@ -86,7 +86,7 @@ def write_dicts_to_file(filepath_out, list_of_dicts):
     :param filepath_out: file to which to write the data
     :param list_of_dicts: list of dictionaries. Must all have the same keys
     """
-    with open(filepath_out, 'w', newline='\n') as outfile:
+    with open(filepath_out, 'w', newline='\n', encoding='utf-8') as outfile:
         writer = DictWriter(outfile, fieldnames=list_of_dicts[0].keys(), delimiter='\t')
         writer.writeheader()
         for data in list_of_dicts:
@@ -101,30 +101,43 @@ def main():
     - Filename to training data
     - Filename to test data
     - Filename to write test data with predictions to.
-    For example,
-    python content_detection_model.py ./../../Data/parc_features/parc_train_features_small.tsv ./../../Data/parc_features/parc_test_features_small.tsv ./../../Data/parc_features/parc_test_predicted_features_small.tsv
+    For example, (PARC)
+    python content_detection_model.py ./../../Data/parc_features/parc_train_features.tsv ./../../Data/parc_features/parc_test_features.tsv ./../../Data/parc_features/parc_test_predicted_features.tsv
+    (PolNeAR)
+    python content_detection_model.py ./../../Data/polnear_features/polnear_train_features.tsv ./../../Data/polnear_features/polnear_test_features.tsv ./../../Data/polnear_features/polnear_test_predicted_features.tsv
     """
     filename_train = sys.argv[1]
     filename_test = sys.argv[2]
     filepath_out = sys.argv[3]
 
+    # Print for checks
+    print(f'Training on {filename_train}')
+    print(f'Predicting on {filename_test}')
+
     # Read in data
     train_data = read_data(filename_train)
     test_data = read_data(filename_test)
 
+    print('Read data. Proceed to extract features and labels')
     # Separate data into features and labels
     X_train, y_train = extract_features_and_labels(train_data)
     X_test, y_test = extract_features_and_labels(test_data)
 
+    print('Extracted features and labels. Proceed to train model.')
+
     # Train the model
     crf = train_crf(X_train, y_train)
+    print('Model has been fit')
     # Predict on test data
     y_pred = crf.predict(X_test)
 
+    print('Labels have been predicted on test. Continue to write output to file.')
     # Join features, gold labels and predicted labels
     true_pred_data = join_test_gold_pred(X_test, y_test, y_pred)
     # Write to file
     write_dicts_to_file(filepath_out, true_pred_data)
+
+    print(f'Predicted labels written to {filepath_out}')
 
 
 if __name__ == '__main__':
