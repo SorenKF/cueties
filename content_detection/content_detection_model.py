@@ -24,6 +24,7 @@ def extract_features_and_labels(list_of_dicts):
     for token_dict in list_of_dicts:
         # Remove label from dictionaries
         label = token_dict.pop('content_label_gold')
+        attribution = token_dict.pop('attribution')
         # Append changed dict to list and label to corresponding list
         feature_dicts.append(token_dict)
         label_list.append(label)
