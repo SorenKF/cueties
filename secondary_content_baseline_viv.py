@@ -7,18 +7,26 @@ parc_filepath = '../2020_NLP/parc_features/parc_dev_features.tsv'
 polnear_filepath = '../2020_NLP/polnear_features/polnear_dev_features.tsv'
 
 
-def get_candidate_indices(tsv_filepath):
+def get_dataframe(tsv_filepath):
+    """
+    Read in a tsv_file as a DataFrame.
+
+    :param tsv_filepath: path to a tsv-file
+    :return: df (DataFrame with the information from the tsv-file)
+    """
+    df = pd.read_csv(tsv_filepath, delimiter='\t', index_col=0, low_memory=False)
+    return df
+
+
+def get_candidate_indices(df):
     """
     Get a dictionary of all candidate indices from a tsv-file.
 
-    :param tsv_filepath: Path to a tsv file.
+    :param data:
     :return: content_dictionary (a dictionary with the indices of the content spans,
                 formatted as a tuple (filename, sent_no) as the key and a list of the content span indices as the value)
              content_df (a dataframe that only contains the information of the content spans)
     """
-    # Read in the tsv-data.
-    df = pd.read_csv(tsv_filepath, delimiter='\t', index_col=0, low_memory=False)
-
     candidate_indices = list()
 
     # List of tuples with whether (1) there is a quotation mark in the sentence and
@@ -133,11 +141,34 @@ def create_baseline_dictionary(main_dictionary):
     return main_dictionary
 
 
+def IOB_baseline(df, baseline_dictionary):
+    """
+    Adds a columns to the original DataFrame with IOBE information for the baseline content spans
+        as defined in baseline_dictionary.
+
+    :param df: original DataFrame
+    :param baseline_dictionary: dictionary with (filename, sentence_num) tuples as keys
+        and a list of indices as value.
+    :return: df (DataFrame with IOB information for each predicted content span)
+    """
+    # Set default value of baseline at "O" for 'outside'
+    df["baseline"] = "O"
+
+    for tuple, indices in baseline_dictionary.items():
+        df.at[indices[0], "baseline"] = "B"  # Assign B to each initial index
+        df.at[indices[-1], "baseline"] = "E"  # Assign E to each final index
+        df.at[indices[1:-1], "baseline"] = "I"  # Assign I to all other indices in the list
+
+    return df
+
+
 def run():
-    content_dictionary, content_df = get_candidate_indices(parc_filepath)
+    df = get_dataframe(parc_filepath)
+    content_dictionary, content_df = get_candidate_indices(df)
     cues_dictionary = get_cue_from_spans(content_dictionary, content_df)
     main_dictionary = split_spans_on_cue(content_dictionary, cues_dictionary)
     baseline_dictionary = create_baseline_dictionary(main_dictionary)
+    IOB_df = IOB_baseline(df, baseline_dictionary)
 
 
 if __name__ == "__main__":
