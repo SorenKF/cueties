@@ -1,10 +1,11 @@
+import os
 from collections import defaultdict
 
 import pandas as pd
 
 # Define necessary filepaths.
-parc_filepath = '../2020_NLP/parc_features/parc_dev_features.tsv'
-polnear_filepath = '../2020_NLP/polnear_features/polnear_dev_features.tsv'
+parc_dev_filepath = '../../../2020_NLP/parc_features/parc_dev_features.tsv'
+polnear_dev_filepath = '../../../2020_NLP/polnear_features/polnear_dev_features.tsv'
 
 
 def get_dataframe(tsv_filepath):
@@ -141,7 +142,7 @@ def create_baseline_dictionary(main_dictionary):
     return main_dictionary
 
 
-def IOB_baseline(df, baseline_dictionary):
+def get_indir_baseline(df, baseline_dictionary):
     """
     Adds a columns to the original DataFrame with IOBE information for the baseline content spans
         as defined in baseline_dictionary.
@@ -162,13 +163,36 @@ def IOB_baseline(df, baseline_dictionary):
     return df
 
 
-def run():
-    df = get_dataframe(parc_filepath)
+def combine_baseline_columns(indir_baseline_df, filepath):
+    baseline_df = indir_baseline_df[["lemma", "content_label_gold", "quotation", "baseline"]]
+    baseline_df.columns = ['lemma', 'gold', 'direct', 'indirect']
+
+    baseline_df["combined"] = baseline_df["direct"]
+
+    for index, row in baseline_df.iterrows():
+        if row.combined == "O" and row.indirect != "O":
+            baseline_df.at[index, "combined"] = row.indirect
+
+    baseline_df.pop('indirect')
+
+    basename = os.path.basename(filepath)
+    outpath = basename.replace("_features.tsv", "_baseline.csv")
+    baseline_df.to_csv(outpath)
+
+
+def get_full_baseline(filepath):
+    df = get_dataframe(filepath)
     content_dictionary, content_df = get_candidate_indices(df)
     cues_dictionary = get_cue_from_spans(content_dictionary, content_df)
     main_dictionary = split_spans_on_cue(content_dictionary, cues_dictionary)
     baseline_dictionary = create_baseline_dictionary(main_dictionary)
-    IOB_df = IOB_baseline(df, baseline_dictionary)
+    indir_baseline_df = get_indir_baseline(df, baseline_dictionary)
+    combine_baseline_columns(indir_baseline_df, filepath)
+
+
+def run():
+    get_full_baseline(parc_dev_filepath)
+    get_full_baseline(polnear_dev_filepath)
 
 
 if __name__ == "__main__":

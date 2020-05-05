@@ -138,8 +138,8 @@ def run():
 
     parc_test_folder = "../Data/updated_corpora/parc_test_updated/"
     polnear_test_folder = "../Data/updated_corpora/polnear_test_updated/"
-    parc_baseline_data_path = "./baseline/parc_baseline.csv"
-    polnear_baseline_data_path = './baseline/polnear_baseline.csv'
+    parc_baseline_data_path = "parc_cue_baseline.csv"
+    polnear_baseline_data_path = 'polnear_cue_baseline.csv'
 
     cues = get_common_cues(parc_train_folder, polnear_train_folder, 10)
     add_baseline_info(parc_test_folder,
