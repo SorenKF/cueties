@@ -98,14 +98,14 @@ def add_baseline_info(parc_test_folder, polnear_test_folder, cues):
     """
     # Add baseline column
     parc_test_data = add_baseline_column(parc_test_folder, cues)
-    parc_test_data.to_csv('./baseline/parc_baseline.csv', index=False, index_label=False)
+    parc_test_data.to_csv('./baseline/parc_cue_baseline.csv', index=False, index_label=False)
 
     polnear_test_data = add_baseline_column(polnear_test_folder, cues)
-    polnear_test_data.to_csv('./baseline/polnear_baseline.csv', index=False, index_label=False)
+    polnear_test_data.to_csv('./baseline/polnear_cue_baseline.csv', index=False, index_label=False)
 
     # Add individual dataframes together and write to file.
     complete_df = parc_test_data.append(polnear_test_data, ignore_index=True)
-    complete_df.to_csv("./baseline/entire_baseline.csv", index=False, index_label=False)
+    complete_df.to_csv("./baseline/entire_cue_baseline.csv", index=False, index_label=False)
 
 
 def evaluate_baseline(baseline_data_path):
@@ -144,9 +144,9 @@ def run():
     cues = get_common_cues(parc_train_folder, polnear_train_folder, 10)
     add_baseline_info(parc_test_folder, polnear_test_folder, cues)
 
-    evaluate_baseline('./baseline/entire_baseline.csv')
-    evaluate_baseline('./baseline/parc_baseline.csv')
-    evaluate_baseline('./baseline/polnear_baseline.csv')
+    evaluate_baseline('./baseline/entire_cue_baseline.csv')
+    evaluate_baseline('./baseline/parc_cue_baseline.csv')
+    evaluate_baseline('./baseline/polnear_cue_baseline.csv')
 
 
 if __name__ == "__main__":
