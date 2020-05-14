@@ -1,3 +1,7 @@
+# This is an updated version of cue_feature_engineering.py;
+# It was run to get the feature files that are concatenations of all files in a corpus into on file
+# with all features in it
+ 
 import pandas as pd
 import numpy
 import glob
