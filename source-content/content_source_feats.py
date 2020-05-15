@@ -194,7 +194,7 @@ def find_num_conts_between(token_df, pair_df):
 def get_pairwise_data(filepath):
     # Read in token level data
     token_df = pd.read_csv(filepath, delimiter='\t', index_col=0)
-    token_df = token_df[:500]
+    #token_df = token_df[:500]
 
     instance_output = instance_generation.collect_instances_main(token_df)
 
