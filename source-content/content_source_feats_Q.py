@@ -1,6 +1,3 @@
-import pandas as pd
-import instance_generation
-
 def create_instance_list(list_of_tuples,df):
     
     main_list = list()
@@ -104,28 +101,3 @@ def run_dist_feats(list_of_tuples,df):
     find_num_sources_between(df, main_list)
     
     return df
-
-def main():
-    filepath = './../../Data/parc_features/parc_dev_features.tsv'
-    df = pd.read_csv(filepath, delimiter='\t', index_col=0)
-
-    instance_output = instance_generation.collect_instances_main(df)
-
-    gold_label_list = list()
-    pair_list = list()
-    for instance_list in instance_output:
-        gold_label_list.append(instance_list[2])
-        pair_tupel = (instance_list[0], instance_list[1])
-        pair_list.append(pair_tupel)
-
-    print(gold_label_list[:4])
-    print(pair_list[:4])
-
-    main_list = create_instance_list(pair_list, df)
-    #find_sc_dist(df, main_list)
-    #find_num_conts_between(df, main_list)
-    #find_num_sources_between(df, main_list)
-
-    print(df.head())
-
-main()
