@@ -1,13 +1,6 @@
-def create_content_source_dist_feats(list_of_tuples, df):
-    '''A function to add all content/source distance features to the df
-    takes- list_of_tuples = a list of tuples of tuples of indices of the paired source/content spans
-         - df = the dataframe containing the dataset
-    returns- the df with added s/c_distance, num_conts_between and num_sources_between columns. Where X is used for tokens
-    outside of the s/c pairs and numbers are given to all tokens inside of the s/c span to show the information in column'''
+def create_instance_list(list_of_tuples,df):
     
-    df['s/c_distance'] = 'X'
-    df['num_conts_between'] = 'X'
-    df['num_sources_between'] = 'X'
+    main_list = list()
     
     for instance in list_of_tuples:
         instance_list = list()
@@ -43,20 +36,53 @@ def create_content_source_dist_feats(list_of_tuples, df):
                     instance_list.append(e2)
                 else:
                     instance_list.append(b2)
+                    
+        list_tupel = (instance_list, index_list)
+        main_list.append(list_tupel)
+    
+    return main_list
+
+def find_sc_dist(df, main_list):
+    
+    df['s/c_distance'] = 'X'
+    
+    for list_tupel in main_list:
+        instance_list = list_tupel[0]
+        index_list = list_tupel[1]
         
         if instance_list[0] < instance_list[1]:
             distance = instance_list[1] - instance_list[0]
         else:
             distance = instance_list[0] - instance_list[1]
-   
+
         df.loc[index_list,'s/c_distance'] = distance
+
+    #return df
     
+def find_num_conts_between(df, main_list):
+    
+    df['num_conts_between'] = 'X'
+    
+    for list_tupel in main_list:
+        instance_list = list_tupel[0]
+        index_list = list_tupel[1]
+        
         counter = 0
         for index in list(range(instance_list[0], instance_list[1])):
             if df.loc[index,'content_label_gold'] == 'B':
                 counter += 1
                 
         df.loc[index_list,'num_conts_between'] = counter
+        
+    #return df
+    
+def find_num_sources_between(df, main_list):
+    
+    df['num_sources_between'] = 'X'
+    
+    for list_tupel in main_list:
+        instance_list = list_tupel[0]
+        index_list = list_tupel[1]
         
         counter = 0
         for index in list(range(instance_list[0], instance_list[1])):
@@ -65,4 +91,13 @@ def create_content_source_dist_feats(list_of_tuples, df):
                 
         df.loc[index_list,'num_sources_between'] = counter
         
+    #return df
+    
+def run_dist_feats(list_of_tuples,df):
+    
+    main_list = create_instance_list(list_of_tuples,df)
+    find_sc_dist(df, main_list)
+    find_num_conts_between(df, main_list)
+    find_num_sources_between(df, main_list)
+    
     return df
