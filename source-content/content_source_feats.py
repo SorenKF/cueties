@@ -1,7 +1,8 @@
 import pandas as pd
 import instance_generation
+import winsound
 
-
+# Change the filepaths in the main() function!!
 
 def seperate_instance_gold(instance_output):
     gold_label_list = list()
@@ -145,7 +146,7 @@ def get_distance_c2sentstart(token_df, pair_df, list_of_tuples):
         file_df = token_df.loc[token_df["filename"] == doc_filename]  # Filter by filename to get the correct indices.
 
         sent_id = token_df.iloc[b_content]["sentence_number"]
-        index_sent_start = file_df[token_df.sentence_number == sent_id].first_valid_index()
+        index_sent_start = file_df[file_df.sentence_number == sent_id].first_valid_index()
 
         distance_c2sent = b_content - index_sent_start
         distances_2sentstart.append(distance_c2sent)
@@ -225,20 +226,40 @@ def get_pairwise_data(filepath):
     find_sc_dist(pair_df)
     find_num_conts_between(token_df, pair_df)
 
+    pair_df.drop(['all_indices_in_span', 'gap_indices'], axis=1)
+
     return pair_df
 
 def main():
-    train_filepath = "./../../Data/parc_features/parc_train_features.tsv"
+    print('starting')
     test_filepath = "./../../Data/parc_features/parc_dev_features.tsv"
+    test_fileout = "./../../Data/parc_dev_pairs.tsv"
+    train_filepath = "./../../Data/parc_features/parc_train_features.tsv"
+    train_fileout = "./../../Data/parc_train_pairs.tsv"
 
-    train_fileout = "./../../Data/parc_train_features.tsv"
-    test_fileout = "./../../Data/parc_dev_features.tsv"
 
-    df_train = get_pairwise_data(train_filepath)
+    print(f'reading in {test_filepath}')
     df_test = get_pairwise_data(test_filepath)
-
-    df_train.to_csv(train_fileout, sep='\t')
+    print('found pairwise data')
     df_test.to_csv(test_fileout, sep='\t')
+    print(f'written to {test_fileout}')
+
+    # Remove later
+    frequency = 1700  # Set Frequency To 2500 Hertz
+    duration = 500  # Set Duration To 1000 ms == 1 second
+    winsound.Beep(frequency, duration)
+
+
+
+    print(f'reading in {train_filepath}')
+    df_train = get_pairwise_data(train_filepath)
+    print('found pairwise data')
+    df_train.to_csv(train_fileout, sep='\t')
+    print(f'written to {train_fileout}')
+
+
+    winsound.Beep(frequency, duration)
+
 
 if __name__ == '__main__':
     main()
