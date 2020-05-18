@@ -2,8 +2,8 @@ import pandas as pd
 from instance_generation import content_in_sentence, candidate_sources, collect_span_dict, check_for_contents, collect_candidate_sources, collect_instances, compare_spans, collect_instances_main
 from collections import defaultdict
 
-df = pd.read_csv("newest_df_parc.csv", sep='\t', header=0, index_col=0)
-#df = pd.read_csv("newest_df_polnear.csv", sep='\t', header=0, index_col=0)
+df = pd.read_csv("Stella_newest_df_parc.csv", sep='\t', header=0, index_col=0)
+#df = pd.read_csv("Stella_newest_df_polnear.csv", sep='\t', header=0, index_col=0)
 
 # get indices from the instances created by Nathan without the labels
 def main():
