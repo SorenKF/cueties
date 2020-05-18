@@ -64,8 +64,8 @@ for index, content_label in enumerate(df["content_label_gold"]):
      
     
 #write the new df to a csv to check what on earth I am actually doing
-df.to_csv("C:/Users/Stell/Documents/Attribution_System/source-content/newest_df_polnear.csv", sep='\t', encoding='utf-8')
-#intermittant saved df: df = pd.read_csv("C:/Users/Stell/Documents/Attribution_System/source-content/newest_df_parc.csv", sep='\t', header=0, index_col=0)
+#df.to_csv("C:/Users/Stell/Documents/Attribution_System/source-content/newest_df_polnear.csv", sep='\t', encoding='utf-8')
+#intermittant saved df: df = pd.read_csv("C:/Users/Stell/Documents/Attribution_System/source-content/newest_df_polnear.csv", sep='\t', header=0, index_col=0)
 
 
 # get indices from the instances created by Nathan without the labels
@@ -99,9 +99,12 @@ y_pred = []
 for source, content, prediction in return_list:
     y_pred.append(prediction)
 
-precision = precision_score(y_true, y_pred)
-recall = recall_score(y_true, y_pred)
-f1 = f1_score(y_true, y_pred)
-accuracy = accuracy_score(y_true, y_pred)
+#with open('list_baseline_output_POLN.txt', 'w') as f:
+    #f.write(str(return_list))
 
-print('precision: ', precision, 'recall: ', recall, 'f1: ', f1, 'accuracy: ', accuracy)
+# precision = precision_score(y_true, y_pred)
+# recall = recall_score(y_true, y_pred)
+# f1 = f1_score(y_true, y_pred)
+# accuracy = accuracy_score(y_true, y_pred)
+
+# print('precision: ', precision, 'recall: ', recall, 'f1: ', f1, 'accuracy: ', accuracy)
