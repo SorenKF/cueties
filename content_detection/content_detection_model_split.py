@@ -129,9 +129,9 @@ def main():
         - Folder path to test data
         - Folder path to write test data with predictions to.
         For example, (PARC)
-        python content_detection_model.py ./../../Data/parc/parc_train_set/ ./../../Data/parc/parc_dev_set/ ./../../Data/parc/parc_dev_pred_set/
+        python content_detection_model_split.py ./../../Data/parc_split/parc/parc_train_set/ ./../../Data/parc_split/parc/parc_test_set/ ./../../Data/parc_split/parc/parc_test_pred_set/
         (PolNeAR)
-        python content_detection_model.py ./../../Data/polnear/polnear_train_set/ ./../../Data/parc/parc_dev_set/ ./../../Data/parc/parc_dev_pred_set/
+        python content_detection_model_split.py ./../../Data/polnear_split/polnear/polnear_train_set/ ./../../Data/polnear_split/polnear/polnear_test_set/ ./../../Data/polnear_split/polnear/polnear_test_pred_set/
         """
     path_train = sys.argv[1]
     path_test = sys.argv[2]
