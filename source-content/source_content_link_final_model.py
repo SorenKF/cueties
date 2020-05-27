@@ -65,8 +65,8 @@ def train_pred_logreg(train_feats, train_labels, test_feats):
 def main():
     #df_gold_labels = pd.read_csv('source-content_feature_data/parc_dev_pairs.tsv', sep='\t', header=0, index_col=0)
     
-    df_train = pd.read_csv('source-content_feature_data/parc_train_pairs.tsv', sep='\t', header=0, index_col=0)
-    df_test = pd.read_csv('source-content_feature_data/parc_dev_pred_pairs.tsv', sep='\t', header=0, index_col=0)
+    df_train = pd.read_csv('C:/Users/Stell/Documents/Attribution_System/source-content/source-content_feature_data/polnear_train_pairs.tsv', sep='\t', header=0, index_col=0)
+    df_test = pd.read_csv('C:/Users/Stell/Documents/Attribution_System/source-content/source-content_test_pred_pairs/polnear_test_pred_pairs.tsv', sep='\t', header=0, index_col=0)
     #df_test['gold_labels'] = df_gold_labels['gold_labels']
 
     # Extract feats/labels
@@ -78,7 +78,7 @@ def main():
 
        # Write to df
     df_test['maxent_pred'] = predictions
-    df_test.to_csv("source-content_feature_data/parc_dev_pred_pairs_with_predictions.tsv", sep='\t', encoding='utf-8')
+    df_test.to_csv("C:/Users/Stell/Documents/Attribution_System/source-content/source-content_test_pred_pairs/polnear_test_pred_pairs_with_predictions.tsv", sep='\t', encoding='utf-8')
 
     print('CLASSIFICATION REPORT')
     print(classification_report(df_test['gold_labels'], df_test['maxent_pred']))
