@@ -3,6 +3,7 @@
 # python train_file test_file out_file
 # For example:
 # python content_detection_model.py ./../../Data/parc_features/parc_train_features.tsv ./../../Data/parc_features/parc_test_features.tsv ./../../Data/parc_features/parc_test_predicted_features.tsv
+# './../../Data/parc_split/parc/parc_test_set/*
 import sklearn_crfsuite
 from csv import DictReader, DictWriter
 import sys
